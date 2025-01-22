@@ -3,6 +3,7 @@ import React from "react";
 import { Container } from "react-grid-system";
 import styled from "styled-components";
 import { TopBar } from "./TopBar";
+import { Footer } from "./Footer";
 
 
 const StyledContainer = styled(Container)`
@@ -14,6 +15,7 @@ const Layout: React.FC<ReactSimpleComponentProps> = ({ children }) => {
     <StyledContainer component="main">
       <TopBar />
       { children }
+      <Footer />
     </StyledContainer>
   );
 }

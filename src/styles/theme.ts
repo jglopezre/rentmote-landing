@@ -14,12 +14,17 @@ export const theme = {
     md: '16px',
     lg: '24px',
     xl: '32px',
+    xxl: '48px',
   },
   typography: {
     fontSize: {
-      sm: '14px',
-      md: '16px',
-      lg: '20px',
+      base: '16px',
+      s1: '3rem',
+      s2: '2.3rem',
+      s3: '1.9rem',
+      s4: '1.1rem',
+      s5: '0.9rem',
+      s6: '0.7rem', 
     },
     fontWeight: {
       regular: 300,

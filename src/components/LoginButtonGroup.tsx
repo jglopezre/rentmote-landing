@@ -1,5 +1,17 @@
+import { useUserLanguage } from "@/customHooks";
 import React from "react";
 import styled from "styled-components";
+
+const texts = {
+  en: {
+    login: 'Login',
+    signup: 'Sign Up'
+  },
+  es: {
+    login: 'Entrar',
+    signup: 'Registrarse'
+  }
+}
 
 const ButtonWrapper = styled.div`
   display: flex;
@@ -37,8 +49,9 @@ const LoginButon = styled.button`
   }
 `;
 
-
 export const LoginButtonGroup: React.FC = () => {
+  const userLanguage = useUserLanguage();
+
   const onLoginActionHandle = () => {
     console.log('Login button pressed');
   }
@@ -50,12 +63,11 @@ export const LoginButtonGroup: React.FC = () => {
   return (
     <ButtonWrapper>
       <LoginButon type="button" onClick={onLoginActionHandle}>
-        Log in
+        {userLanguage === 'es' ? texts.es.login : texts.en.login}
       </LoginButon>
       <SignupButton type="button" onClick={onSignupActionHandle}>
-        Sign up
+        {userLanguage === 'es' ? texts.es.signup : texts.en.signup}
       </SignupButton>
     </ButtonWrapper>
-  )
-
+  );
 }

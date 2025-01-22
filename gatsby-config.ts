@@ -48,7 +48,23 @@ const config: GatsbyConfig = {
         "path": "./src/pages/"
       },
       __key: "pages"
-    }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `md-en`,
+        path: `./src/data/md/en`,
+      },
+      __key: "md-en"
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `md-es`,
+        path: `./src/data/md/es`,
+      },
+      __key: "md-es"
+    },
   ]
 };
 
