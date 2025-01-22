@@ -22,7 +22,7 @@ export const theme = {
       s1: '3rem',
       s2: '2.3rem',
       s3: '1.9rem',
-      s4: '1.1rem',
+      s4: '1.4rem',
       s5: '0.9rem',
       s6: '0.7rem', 
     },

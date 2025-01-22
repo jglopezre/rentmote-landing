@@ -9,11 +9,6 @@ const StyledRow = styled(Row)`
   padding-top: ${({ theme }) => theme.spacing.sm };
   font-size: ${({ theme }) => theme.typography.fontSize.sm};
 `
-
-const StyledCol1 = styled(Col)`
-  
-`;
-
 const StyledCol2 = styled(Col)`
   display: flex;
   justify-content: center;
@@ -29,17 +24,17 @@ const StyledCol3 = styled(Col)`
 export const TopBar: React.FC = () => {
   return (
     <StyledRow justify="between">
-      <StyledCol1>
+      <Col xs="content">
         <StaticImage
           src="../images/rentmote-logotipo-color.png"
           width={120}
           alt="rentmote"  
         />
-      </StyledCol1>
+      </Col>
       <StyledCol2>
         <NavBar />
       </StyledCol2>
-      <StyledCol3>
+      <StyledCol3 xs="content">
         <LoginButtonGroup />
       </StyledCol3>
     </StyledRow>

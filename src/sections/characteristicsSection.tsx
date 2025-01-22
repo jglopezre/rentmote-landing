@@ -6,14 +6,10 @@ import { Col, Row } from 'react-grid-system';
 import styled from 'styled-components';
 
 
-const SectionWrapper = styled(Row)`
-  
-`
-
 export const CharacteristicsSection: React.FC = () => {
   const data = useStaticQuery(graphql`
-    query CharacteristicsCardQuery {
-      en: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/md/en/" } }) {
+    query CharacteristicsCard {
+      en: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/md/en/characteristicsCards/" } }) {
         nodes {
           frontmatter {
             image {
@@ -31,7 +27,7 @@ export const CharacteristicsSection: React.FC = () => {
           }
         }
       }
-      es: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/md/es/" } }) {
+      es: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/md/es/characteristicsCards/" } }) {
         nodes {
           frontmatter {
             image {
@@ -54,22 +50,19 @@ export const CharacteristicsSection: React.FC = () => {
 
   const userLanguage = useUserLanguage();
 
-  console.log(userLanguage)
-
-  const cards = data[userLanguage]?.nodes ?? data['en'].nodes;
+  const cards: any[] = data[userLanguage]?.nodes ?? data['en'].nodes;
+  
   return (
-    <SectionWrapper component="section">
+    <Row component="section" nogutter>
       {
         cards.map(( card: any ) => (
-          <Col xs={12} md={6  }>
-            <CharacteristicCard
-              title={card.frontmatter.title}
-              description={card.frontmatter.description}
-              imageSrc={card.frontmatter.image.childImageSharp.gatsbyImageData}
-            />
-          </Col>
+          <CharacteristicCard
+            title={card.frontmatter.title}
+            description={card.frontmatter.description}
+            imageSrc={card.frontmatter.image.childImageSharp.gatsbyImageData}
+          />
         ))
       }
-    </SectionWrapper>
+    </Row>
   );
 }

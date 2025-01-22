@@ -12,11 +12,11 @@ const StyledContainer = styled(Container)`
 
 const Layout: React.FC<ReactSimpleComponentProps> = ({ children }) => {
   return (
-    <StyledContainer component="main">
+    <Container component="main">
       <TopBar />
       { children }
       <Footer />
-    </StyledContainer>
+    </Container>
   );
 }
 

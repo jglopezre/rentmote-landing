@@ -1,13 +1,17 @@
 import * as React from 'react';
 import type { HeadFC, PageProps } from 'gatsby';
 import Layout from '@/components/Layout';
-import { Hero } from '@/sections/hero';
-import { CharacteristicsSection } from '@/sections';
+import {
+  ApplicationDescription,
+  CharacteristicsSection,
+  OperationDescriptionSection
+} from '@/sections';
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
     <Layout>
-      <Hero />
+      <ApplicationDescription />
+      <OperationDescriptionSection />
       <CharacteristicsSection />
     </Layout>
   )

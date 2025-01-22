@@ -1,5 +1,5 @@
 ---
 title: "Gestión de Propiedades"
-description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat."
+description: "Simplificación la gestión de propiedades. Permite ahorrar tiempo y esfuerzo mientras optimiza sus resultados."
 image: "./hand-with-gears-icon.png"
 ---

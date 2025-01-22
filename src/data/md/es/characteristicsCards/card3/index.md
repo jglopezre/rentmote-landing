@@ -1,5 +1,5 @@
 ---
 title: "Pago Automatizado"
-description: "Expetenda tincidunt in sed, ex partem placerat sea, porro commodo ex eam. His putant aeterno interesset at. Usu ea mundi tincidunt, omnium virtute aliquando ius ex. Ea aperiri sententiae duo."
+description: "Configura pagos automatizados para simplificar la gestión de tus propiedades, brindándote tranquilidad y ahorrándote tiempo."
 image: "./pos-with-card-icon.png"
 ---

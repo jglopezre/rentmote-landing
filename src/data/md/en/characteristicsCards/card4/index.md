@@ -1,5 +1,5 @@
 ---
 title: "Incidents Following"
-description: "Usu nullam dolorum quaestio ei, sit vidit facilisis ea. Per ne impedit iracundia neglegentur. Consetetur neglegentur eum ut, vis animal legimus inimicus id."
+description: "Organize and manage reported incidents, allowing you to generate reports to monitor and prioritize the status of each incident"
 image: "./hand-with-gear-icon.png"
 ---

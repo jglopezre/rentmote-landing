@@ -1,5 +1,5 @@
 ---
 title: "Seguimiento de incidencias"
-description: "Usu nullam dolorum quaestio ei, sit vidit facilisis ea. Per ne impedit iracundia neglegentur. Consetetur neglegentur eum ut, vis animal legimus inimicus id."
+description: "Organiza y gestiona las incidencias reportadas, permitiendo generar reportes para monitorear y priorizar el estado de cada incidencia."
 image: "./hand-with-gear-icon.png"
 ---

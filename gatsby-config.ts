@@ -16,6 +16,7 @@ const config: GatsbyConfig = {
     "gatsby-transformer-remark",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
+    "gatsby-transformer-json",
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
@@ -64,6 +65,12 @@ const config: GatsbyConfig = {
         path: `./src/data/md/es`,
       },
       __key: "md-es"
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `./src/data/json`,
+      },
     },
   ]
 };

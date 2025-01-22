@@ -1,5 +1,5 @@
 ---
 title: "Automatic Payment"
-description: "Expetenda tincidunt in sed, ex partem placerat sea, porro commodo ex eam. His putant aeterno interesset at. Usu ea mundi tincidunt, omnium virtute aliquando ius ex. Ea aperiri sententiae duo."
+description: "Set up automated payments to simplify your rental management, providing peace of mind and saving you time."
 image: "./pos-with-card-icon.png"
 ---
