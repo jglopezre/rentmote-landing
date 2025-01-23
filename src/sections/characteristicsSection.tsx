@@ -2,11 +2,13 @@ import { CharacteristicCard } from '@/components';
 import { useUserLanguage } from '@/customHooks';
 import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
-import { Col, Row } from 'react-grid-system';
+import { Col, Row, useScreenClass } from 'react-grid-system';
 import styled from 'styled-components';
 
-const StyledSectionWrapper = styled(Row)`
+const StyledSectionWrapper = styled(Row)<{ $breakpoint: string }>`
   padding-bottom: 3rem;
+  padding-left: ${( props ) => (props.$breakpoint == 'md' || props.$breakpoint == 'xs') ? props.theme.spacing.smallLateral : props.theme.spacing.largeLateral};
+  padding-right: ${( props ) => (props.$breakpoint == 'md' || props.$breakpoint == 'xs') ? props.theme.spacing.smallLateral : props.theme.spacing.largeLateral};
 `;
 
 const StyledTitle = styled(Col)`
@@ -93,8 +95,10 @@ export const CharacteristicsSection: React.FC = () => {
   const texts = data.allJsonJson.nodes[0]; 
   const selectedTexts = texts[userLanguage].characteristicsSection ?? texts['en'].characteristicsSection;
 
+  const breakpoint = useScreenClass();
+
   return (
-    <StyledSectionWrapper component="section" id="characteristics-section" nogutter >
+    <StyledSectionWrapper component="section" id="characteristics-section" $breakpoint={breakpoint} nogutter >
       <StyledTitle xs={12}>
         <h1>{selectedTexts.description}</h1>
       </StyledTitle>

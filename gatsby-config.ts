@@ -2,8 +2,10 @@ import type { GatsbyConfig } from "gatsby";
 
 const config: GatsbyConfig = {
   siteMetadata: {
-    title: `rentmote-landing`,
-    siteUrl: `https://www.yourdomain.tld`
+    title: `Rentmote`,
+    description: `Rentmote app presentation page`,
+    siteUrl: `https://rentmote.pages.dev/`,
+    image: `/rentmote-logo.png`,
   },
   // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
   // If you use VSCode you can also use the GraphQL plugin

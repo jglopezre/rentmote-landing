@@ -9,6 +9,8 @@
 
 export const theme = {
   spacing: {
+    largeLateral: '10%',
+    smallLateral: '3%',
     xs: '4px',
     sm: '8px',
     md: '16px',

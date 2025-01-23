@@ -1,8 +1,9 @@
 import * as React from 'react';
 import type { HeadFC, PageProps } from 'gatsby';
 import Layout from '@/components/Layout';
+import { Seo } from '@/components/Seo';
 import {
-  ApplicationDescription,
+  ApplicationDescriptionSection,
   CharacteristicsSection,
   HeroSection,
   OperationDescriptionSection
@@ -14,11 +15,13 @@ const IndexPage: React.FC<PageProps> = () => {
       <HeroSection />
       <OperationDescriptionSection />
       <CharacteristicsSection />
-      <ApplicationDescription />
+      <ApplicationDescriptionSection />
     </Layout>
   )
 }
 
 export default IndexPage
 
-export const Head: HeadFC = () => <title>Rentmote</title>
+export const Head: HeadFC = () => (
+  <Seo />
+)

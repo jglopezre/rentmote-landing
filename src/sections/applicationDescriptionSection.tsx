@@ -2,12 +2,14 @@ import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import { useUserLanguage } from '@/customHooks';
-import { Col, Row } from 'react-grid-system';
+import { Col, Row, useScreenClass } from 'react-grid-system';
 import styled from 'styled-components';
 
 
-const StyledSectionWrapper = styled(Row)`
+const StyledSectionWrapper = styled(Row)<{ $breakpoint: string }>`
   padding-bottom: 3rem;
+  padding-left: ${( props ) => (props.$breakpoint == 'md' || props.$breakpoint == 'xs') ? props.theme.spacing.smallLateral : props.theme.spacing.largeLateral};
+  padding-right: ${( props ) => (props.$breakpoint == 'md' || props.$breakpoint == 'xs') ? props.theme.spacing.smallLateral : props.theme.spacing.largeLateral};
 `
 
 const TextsWrapper = styled(Col)`
@@ -47,7 +49,7 @@ const ImageWrapper = styled(Col)`
   
 `;
 
-export const ApplicationDescription: React.FC = () => {
+export const ApplicationDescriptionSection: React.FC = () => {
   const data = useStaticQuery(graphql`
     query AplicationDescription {
       allJsonJson {
@@ -74,8 +76,10 @@ export const ApplicationDescription: React.FC = () => {
   const texts = data.allJsonJson.nodes[0];
   const selectedTexts = texts[userLanguage].applicationDescription ?? texts['en'].applicationDescription;
 
+  const breakpoint = useScreenClass();
+
   return (
-    <StyledSectionWrapper component="section" id="application-description">
+    <StyledSectionWrapper component="section" id="application-description" $breakpoint={breakpoint}>
       <TextsWrapper xs={12}>
         <UpperText>{selectedTexts.title}</UpperText>
         <br />

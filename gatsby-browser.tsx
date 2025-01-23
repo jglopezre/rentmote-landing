@@ -2,9 +2,12 @@
 import React from 'react';
 import 'normalize.css';
 import { ThemeWrapper } from '@/components';
+import { ScreenClassProvider } from 'react-grid-system';
 
 export const wrapPageElement = ({ element }: { element: React.ReactNode }) => (
   <ThemeWrapper>
-    {element}
+    <ScreenClassProvider>
+      {element}
+    </ScreenClassProvider>
   </ThemeWrapper>
 );

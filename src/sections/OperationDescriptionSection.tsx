@@ -1,12 +1,14 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
-import { Col, Row } from 'react-grid-system';
+import { Col, Row, useScreenClass } from 'react-grid-system';
 import styled from 'styled-components';
 import { useUserLanguage } from '@/customHooks';
 import { OperationDesciptionCard } from '@/components';
 
-const StyledSextionWrapper = styled(Col)`
+const StyledSextionWrapper = styled(Row)<{$breakpoint: string}>`
   padding-bottom: 3rem;
+  padding-left: ${( props ) => (props.$breakpoint == 'md' || props.$breakpoint == 'xs') ? props.theme.spacing.smallLateral : props.theme.spacing.largeLateral};
+  padding-right: ${( props ) => (props.$breakpoint == 'md' || props.$breakpoint == 'xs') ? props.theme.spacing.smallLateral : props.theme.spacing.largeLateral};
 `;
 
 const StyledTextCol = styled(Col)`
@@ -102,8 +104,10 @@ export const OperationDescriptionSection: React.FC = () => {
     const texts = data.allJsonJson.nodes[0];
     const selectedTexts = texts[userLanguage].operationDescription ?? texts['en'].operationDescription;
 
+    const breakpoint = useScreenClass();
+
   return (
-    <StyledSextionWrapper component="section" id="operation-description">
+    <StyledSextionWrapper component="section" id="operation-description" $breakpoint={breakpoint}>
       <StyledTextCol xs={12}>
         <UpperText>{selectedTexts.title}</UpperText>
         <LowerText>{selectedTexts.description}</LowerText>

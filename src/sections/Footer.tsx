@@ -1,5 +1,5 @@
 import React from 'react';
-import { Col, Row } from 'react-grid-system';
+import { Col, Row, useScreenClass } from 'react-grid-system';
 import { useUserLanguage } from '@/customHooks';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
@@ -22,14 +22,14 @@ const textsEn = {
   privacyPolicy: 'Privacy Policy',
 }
 
-const StyledFooterWrapper = styled(Row)`
+const StyledFooterWrapper = styled(Row)<{ $breakpoint:string }>`
+  padding-top: 2rem;
+  padding-left: ${( props ) => (props.$breakpoint == 'md' || props.$breakpoint == 'xs') ? props.theme.spacing.smallLateral : props.theme.spacing.largeLateral};
+  padding-right: ${( props ) => (props.$breakpoint == 'md' || props.$breakpoint == 'xs') ? props.theme.spacing.smallLateral : props.theme.spacing.largeLateral};
   font-size: ${({ theme }) => theme.typography.fontSize.s5};
   line-height: ${({ theme }) => theme.spacing.lg};
   color: ${({ theme }) => theme.colors.light};
   background-color: ${({ theme }) => theme.colors.primary1};
-  padding-top: 2rem;
-  border-top-right-radius: 8px;
-  border-top-left-radius: 8px;
 `;
 
 const LogoContainer = styled(Col)`
@@ -72,8 +72,10 @@ export const Footer: React.FC = () => {
 
   const texts = userLanguage === 'es' ? textsEs : textsEn;
 
+  const breakpoint = useScreenClass();
+
   return (
-    <StyledFooterWrapper component="footer">
+    <StyledFooterWrapper component="footer" $breakpoint={breakpoint}>
       <LogoContainer xs={12} md={4}>
         <Link to="">
           <StaticImage
