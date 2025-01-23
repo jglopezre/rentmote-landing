@@ -5,7 +5,7 @@ export const GlobalStyles = createGlobalStyle`
     font-family: Lexend, Arial, sans-serif;
     font-weight: ${({ theme }) => theme.typography.fontWeight.regular};
     background-color: ${({ theme }) => theme.colors.background};
-    color: ${({ theme }) => theme.colors.text};
+    color: ${({ theme }) => theme.colors.primary1};
     font-size: ${({ theme }) => theme.typography.fontSize.base};
     transition: background-color, 0.3s;
   }

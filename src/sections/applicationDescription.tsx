@@ -7,18 +7,18 @@ import styled from 'styled-components';
 
 
 const StyledSectionWrapper = styled(Row)`
-  padding-top: ${({ theme }) => theme.spacing.xl};
-  padding-bottom: ${({ theme }) => theme.spacing.xl};
+  padding-bottom: 3rem;
 `
 
 const TextsWrapper = styled(Col)`
   text-align: center;
 `;
 
-const UpperText = styled.p`
+const UpperText = styled.h1`
   font-size: ${({ theme }) => theme.typography.fontSize.s3};
   font-weight: ${({ theme }) => theme.typography.fontWeight.bold};
   color: ${({ theme }) => theme.colors.primary2};
+  font-family: Lexend, Arial, Helvetica, sans-serif;
   position: relative;
   &::before {
     content: '';
@@ -49,16 +49,21 @@ const ImageWrapper = styled(Col)`
 
 export const ApplicationDescription: React.FC = () => {
   const data = useStaticQuery(graphql`
-    query MyQuery {
-      jsonJson {
-        id
-        es {
-          title
-          description
-        }
-        en {
-          title
-          description
+    query AplicationDescription {
+      allJsonJson {
+        nodes {
+          en {
+            applicationDescription {
+              description
+              title
+            }
+          }
+          es {
+            applicationDescription {
+              description
+              title
+            }
+          }
         }
       }
     }
@@ -66,14 +71,15 @@ export const ApplicationDescription: React.FC = () => {
 
   const userLanguage = useUserLanguage();
 
-  const texts = data.jsonJson[userLanguage] ?? data.jsonJson['en'];
+  const texts = data.allJsonJson.nodes[0];
+  const selectedTexts = texts[userLanguage].applicationDescription ?? texts['en'].applicationDescription;
 
   return (
     <StyledSectionWrapper component="section">
       <TextsWrapper xs={12}>
-        <UpperText>{texts.title}</UpperText>
+        <UpperText>{selectedTexts.title}</UpperText>
         <br />
-        <LowerText>{texts.description}</LowerText>
+        <LowerText>{selectedTexts.description}</LowerText>
       </TextsWrapper>
       <ImageWrapper xs={12}>
         <StaticImage
@@ -81,7 +87,7 @@ export const ApplicationDescription: React.FC = () => {
           alt="rentmote-screenshoot"
           placeholder="blurred"
           style={{ boxShadow: '0px 15px 15px rgba(0, 0, 0, 0.2)'}}
-      />
+        />
       </ImageWrapper>
     </StyledSectionWrapper>
   );

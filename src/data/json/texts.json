@@ -1,0 +1,56 @@
+{
+  "es": {
+    "applicationDescription": {
+      "title": "Rentmote te facilita la gestion de tus alquileres",
+      "description": "La aplicación reduce los tiempos de gestión, minimiza impagos y garantiza una experiencia eficiente para los gestores de propiedades, inmobiliarias y propietarios."
+    },
+    "operationDescription": {
+      "title": "Cómo Funciona",
+      "description": "Es muy fácil"
+    },
+    "characteristicsSection": {
+      "description": "¿Qué te ofrece?"
+    },
+    "navbar": [
+      {
+        "text": "Quienes somos",
+        "to": ""
+      },
+      {
+        "text": "Características",
+        "to": ""
+      },
+      {
+        "text": "Contacto",
+        "to": ""
+      }
+    ]
+  },
+  "en": {
+    "applicationDescription": {
+      "title": "Rentmote makes managing your rentals easier.",
+      "description": "The application reduces management time, minimizes missed payments, and ensures an efficient experience for property managers, property management companies, and property owners."
+    },
+    "operationDescription": {
+      "title": "How does it work?",
+      "description": "It's easy"
+    },
+    "characteristicsSection": {
+      "description": "What does it offer you?"
+    },
+    "navbar": [
+      {
+        "text": "Who we are",
+        "to": ""
+      },
+      {
+        "text": "Characteristics",
+        "to": ""
+      },
+      {
+        "text": "Contact us",
+        "to": ""
+      }
+    ]
+  }
+}

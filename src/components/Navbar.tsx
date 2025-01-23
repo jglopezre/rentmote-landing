@@ -1,6 +1,7 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import { graphql, Link, useStaticQuery } from 'gatsby';
 import styled from 'styled-components';
+import { useUserLanguage } from '@/customHooks';
 
 const StyledLink = styled(Link)`
   position: relative;
@@ -24,11 +25,39 @@ const StyledLink = styled(Link)`
 `
 
 export const NavBar: React.FC = () => {
+  const data = useStaticQuery(graphql`
+    query NavBar {
+      allJsonJson {
+        nodes {
+          en {
+            navbar {
+              to
+              text
+            }
+          }
+          es {
+            navbar {
+              text
+              to
+            }
+          }
+        }
+      }
+    }
+  `);
+
+  const userLanguage = useUserLanguage();
+
+  const texts = data.allJsonJson.nodes[0]; //[userLanguage].applicationDescription ?? data.allJsonJson.nodes['en'].applicationDescription;
+  const selectedTexts: any[] = texts[userLanguage].navbar ?? texts['en'].navbar;
+
   return (
     <nav>
-      <StyledLink to="">Quienes Somos</StyledLink>
-      <StyledLink to="">Caracteristicas</StyledLink>
-      <StyledLink to="">Contacto</StyledLink>
+      {
+        selectedTexts.map(( elem ) => (
+            <StyledLink to={elem.to}>{elem.text}</StyledLink>    
+        ))
+      }
     </nav>
   )
 }

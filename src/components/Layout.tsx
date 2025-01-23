@@ -1,9 +1,9 @@
-import { ReactSimpleComponentProps } from "@/custom-types";
-import React from "react";
-import { Container } from "react-grid-system";
-import styled from "styled-components";
-import { TopBar } from "./TopBar";
-import { Footer } from "./Footer";
+import React from 'react';
+import { Container } from 'react-grid-system';
+import styled from 'styled-components';
+import { TopBar } from './TopBar';
+import { Footer } from '../sections/Footer';
+import { ReactSimpleComponentProps } from '@/custom-types';
 
 
 const StyledContainer = styled(Container)`

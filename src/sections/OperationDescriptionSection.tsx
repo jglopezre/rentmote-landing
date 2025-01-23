@@ -5,6 +5,9 @@ import styled from 'styled-components';
 import { useUserLanguage } from '@/customHooks';
 import { OperationDesciptionCard } from '@/components';
 
+const StyledSextionWrapper = styled(Col)`
+  padding-bottom: 3rem;
+`;
 
 const StyledTextCol = styled(Col)`
   text-align: center;
@@ -65,7 +68,7 @@ export const OperationDescriptionSection: React.FC = () => {
                 childImageSharp {
                   gatsbyImageData(
                     layout: CONSTRAINED
-                    width: 120
+                    width: 140
                     placeholder: BLURRED
                   )
                 }
@@ -75,18 +78,35 @@ export const OperationDescriptionSection: React.FC = () => {
             }
           }
         }
+        allJsonJson {
+          nodes {
+            en {
+              operationDescription {
+                description
+                title
+              }
+            }
+            es {
+              operationDescription {
+                description
+                title
+              }
+            }
+          }
+        }
       }
     `);
-
     const userLanguage = useUserLanguage();
 
     const cards: any[] = data[userLanguage]?.nodes ?? data['en'].nodes;
+    const texts = data.allJsonJson.nodes[0];
+    const selectedTexts = texts[userLanguage].operationDescription ?? texts['en'].operationDescription;
 
   return (
-    <Row component="section">
+    <StyledSextionWrapper component="section">
       <StyledTextCol xs={12}>
-        <UpperText>Cómo Funciona</UpperText>
-        <LowerText>Es muy fácil</LowerText>
+        <UpperText>{selectedTexts.title}</UpperText>
+        <LowerText>{selectedTexts.description}</LowerText>
       </StyledTextCol>
       <Col xs={12}>
         <Row>
@@ -102,6 +122,6 @@ export const OperationDescriptionSection: React.FC = () => {
           }
         </Row>
       </Col>
-    </Row>
+    </StyledSextionWrapper>
   );
 }

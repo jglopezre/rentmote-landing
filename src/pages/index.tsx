@@ -4,15 +4,17 @@ import Layout from '@/components/Layout';
 import {
   ApplicationDescription,
   CharacteristicsSection,
+  HeroSection,
   OperationDescriptionSection
 } from '@/sections';
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
     <Layout>
-      <ApplicationDescription />
+      <HeroSection />
       <OperationDescriptionSection />
       <CharacteristicsSection />
+      <ApplicationDescription />
     </Layout>
   )
 }

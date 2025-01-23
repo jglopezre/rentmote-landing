@@ -11,11 +11,16 @@ type CharacteristicCardProps = {
 
 const Wrapper = styled.div`
   min-height: 265px;
-  background: ${({ theme }) => theme.colors.primary1};
-  color: ${({ theme }) => theme.colors.light};
+  border-color: ${({ theme }) => theme.colors.primary1};
+  border-style: solid;
   border-radius: 8px;
+  border-width: 2px;
   padding: 1.6rem 2rem;
   margin: ${({ theme }) => theme.spacing.md};
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+  & h2 {
+    color: ${({ theme }) => theme.colors.primary2};
+  }
 `;
 
 const StyledParagraph = styled.p`

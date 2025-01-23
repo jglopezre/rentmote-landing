@@ -12,24 +12,30 @@ type OperationDescriptionCardProps = {
 }
 
 const CardWrapper = styled(Col)`
-  padding: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
   & h2, p {
     line-height: 1.8rem;
   }
 `;
 
+const ImageContainer = styled(Col)`
+  display: flex;
+  justify-content: center;
+`
+
 export const OperationDesciptionCard: React.FC<OperationDescriptionCardProps> = (props) => {
   const image = getImage(props.imageSrc);
 
   return (
-    <CardWrapper xs={12} md={4} >
+    <CardWrapper xs={12} md={4}>
       <Row>
-        <Col xs={3}>
+        <Col xs="content">
           {props.value ? <CircledNumber value={props.value} /> : null}
         </Col>
-        <Col xs={9}>
+        <ImageContainer>
           {image ? <GatsbyImage image={image} alt="" /> : null}
-        </Col>
+        </ImageContainer>
       </Row>
       <Row>
         <Col>

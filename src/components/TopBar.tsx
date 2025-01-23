@@ -5,8 +5,9 @@ import styled from "styled-components";
 import { LoginButtonGroup } from "./LoginButtonGroup";
 import { NavBar } from "./Navbar";
 
-const StyledRow = styled(Row)`
-  padding-top: ${({ theme }) => theme.spacing.sm };
+const StyledSectionWrapper = styled(Row)`
+  padding-top: 1rem;
+  padding-bottom: 2rem;
   font-size: ${({ theme }) => theme.typography.fontSize.sm};
 `
 const StyledCol2 = styled(Col)`
@@ -23,7 +24,7 @@ const StyledCol3 = styled(Col)`
 
 export const TopBar: React.FC = () => {
   return (
-    <StyledRow justify="between">
+    <StyledSectionWrapper justify="between" component="header">
       <Col xs="content">
         <StaticImage
           src="../images/rentmote-logotipo-color.png"
@@ -37,6 +38,6 @@ export const TopBar: React.FC = () => {
       <StyledCol3 xs="content">
         <LoginButtonGroup />
       </StyledCol3>
-    </StyledRow>
+    </StyledSectionWrapper>
   );
 }
