@@ -103,7 +103,7 @@ export const OperationDescriptionSection: React.FC = () => {
     const selectedTexts = texts[userLanguage].operationDescription ?? texts['en'].operationDescription;
 
   return (
-    <StyledSextionWrapper component="section">
+    <StyledSextionWrapper component="section" id="operation-description">
       <StyledTextCol xs={12}>
         <UpperText>{selectedTexts.title}</UpperText>
         <LowerText>{selectedTexts.description}</LowerText>

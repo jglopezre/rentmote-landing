@@ -48,6 +48,18 @@ export const NavBar: React.FC = () => {
 
   const userLanguage = useUserLanguage();
 
+  const handleScroll = (event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+    event.preventDefault();
+    const targetId = event.currentTarget.getAttribute('href')?.substring(1);
+    const targetElement = targetId ? document.querySelector(targetId) : undefined;
+    console.log(targetElement)
+
+    targetElement?.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+    });
+  }
+
   const texts = data.allJsonJson.nodes[0]; //[userLanguage].applicationDescription ?? data.allJsonJson.nodes['en'].applicationDescription;
   const selectedTexts: any[] = texts[userLanguage].navbar ?? texts['en'].navbar;
 
@@ -55,7 +67,7 @@ export const NavBar: React.FC = () => {
     <nav>
       {
         selectedTexts.map(( elem ) => (
-            <StyledLink to={elem.to}>{elem.text}</StyledLink>    
+            <StyledLink to={elem.to} onClick={handleScroll}>{elem.text}</StyledLink>    
         ))
       }
     </nav>

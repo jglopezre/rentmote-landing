@@ -75,7 +75,7 @@ export const ApplicationDescription: React.FC = () => {
   const selectedTexts = texts[userLanguage].applicationDescription ?? texts['en'].applicationDescription;
 
   return (
-    <StyledSectionWrapper component="section">
+    <StyledSectionWrapper component="section" id="application-description">
       <TextsWrapper xs={12}>
         <UpperText>{selectedTexts.title}</UpperText>
         <br />

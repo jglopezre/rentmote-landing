@@ -93,10 +93,8 @@ export const CharacteristicsSection: React.FC = () => {
   const texts = data.allJsonJson.nodes[0]; 
   const selectedTexts = texts[userLanguage].characteristicsSection ?? texts['en'].characteristicsSection;
 
-  console.log(selectedTexts)
-  
   return (
-    <StyledSectionWrapper component="section" nogutter>
+    <StyledSectionWrapper component="section" id="characteristics-section" nogutter >
       <StyledTitle xs={12}>
         <h1>{selectedTexts.description}</h1>
       </StyledTitle>
