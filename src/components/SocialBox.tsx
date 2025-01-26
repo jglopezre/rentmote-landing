@@ -2,6 +2,12 @@ import React from 'react';
 import { Col, Row } from 'react-grid-system';
 import styled from 'styled-components';
 
+const urls = {
+  instagram: 'https://www.instagram.com/rentmote/',
+  
+}
+
+
 const StyledExternalLink = styled.a`
   color: ${({ theme }) => theme.colors.light};
   &:hover {

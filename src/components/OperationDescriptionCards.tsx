@@ -12,41 +12,90 @@ type OperationDescriptionCardProps = {
 }
 
 const CardWrapper = styled(Col)`
-  padding-top: 3rem;
-  padding-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
   & h2, p {
     line-height: 1.8rem;
   }
 `;
 
-const ImageContainer = styled(Col)`
-  display: flex;
-  justify-content: center;
+const ImageContainer = styled.div`
+`
+
+const StyledContentWrapper = styled(Row)`
+  position: absolute;
+  bottom: 0;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  overflow: hidden;
+  z-index: 10;
+  &::before {
+    content: '';
+    display: box;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
 `
 
 export const OperationDesciptionCard: React.FC<OperationDescriptionCardProps> = (props) => {
   const image = getImage(props.imageSrc);
 
   return (
-    <CardWrapper xs={12} md={4}>
-      <Row>
-        <Col xs="content">
+    <CardWrapper xs="content">
+      {
+        image
+          ? (
+              <GatsbyImage
+                image={image}
+                alt=""
+                style={{borderRadius: '8px'}}
+              />
+            )
+          : null
+      }
+      <StyledContentWrapper>
+        <Col>
           {props.value ? <CircledNumber value={props.value} /> : null}
         </Col>
-        <ImageContainer>
-          {image ? <GatsbyImage image={image} alt="" /> : null}
-        </ImageContainer>
-      </Row>
-      <Row>
-        <Col>
+        <Col xs={12}>
           <h2>{props.title}</h2>
         </Col>
-      </Row>
-      <Row>
-        <Col>
+        <Col xs={12}>
           <p>{props.description}</p>
         </Col>
-      </Row>
+      </StyledContentWrapper>
     </CardWrapper>
   );
 }
+
+/*
+<CardWrapper xs={12} md={4}>
+  <Row>
+    <Col xs="content">
+      {props.value ? <CircledNumber value={props.value} /> : null}
+    </Col>
+    <ImageContainer>
+      {image ? <GatsbyImage image={image} alt="" /> : null}
+    </ImageContainer>
+  </Row>
+  <Row>
+    <Col>
+      <h2>{props.title}</h2>
+    </Col>
+  </Row>
+  <Row>
+    <Col>
+      <p>{props.description}</p>
+    </Col>
+  </Row>
+</CardWrapper>
+*/

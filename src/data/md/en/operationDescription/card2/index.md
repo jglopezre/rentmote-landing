@@ -1,5 +1,5 @@
 ---
 title: "Create a tenant"
 description: "Create a detailed tenant profile with information such as surname, first name, address, phone number, etc."
-image: "./phone-face.png"
+image: "./rentmote-tenants.png"
 ---

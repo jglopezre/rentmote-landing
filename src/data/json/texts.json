@@ -1,5 +1,10 @@
 {
   "es": {
+    "heroContent": {
+      "textA": "Gestiona todo desde el mismo lugar",
+      "textB": "Una plataforma integral de gestión inmobiliaria con IA integrada, creada por y para property managers.",
+      "textC": "Próximamente disponible"
+    },
     "applicationDescription": {
       "title": "Rentmote te facilita la gestión de tus alquileres",
       "description": "La aplicación reduce los tiempos de gestión, minimiza impagos y garantiza una experiencia eficiente para los gestores de propiedades, inmobiliarias y propietarios."
@@ -27,6 +32,11 @@
     ]
   },
   "en": {
+    "heroContent": {
+      "textA": "Manage everything from the same place.",
+      "textB": "A comprehensive real estate management platform with integrated AI, created by and for property managers.",
+      "textC": "Coming soon"
+    },
     "applicationDescription": {
       "title": "Rentmote makes managing your rentals easier.",
       "description": "The application reduces management time, minimizes missed payments, and ensures an efficient experience for property managers, property management companies, and property owners."

@@ -32,6 +32,8 @@ const config: GatsbyConfig = {
           families: [
             'Lexend:300,400,700',
             'Roboto Mono:300,400,700',
+            'Barlow Condensed:400,700',
+            'Rubik:200',
           ],
         },
       },

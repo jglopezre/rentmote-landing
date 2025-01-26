@@ -52,7 +52,8 @@ export const OperationDescriptionSection: React.FC = () => {
                 childImageSharp {
                   gatsbyImageData(
                     layout: CONSTRAINED
-                    width: 120
+                    width: 360
+                    height: 600
                     placeholder: BLURRED
                   )
                 }
@@ -70,7 +71,8 @@ export const OperationDescriptionSection: React.FC = () => {
                 childImageSharp {
                   gatsbyImageData(
                     layout: CONSTRAINED
-                    width: 140
+                    width: 360
+                    height: 600
                     placeholder: BLURRED
                   )
                 }

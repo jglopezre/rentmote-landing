@@ -1,5 +1,5 @@
 ---
 title: "Crea un Alquiler"
-description: "Relacion se propiedad con su inquilino describiendo gastos, servios y demas."
-image: "./signing-contract.png"
+description: "Relaciona la propiedad con su inquilino describiendo gastos, servios y demas."
+image: "./rentmote-renters.png"
 ---
