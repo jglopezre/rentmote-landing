@@ -118,12 +118,14 @@ export const OperationDescriptionSection: React.FC = () => {
         <Row>
           {
             cards.map((card: any, index) => (
-              <OperationDesciptionCard
-                title={card.frontmatter.title}
-                description={card.frontmatter.description}
-                imageSrc={card.frontmatter.image.childImageSharp.gatsbyImageData}
-                value={index + 1}
-              />
+              <Col xs={12} md={4}>
+                <OperationDesciptionCard
+                  title={card.frontmatter.title}
+                  description={card.frontmatter.description}
+                  imageSrc={card.frontmatter.image.childImageSharp.gatsbyImageData}
+                  value={index + 1}
+                />
+              </Col>
             ))
           }
         </Row>

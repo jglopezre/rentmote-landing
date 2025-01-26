@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { GatsbyImage, getImage, ImageDataLike } from 'gatsby-plugin-image';
 import { Col, Row } from 'react-grid-system';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import { CircledNumber } from './CircledNumber';
 
 type OperationDescriptionCardProps = {
@@ -11,28 +11,29 @@ type OperationDescriptionCardProps = {
   value?: number
 }
 
-const CardWrapper = styled(Col)`
+const CardWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+  border-radius: 8px;
   position: relative;
   & h2, p {
     line-height: 1.8rem;
   }
 `;
 
-const ImageContainer = styled.div`
-`
-
-const StyledContentWrapper = styled(Row)`
+const StyledContentWrapper = styled(Row)<{$isHovered: boolean}>`
   position: absolute;
-  bottom: 0;
+  top: ${(props) => props.$isHovered ? '50%' : '73%'};
   padding-left: 2rem;
   padding-right: 2rem;
   padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 8rem;
   overflow: hidden;
   z-index: 10;
+  transition: top 0.3s;
+
   &::before {
     content: '';
     display: box;
@@ -41,16 +42,24 @@ const StyledContentWrapper = styled(Row)`
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
   }
-
 `
 
 export const OperationDesciptionCard: React.FC<OperationDescriptionCardProps> = (props) => {
+  const [isHovered, setIsHovered] = useState(false);
+
   const image = getImage(props.imageSrc);
 
+  console.log(isHovered)
+
   return (
-    <CardWrapper xs="content">
+    <CardWrapper
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
       {
         image
           ? (
@@ -62,7 +71,7 @@ export const OperationDesciptionCard: React.FC<OperationDescriptionCardProps> = 
             )
           : null
       }
-      <StyledContentWrapper>
+      <StyledContentWrapper $isHovered={isHovered}>
         <Col>
           {props.value ? <CircledNumber value={props.value} /> : null}
         </Col>
@@ -73,7 +82,8 @@ export const OperationDesciptionCard: React.FC<OperationDescriptionCardProps> = 
           <p>{props.description}</p>
         </Col>
       </StyledContentWrapper>
-    </CardWrapper>
+
+      </CardWrapper>
   );
 }
 

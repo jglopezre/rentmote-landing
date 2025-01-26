@@ -63,6 +63,7 @@ export const HeroSection: React.FC = () => {
   const userLanguage = useUserLanguage();
   const texts = data.allJsonJson.nodes[0][userLanguage].heroContent ?? data.allJsonJson.nodes[0]['en'].heroContent;
 
+  console.log(texts);
   const breakpoint = useScreenClass();
   
   return (
