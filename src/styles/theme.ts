@@ -8,6 +8,18 @@
 } */
 
 export const theme = {
+  border: {
+    radius: {
+      base: '10px'
+    },
+    width: {
+      sm: '1px',
+      md: '2px',
+    },
+    style: {
+      solid: 'solid'
+    }
+  },
   spacing: {
     largeLateral: '10%',
     smallLateral: '3%',
@@ -20,13 +32,14 @@ export const theme = {
   },
   typography: {
     fontSize: {
-      base: '16px',
+      base: '18px',
       s1: '3rem',
       s2: '2.3rem',
-      s3: '1.9rem',
-      s4: '1.4rem',
-      s5: '1rem',
-      s6: '0.7rem', 
+      s3: '1.2rem',
+      s4: '1.6rem',
+      a5: '1.2rem',
+      s6: '1rem',
+      s7: '0.7rem', 
     },
     fontWeight: {
       regular: 300,
@@ -41,5 +54,8 @@ export const theme = {
     secondary2: '#722282',  // Purple
     light: 'white',
     dark: '#2a2a2a',
+    dark2: '#404040',
+    light2: '#fbfaf9',
+    light3: '#a0a0ba',
   }
 };

@@ -1,45 +1,45 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
-import { Col, Row, useScreenClass } from 'react-grid-system';
+import { Col, Container, Row, useScreenClass } from 'react-grid-system';
 import styled from 'styled-components';
 import { useUserLanguage } from '@/customHooks';
 import { OperationDesciptionCard } from '@/components';
 
-const StyledSextionWrapper = styled(Row)<{$breakpoint: string}>`
+const StyledSextionWrapper = styled(Container)`
   padding-top: 3rem;
-  padding-bottom: 4rem;
-  padding-left: ${( props ) => (props.$breakpoint == 'md' || props.$breakpoint == 'xs') ? props.theme.spacing.smallLateral : props.theme.spacing.largeLateral};
-  padding-right: ${( props ) => (props.$breakpoint == 'md' || props.$breakpoint == 'xs') ? props.theme.spacing.smallLateral : props.theme.spacing.largeLateral};
-`;
-
-const StyledTextCol = styled(Col)`
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`;
-
-const UpperText = styled.p`
-  font-size: ${({ theme }) => theme.typography.fontSize.s3};
-  font-weight: ${({ theme }) => theme.typography.fontWeight.bold};
-  color: ${({ theme }) => theme.colors.primary2};
+  padding-bottom: 5rem;
   position: relative;
   &::before {
     content: '';
     display: block;
     position: absolute;
-    left: 30%;
-    bottom: -20px;
-    width: 40%;
-    height: 5px;
-    background: linear-gradient(90deg, ${({ theme }) => theme.colors.secondary2}, ${({ theme }) => theme.colors.secondary1}, ${({ theme }) => theme.colors.secondary2});
-    border-radius: 5px;
+    width: 200%;
+    height: 100%;
+    top: 0;
+    left: -50%;
+    background-image: linear-gradient(${({ theme }) => theme.colors.light2}, ${({ theme }) => theme.colors.light});
   }
 `;
 
-const LowerText = styled.p`
-  font-size: ${({ theme }) => theme.typography.fontSize.s4};
+const StyledTextCol = styled(Col)`
   color: ${({ theme }) => theme.colors.primary1};
+  text-align: center;
+  padding-bottom: 4rem;
+  & div {
+    display: inline-block;
+    width: 100%;
+    max-width: 700px;
+    & h1 {
+      position: relative;
+      font-weight: 400;
+      font-size: ${({ theme }) => theme.typography.fontSize.s2};
+    }
+    & p {
+      max-width: inherit;
+      word-wrap: break-word;
+      font-size: ${({ theme }) => theme.typography.fontSize.s5};
+    }
+  }
 `;
 
 export const OperationDescriptionSection: React.FC = () => {
@@ -110,27 +110,31 @@ export const OperationDescriptionSection: React.FC = () => {
     const breakpoint = useScreenClass();
 
   return (
-    <StyledSextionWrapper component="section" id="operation-description" $breakpoint={breakpoint}>
-      <StyledTextCol xs={12}>
-        <UpperText>{selectedTexts.title}</UpperText>
-        <LowerText>{selectedTexts.description}</LowerText>
-      </StyledTextCol>
-      <Col xs={12}>
-        <Row>
-          {
-            cards.map((card: any, index) => (
-              <Col xs={12} md={4}>
-                <OperationDesciptionCard
-                  title={card.frontmatter.title}
-                  description={card.frontmatter.description}
-                  imageSrc={card.frontmatter.image.childImageSharp.gatsbyImageData}
-                  value={index + 1}
-                />
-              </Col>
-            ))
-          }
-        </Row>
-      </Col>
+    <StyledSextionWrapper component="section" id="operation-description">
+      <Row justify='center' align='center'>
+        <StyledTextCol xs="content">
+          <div>
+            <h1>{selectedTexts.title}</h1>
+            <p>{selectedTexts.description}</p>
+          </div>
+        </StyledTextCol>
+        <Col xs={12}>
+          <Row>
+            {
+              cards.map((card: any, index) => (
+                <Col xs={12} md={4}>
+                  <OperationDesciptionCard
+                    title={card.frontmatter.title}
+                    description={card.frontmatter.description}
+                    imageSrc={card.frontmatter.image.childImageSharp.gatsbyImageData}
+                    value={index + 1}
+                  />
+                </Col>
+              ))
+            }
+          </Row>
+        </Col>
+      </Row>
     </StyledSextionWrapper>
   );
 }

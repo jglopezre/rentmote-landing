@@ -19,14 +19,16 @@ const CardWrapper = styled.div`
   border-radius: 8px;
   position: relative;
   margin-bottom: 1rem;
-  & h2, p {
-    line-height: 1.8rem;
+  line-height: 1.8rem;
+  max-width: 350px;
+  & h2 {
+    font-weight: 400;
   }
 `;
 
 const StyledContentWrapper = styled(Row)<{$isHovered: boolean}>`
   position: absolute;
-  top: ${(props) => props.$isHovered ? '50%' : '73%'};
+  top: ${(props) => props.$isHovered ? '45%' : '73%'};
   padding-left: 2rem;
   padding-right: 2rem;
   padding-top: 2rem;
@@ -43,9 +45,7 @@ const StyledContentWrapper = styled(Row)<{$isHovered: boolean}>`
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.6);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.8);
   }
 `
 
@@ -81,30 +81,6 @@ export const OperationDesciptionCard: React.FC<OperationDescriptionCardProps> = 
           <p>{props.description}</p>
         </Col>
       </StyledContentWrapper>
-
-      </CardWrapper>
+    </CardWrapper>
   );
 }
-
-/*
-<CardWrapper xs={12} md={4}>
-  <Row>
-    <Col xs="content">
-      {props.value ? <CircledNumber value={props.value} /> : null}
-    </Col>
-    <ImageContainer>
-      {image ? <GatsbyImage image={image} alt="" /> : null}
-    </ImageContainer>
-  </Row>
-  <Row>
-    <Col>
-      <h2>{props.title}</h2>
-    </Col>
-  </Row>
-  <Row>
-    <Col>
-      <p>{props.description}</p>
-    </Col>
-  </Row>
-</CardWrapper>
-*/

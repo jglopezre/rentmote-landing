@@ -1,54 +1,73 @@
 import React, { useState } from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import styled from 'styled-components';
-import { Col, Row, useScreenClass } from 'react-grid-system';
+import { Col, Container, Row, useScreenClass } from 'react-grid-system';
 import { CharacteristicCard } from '@/components';
 import { useUserLanguage } from '@/customHooks';
 
-const StyledSectionWrapper = styled(Row)<{ $breakpoint: string }>`
+const StyledSectionWrapper = styled(Container)`
   padding-top: 3rem;
   padding-bottom: 4rem;
-  padding-left: ${( props ) => (props.$breakpoint == 'md' || props.$breakpoint == 'xs') ? props.theme.spacing.smallLateral : props.theme.spacing.largeLateral};
-  padding-right: ${( props ) => (props.$breakpoint == 'md' || props.$breakpoint == 'xs') ? props.theme.spacing.smallLateral : props.theme.spacing.largeLateral};
-  background-color: ${({ theme }) => theme.colors.primary1};
+`;
+
+const InnerContainer = styled(Row)<{ $breakpoint: string }>`
+  padding: ${( props ) => props.$breakpoint === 'xs' || props.$breakpoint === 'md' ?  '0.5rem' : '2rem'} ${( props ) => props.$breakpoint === 'xs' || props.$breakpoint === 'md' ?  '1rem' : '3rem'} ;
+  background-color: ${({ theme }) => theme.colors.light2};
+  border-radius: ${({ theme }) => theme.border.radius.base};
 `;
 
 const StyledTitle = styled(Col)`
-  color: ${({ theme }) => theme.colors.primary2};
+  color: ${({ theme }) => theme.colors.primary1};
   text-align: center;
-  padding-bottom: 3rem;
-  & h1 {
-    font-family: Lexend, Arial, Helvetica, sans-serif;
-    position: relative;
-    &::before {
-      content: '';
-      display: block;
-      position: absolute;
-      left: 40%;
-      bottom: -20px;
-      width: 20%;
-      height: 5px;
-      background: linear-gradient(90deg, ${({ theme }) => theme.colors.secondary2}, ${({ theme }) => theme.colors.secondary1}, ${({ theme }) => theme.colors.secondary2});
-      border-radius: 5px;
+  padding-bottom: 4rem;
+  & div {
+    display: inline-block;
+    width: 100%;
+    max-width: 700px;
+    & h1 {
+      position: relative;
+      font-weight: 400;
+      font-size: ${({ theme }) => theme.typography.fontSize.s2};
+    }
+    & p {
+      max-width: inherit;
+      word-wrap: break-word;
+      font-size: ${({ theme }) => theme.typography.fontSize.s5};
     }
   }
-`
+`;
 
 const StyledSelectorsContainer = styled(Col)`
   display: flex;
   justify-content: start;
   flex-direction: column;
-  color: ${({ theme }) => theme.colors.light};
+  color: ${({ theme }) => theme.colors.primary1};
   
 `
 
-const StyledOptions = styled.h1`
+const StyledOptions = styled.div<{ $isSelected: boolean }>`
   cursor: pointer;
   transition: 0.2s;
-  font-family: Lexend Arial, Helvetica, sans-serif;
   font-weight: 400;
-  &:hover {
-    transform: translateX(15px);
+  font-size: ${({ theme }) => theme.typography.fontSize.s4};
+  position: relative;
+  color: ${(props) => props.$isSelected ? props.theme.colors.primary2 : props.theme.colors.primary1};
+  & p{
+    transform: translateX(${(props) => props.$isSelected ? '20px' : '0'});
+  }
+  &:hover p {
+    transition: transform 0.2s;
+    transform: translateX(20px);
+  }
+  &::before{
+    content: '';
+    display: box;
+    position: absolute;
+    width: 80%;
+    height: 2px;
+    left: 0;
+    bottom: 10px;
+    background-color: ${({ theme }) => theme.colors.primary1};
   }
 `;
 
@@ -60,6 +79,7 @@ export const CharacteristicsSection: React.FC = () => {
           en {
             characteristicsSection {
               description
+              title
               cards {
                 description
                 image
@@ -70,6 +90,7 @@ export const CharacteristicsSection: React.FC = () => {
           es {
             characteristicsSection {
               description
+              title
               cards {
                 description
                 image
@@ -90,9 +111,8 @@ export const CharacteristicsSection: React.FC = () => {
       }
     }
   `);
-
   const breakpoint = useScreenClass();
-  
+
   const userLanguage = useUserLanguage();
 
   const [selectedCard, setSelectedCard] = useState();
@@ -103,7 +123,7 @@ export const CharacteristicsSection: React.FC = () => {
   
   const imagesNames: any[] = selectedTexts.cards
 
-  const cardImages = () => {
+  const cards = (() => {
     const provitional: any[] = []
     imagesNames.forEach((elem) => {
       const provitionalImageData = imagesData.find((image) => image.name === elem.image)
@@ -115,110 +135,43 @@ export const CharacteristicsSection: React.FC = () => {
       })
     })
     return provitional;
-  }
-
-  const cards = cardImages();
-
-  
+  })();
 
   return (
-    <StyledSectionWrapper component="section" id="characteristics-section" $breakpoint={breakpoint} nogutter >
-      <StyledTitle xs={12}>
-        <h1>{selectedTexts.description}</h1>
-      </StyledTitle>
-      <StyledSelectorsContainer xs={12} md={6}>
-        {
-          cards.map((card) => (
-            <StyledOptions
-              key={card.id}
-              onClick={() => setSelectedCard(card)}
-            >
-              {card.title}
-            </StyledOptions>
-          ))
-        }
-      </StyledSelectorsContainer >
-      <Col xs={12} md={6}>
-        {
-          selectedCard
-          ? (
-              <CharacteristicCard
-                description={selectedCard.description}
-                imageSrc={selectedCard.image}
-              />
-          )
-          : null
-        }
-      </Col>
+    <StyledSectionWrapper component="section" id="characteristics-section">
+      <InnerContainer $breakpoint={breakpoint}>
+        <StyledTitle xs={12}>
+          <div>
+            <h1>{selectedTexts.title}</h1>
+            <p>{selectedTexts.description}</p>
+          </div>
+        </StyledTitle>
+        <StyledSelectorsContainer xs={12} md={6}>
+          {
+            cards.map((card) => (
+              <StyledOptions
+                key={card.id}
+                onClick={() => setSelectedCard(card)}
+                $isSelected={card.id === selectedCard?.id}
+              >
+                <p>{card.title}</p>
+              </StyledOptions>
+            ))
+          }
+        </StyledSelectorsContainer >
+        <Col xs={12} md={6}>
+          {
+            selectedCard
+            ? (
+                <CharacteristicCard
+                  description={selectedCard.description}
+                  imageSrc={selectedCard.image}
+                />
+            )
+            : null
+          }
+        </Col>
+      </InnerContainer>
     </StyledSectionWrapper>
   );
 }
-
-{/* <StyledSectionWrapper component="section" id="characteristics-section" $breakpoint={breakpoint} nogutter >
-      <StyledTitle xs={12}>
-        <h1>{selectedTexts.description}</h1>
-      </StyledTitle>
-      {
-        cards.map(( card: any ) => (
-          <CharacteristicCard
-            title={card.title}
-            description={card.description}
-            imageSrc={card.image.childrenImageSharp[0].gatsbyImageData}
-          />
-        ))
-      }
-    </StyledSectionWrapper> */}
-/* const data = useStaticQuery(graphql`
-  query CharacteristicsCard {
-    en: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/md/en/characteristicsCards/" } }) {
-      nodes {
-        frontmatter {
-          image {
-            id
-            childImageSharp {
-              gatsbyImageData(
-                layout: CONSTRAINED
-                width: 80
-                placeholder: BLURRED
-              )
-            }
-          }
-          description
-          title
-        }
-      }
-    }
-    es: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/md/es/characteristicsCards/" } }) {
-      nodes {
-        frontmatter {
-          image {
-            id
-            childImageSharp {
-              gatsbyImageData(
-                layout: CONSTRAINED
-                width: 80
-                placeholder: BLURRED
-              )
-            }
-          }
-          description
-          title
-        }
-      }
-    }
-    allJsonJson {
-      nodes {
-        en {
-          characteristicsSection {
-            description
-          }
-        }
-        es {
-          characteristicsSection {
-            description
-          }
-        }
-      }
-    }
-  }
-`); */

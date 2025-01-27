@@ -3,7 +3,6 @@ import { Col, Row, useScreenClass } from 'react-grid-system';
 import { useUserLanguage } from '@/customHooks';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
-import { text } from 'stream/consumers';
 import { StaticImage } from 'gatsby-plugin-image';
 import { SocialBox } from '@/components';
 
@@ -30,6 +29,9 @@ const StyledFooterWrapper = styled(Row)<{ $breakpoint:string }>`
   line-height: ${({ theme }) => theme.spacing.lg};
   color: ${({ theme }) => theme.colors.light};
   background-color: ${({ theme }) => theme.colors.primary1};
+  border-top-color: ${({ theme }) => theme.colors.light3};
+  border-top-width: ${({ theme }) => theme.border.width.sm};
+  border-top-style: ${({ theme }) => theme.border.style.solid};
 `;
 
 const LogoContainer = styled(Col)`

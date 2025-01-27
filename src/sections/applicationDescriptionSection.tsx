@@ -2,19 +2,44 @@ import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import { useUserLanguage } from '@/customHooks';
-import { Col, Row, useScreenClass } from 'react-grid-system';
+import { Col, Container, Row, useScreenClass } from 'react-grid-system';
 import styled from 'styled-components';
 
 
-const StyledSectionWrapper = styled(Row)<{ $breakpoint: string }>`
-  padding-top: 3rem;
-  padding-bottom: 4rem;
-  padding-left: ${( props ) => (props.$breakpoint == 'md' || props.$breakpoint == 'xs') ? props.theme.spacing.smallLateral : props.theme.spacing.largeLateral};
-  padding-right: ${( props ) => (props.$breakpoint == 'md' || props.$breakpoint == 'xs') ? props.theme.spacing.smallLateral : props.theme.spacing.largeLateral};
+const StyledSectionWrapper = styled(Container)<{ $breakpoint: string }>`
+  padding-top: 8rem;
+  padding-bottom: 5rem;
+  position: relative;
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 200%;
+    height: 100%;
+    top: 0;
+    left: -50%;
+    background-color: ${({ theme }) => theme.colors.primary1};
+  }
 `
 
-const TextsWrapper = styled(Col)`
+const StyledTextCol = styled(Col)`
+  color: ${({ theme }) => theme.colors.light};
   text-align: center;
+  padding-bottom: 4rem;
+  & div {
+    display: inline-block;
+    width: 100%;
+    max-width: 800px;
+    & h1 {
+      font-weight: 300;
+      font-size: ${({ theme }) => theme.typography.fontSize.s2};
+    }
+    & p {
+      max-width: inherit;
+      word-wrap: break-word;
+      font-size: ${({ theme }) => theme.typography.fontSize.s5};
+    }
+  }
 `;
 
 const UpperText = styled.h1`
@@ -81,19 +106,22 @@ export const ApplicationDescriptionSection: React.FC = () => {
 
   return (
     <StyledSectionWrapper component="section" id="application-description" $breakpoint={breakpoint}>
-      <TextsWrapper xs={12}>
-        <UpperText>{selectedTexts.title}</UpperText>
-        <br />
-        <LowerText>{selectedTexts.description}</LowerText>
-      </TextsWrapper>
-      <ImageWrapper xs={12}>
-        <StaticImage
-          src="../images/rentmote-screenshoot.png"
-          alt="rentmote-screenshoot"
-          placeholder="blurred"
-          style={{ boxShadow: '0px 15px 15px rgba(0, 0, 0, 0.2)'}}
-        />
-      </ImageWrapper>
+      <Row justify='center' align='center'>
+        <StyledTextCol xs="content">
+          <div>
+            <h1>{selectedTexts.title}</h1>
+            <p>{selectedTexts.description}</p>
+          </div>
+        </StyledTextCol>
+        <ImageWrapper xs="content">
+          <StaticImage
+            src="../images/rentmote-screenshoot.png"
+            alt="rentmote-screenshoot"
+            placeholder="blurred"
+            style={{ boxShadow: '0px 15px 15px rgba(0, 0, 0, 0.2)'}}
+          />
+        </ImageWrapper>
+      </Row>
     </StyledSectionWrapper>
   );
 }

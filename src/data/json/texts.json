@@ -14,7 +14,8 @@
       "description": "Es muy fácil"
     },
     "characteristicsSection": {
-      "description": "¿Qué te ofrece?",
+      "title": "Una plataforma para gestionarlo todo",
+      "description": "Expande tu negocio sin contratiempos utilizando una plataforma de gestión unificada que respalda todos tus activos.",
       "cards": [
         {
           "title": "Gestión de Propiedades",
@@ -64,7 +65,8 @@
       "description": "It's easy"
     },
     "characteristicsSection": {
-      "description": "What does it offer you?",
+      "title": "One platform to manage everything",
+      "description": "Expand your business seamlessly by leveraging a unified management platform that supports all your assets.",
       "cards": [
         {
           "title": "Properties Manager",
