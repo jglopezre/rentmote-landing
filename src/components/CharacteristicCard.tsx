@@ -4,50 +4,60 @@ import { Col, Row } from 'react-grid-system';
 import styled from 'styled-components';
 
 type CharacteristicCardProps = {
-  title: string,
   description: string,
   imageSrc: ImageDataLike
 }
 
-const Wrapper = styled.div`
-  min-height: 265px;
-  border-color: ${({ theme }) => theme.colors.primary1};
-  border-style: solid;
-  border-radius: 8px;
-  border-width: 2px;
-  padding: 1.6rem 2rem;
-  margin: ${({ theme }) => theme.spacing.md};
-  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
-  & h2 {
-    color: ${({ theme }) => theme.colors.primary2};
-  }
+const Wrapper = styled(Row)`
+  position: relative;
 `;
 
 const StyledParagraph = styled.p`
   line-height: 1.7rem;
 `;
 
+const StyledTextContainer = styled.div`
+  position: absolute;
+  padding: 1rem 2rem;
+  bottom: -15px;
+  left: 40%;
+  color: ${({ theme }) => theme.colors.primary1};
+  border-color: ${({ theme }) => theme.colors.primary1};
+  border-width: 2px;
+  border-style: solid;
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 8px;
+`
+const ImageContainer = styled(Col)`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
 export const CharacteristicCard: React.FC<CharacteristicCardProps> = (props) => {
   const image = getImage(props.imageSrc);
   return (
-    <Col xs={12} md={6}>
-      <Wrapper>
-        <Row>
-          <Col>
-            {image ? <GatsbyImage image={image} alt='' /> : null}
-          </Col>
-        </Row>
-        <Row>
-          <Col>
-            <h2>{props.title ?? ''}</h2>
-          </Col>
-        </Row>
-        <Row>
-          <Col>
-            <StyledParagraph>{props.description ?? ''}</StyledParagraph>
-          </Col>
-        </Row>
-      </Wrapper>
-    </Col>
+    <Wrapper>
+      <ImageContainer xs={12}>
+        {
+          image
+            ? (
+                <GatsbyImage
+                  image={image}
+                  alt=''
+                  style={{
+                    borderRadius: '8px',
+                  }}
+                />
+              )
+            : null
+        }
+      </ImageContainer>
+      <StyledTextContainer>
+        <StyledParagraph>{props.description ?? ''}</StyledParagraph>
+      </StyledTextContainer>
+    </Wrapper>
   );
 }

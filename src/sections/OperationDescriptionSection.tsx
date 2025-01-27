@@ -6,7 +6,8 @@ import { useUserLanguage } from '@/customHooks';
 import { OperationDesciptionCard } from '@/components';
 
 const StyledSextionWrapper = styled(Row)<{$breakpoint: string}>`
-  padding-bottom: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
   padding-left: ${( props ) => (props.$breakpoint == 'md' || props.$breakpoint == 'xs') ? props.theme.spacing.smallLateral : props.theme.spacing.largeLateral};
   padding-right: ${( props ) => (props.$breakpoint == 'md' || props.$breakpoint == 'xs') ? props.theme.spacing.smallLateral : props.theme.spacing.largeLateral};
 `;

@@ -54,8 +54,6 @@ export const OperationDesciptionCard: React.FC<OperationDescriptionCardProps> = 
 
   const image = getImage(props.imageSrc);
 
-  console.log(isHovered)
-
   return (
     <CardWrapper
       onMouseEnter={() => setIsHovered(true)}

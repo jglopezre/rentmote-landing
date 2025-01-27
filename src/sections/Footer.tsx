@@ -87,9 +87,9 @@ export const Footer: React.FC = () => {
       </LogoContainer>
       <LinksContainer xs={12} md={4}>
         <div>
-          <StyledLink to="">{texts.termsOfService}</StyledLink>
+          <StyledLink to="#">{texts.termsOfService}</StyledLink>
           <br/>
-          <StyledLink to="">{texts.privacyPolicy}</StyledLink>
+          <StyledLink to="#">{texts.privacyPolicy}</StyledLink>
         </div>
       </LinksContainer>
       <SocialContainer xs={12} md={4}>
