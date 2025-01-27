@@ -14,7 +14,29 @@
       "description": "Es muy fácil"
     },
     "characteristicsSection": {
-      "description": "¿Qué te ofrece?"
+      "description": "¿Qué te ofrece?",
+      "cards": [
+        {
+          "title": "Gestión de Propiedades",
+          "description": "Simplificación la gestión de propiedades. Permite ahorrar tiempo y esfuerzo mientras optimiza sus resultados.",
+          "image": "./hand-with-gears-icon-blue.png"
+        },
+        {
+          "title": "Gestión de cuentas",
+          "description": "Gestiona las cuentas tanto de ingresos como egresos de manera intantanea, generando reportes de los diferentes estados financieros.",
+          "image": "./chart-icon-blue.png"
+        },
+        {
+          "title": "Pago Automatizado",
+          "description": "Configura pagos automatizados para simplificar la gestión de tus propiedades, brindándote tranquilidad y ahorrándote tiempo.",
+          "image": "./pos-with-card-blue.png"
+        },
+        {
+          "title": "Seguimiento de incidencias",
+          "description": "Organiza y gestiona las incidencias reportadas, permitiendo generar reportes para monitorear y priorizar el estado de cada incidencia.",
+          "image": "./hand-with-gear-blue.png"
+        }
+      ]
     },
     "navbar": [
       {
@@ -42,7 +64,29 @@
       "description": "It's easy"
     },
     "characteristicsSection": {
-      "description": "What does it offer you?"
+      "description": "What does it offer you?",
+      "cards": [
+        {
+          "title": "Properties Manager",
+          "description": "Simplifying property management. It saves time and effort while optimizing your results.",
+          "image": "./hand-with-gears-icon-blue.png"
+        },
+        {
+          "title": "Account Manager",
+          "description": "Manage both income and expense accounts instantly, generating reports of the different financial statements.",
+          "image": "./chart-icon-blue.png"
+        },
+        {
+          "title": "Automatic Payment",
+          "description": "Set up automated payments to simplify your rental management, providing peace of mind and saving you time.",
+          "image": "./pos-with-card-blue.png"
+        },
+        {
+          "title": "Incidents Following",
+          "description": "Organize and manage reported incidents, allowing you to generate reports to monitor and prioritize the status of each incident",
+          "image": "./hand-with-gear-blue.png"
+        }
+      ]
     },
     "navbar": [
       {

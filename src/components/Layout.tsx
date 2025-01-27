@@ -28,7 +28,7 @@ const StyledBodyArea = styled.div<{$breakpoint: string}>`
   grid-area: body-area;
   overflow-y: auto;
   margin-top: auto;
-  padding-top: ${(props) => props.$breakpoint == 'xs' ? '0' : '95px'};
+  padding-top: ${(props) => props.$breakpoint == 'xs' ? '0' : '78px'};
 `;
 
 const StyledFooterArea = styled.div`

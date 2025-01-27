@@ -4,6 +4,7 @@ import { Col, Row, useScreenClass } from 'react-grid-system';
 import styled from 'styled-components';
 import { CountdownTimer } from '@/components';
 import { useUserLanguage } from '@/customHooks';
+import { StaticImage } from 'gatsby-plugin-image';
 
 const StyledSectionWrapper = styled(Row)<{$breakpoint: string}>`
   padding-left: ${( props ) => (props.$breakpoint == 'md' || props.$breakpoint == 'xs') ? props.theme.spacing.smallLateral : props.theme.spacing.largeLateral};
@@ -24,7 +25,7 @@ const StyledSectionWrapper = styled(Row)<{$breakpoint: string}>`
     height: 100%;
     top: 0;
     left:0;
-    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2) ,rgba(255, 255, 255, 1)); 
+    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3) ,rgba(255, 255, 255, 1)); 
     pointer-events: none;
   }
 `;
@@ -37,9 +38,9 @@ const StyledTextArea = styled(Col)`
 `;
 
 const StyledTitle = styled.h1`
-  font-size: ${({ theme }) => theme.typography.fontSize.s1};
+  font-size: ${({ theme }) => theme.typography.fontSize.s3};
   font-family: Lexend, Arial, Helvetica, sans-serif;
-  color: ${({ theme }) => theme.colors.light};
+  color: ${({ theme }) => theme.colors.primary1};
 `;
 
 const StyledParagraph = styled.p`
@@ -95,6 +96,13 @@ export const HeroSection: React.FC = () => {
         }}
       />
       <StyledTextArea xs={12}>
+        <StaticImage
+          src="../images/rentmote-logotipo-color.png"
+          alt="rentmote-logo"
+          width={300}
+          placeholder="blurred"
+          style={{ marginBottom: '2rem' }}
+        />
         <StyledTitle>{texts.textA}</StyledTitle>
         <br />
         <StyledParagraph>{texts.textB}</StyledParagraph>

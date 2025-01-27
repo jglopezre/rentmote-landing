@@ -1,9 +1,9 @@
+import React from 'react';
+import { graphql, useStaticQuery } from 'gatsby';
+import styled from 'styled-components';
+import { Col, Row, useScreenClass } from 'react-grid-system';
 import { CharacteristicCard } from '@/components';
 import { useUserLanguage } from '@/customHooks';
-import { graphql, useStaticQuery } from 'gatsby';
-import React from 'react';
-import { Col, Row, useScreenClass } from 'react-grid-system';
-import styled from 'styled-components';
 
 const StyledSectionWrapper = styled(Row)<{ $breakpoint: string }>`
   padding-bottom: 3rem;

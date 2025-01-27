@@ -39,8 +39,8 @@ export const TopBar: React.FC = () => {
       <Col xs="content">
         <Link to="/">
           <StaticImage
-            src="../images/rentmote-logotipo-color.png"
-            width={120}
+            src="../images/rentmote-logotipo-black.png"
+            width={90}
             alt="rentmote"
             placeholder="blurred"
           />
