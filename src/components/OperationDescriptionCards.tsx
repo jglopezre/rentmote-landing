@@ -18,6 +18,7 @@ const CardWrapper = styled.div`
   overflow: hidden;
   border-radius: 8px;
   position: relative;
+  margin-bottom: 1rem;
   & h2, p {
     line-height: 1.8rem;
   }

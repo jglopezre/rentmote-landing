@@ -77,7 +77,7 @@ export const Footer: React.FC = () => {
   return (
     <StyledFooterWrapper component="footer" $breakpoint={breakpoint}>
       <LogoContainer xs={12} md={4}>
-        <Link to="">
+        <Link to="/">
           <StaticImage
             src="../images/rentmote-logotipo-white.png"
             alt=''

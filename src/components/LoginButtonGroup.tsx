@@ -1,4 +1,5 @@
 import { useUserLanguage } from "@/customHooks";
+import { navigate } from "gatsby";
 import React from "react";
 import styled from "styled-components";
 
@@ -53,11 +54,16 @@ export const LoginButtonGroup: React.FC = () => {
   const userLanguage = useUserLanguage();
 
   const onLoginActionHandle = () => {
+    if(typeof window === 'undefined') {
+      console.error('window no es accesible en el entorno actual')
+      return
+    } 
     console.log('Login button pressed');
+    window.open('https://hexeros.in/dev/rentmote/admin');
   }
   
   const onSignupActionHandle = () => {
-    console.log('Sign Up Button pressed');
+    navigate('/signUp');
   }
 
   return (

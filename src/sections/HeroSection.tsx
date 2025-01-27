@@ -16,18 +16,30 @@ const StyledSectionWrapper = styled(Row)<{$breakpoint: string}>`
   text-align: center;
   padding-top: 5rem;
   padding-bottom: 5rem;
+  &::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left:0;
+    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2) ,rgba(255, 255, 255, 1)); 
+    pointer-events: none;
+  }
 `;
 
 const StyledTextArea = styled(Col)`
   display: flex;
   flex-direction: column;
   align-items: center;
+  z-index: 1;
 `;
 
 const StyledTitle = styled.h1`
   font-size: ${({ theme }) => theme.typography.fontSize.s1};
   font-family: Lexend, Arial, Helvetica, sans-serif;
-  color: ${({ theme }) => theme.colors.primary2};
+  color: ${({ theme }) => theme.colors.light};
 `;
 
 const StyledParagraph = styled.p`
@@ -68,17 +80,25 @@ export const HeroSection: React.FC = () => {
   
   return (
     <StyledSectionWrapper $breakpoint={breakpoint}>
+      <video
+        src="/videos/rentmote-herovideo.mp4"
+        autoPlay
+        loop
+        muted
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "100%",
+          height: "100%",
+          objectFit: "cover",
+        }}
+      />
       <StyledTextArea xs={12}>
         <StyledTitle>{texts.textA}</StyledTitle>
         <br />
         <StyledParagraph>{texts.textB}</StyledParagraph>
       </StyledTextArea>
-      <Col xs={12}>
-        <p>{texts.textC}</p>
-      </Col>
-      <Col xs={12} style={{ display: 'flex', justifyContent: 'center'}}>
-        <CountdownTimer targetTime="2025-04-01T00:00:00Z"/>
-      </Col>
     </StyledSectionWrapper>
   )
 }

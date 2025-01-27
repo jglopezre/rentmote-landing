@@ -19,15 +19,11 @@
     "navbar": [
       {
         "text": "Cómo Funciona",
-        "to": "#operation-description"
+        "to": "/#operation-description"
       },
       {
         "text": "¿Qué te ofrece?",
-        "to": "#characteristics-section"
-      },
-      {
-        "text": "Contacto",
-        "to": ""
+        "to": "/#characteristics-section"
       }
     ]
   },
@@ -51,15 +47,11 @@
     "navbar": [
       {
         "text": "How does it work?",
-        "to": "#operation-description"
+        "to": "/#operation-description"
       },
       {
         "text": "What does it offer you?",
-        "to": "#characteristics-section"
-      },
-      {
-        "text": "Contact us",
-        "to": ""
+        "to": "/#characteristics-section"
       }
     ]
   }

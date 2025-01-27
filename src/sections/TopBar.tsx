@@ -4,6 +4,7 @@ import { Col, Row, useScreenClass } from 'react-grid-system';
 import styled from 'styled-components';
 import { LoginButtonGroup } from '../components/LoginButtonGroup';
 import { NavBar } from '../components/Navbar';
+import { Link } from 'gatsby';
 
 const StyledSectionWrapper = styled(Row)<{ $breakpoint: string }>`
   padding-top: 1rem;
@@ -36,12 +37,14 @@ export const TopBar: React.FC = () => {
   return (
     <StyledSectionWrapper justify="between" component="header" $breakpoint={breakpoint}>
       <Col xs="content">
-        <StaticImage
-          src="../images/rentmote-logotipo-color.png"
-          width={120}
-          alt="rentmote"
-          placeholder="blurred"
-        />
+        <Link to="/">
+          <StaticImage
+            src="../images/rentmote-logotipo-color.png"
+            width={120}
+            alt="rentmote"
+            placeholder="blurred"
+          />
+        </Link>
       </Col>
       <StyledCol2>
         <NavBar />
