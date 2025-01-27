@@ -45,6 +45,8 @@ const StyledSelectorsContainer = styled(Col)`
 const StyledOptions = styled.h1`
   cursor: pointer;
   transition: 0.2s;
+  font-family: Lexend Arial, Helvetica, sans-serif;
+  font-weight: 400;
   &:hover {
     transform: translateX(15px);
   }
