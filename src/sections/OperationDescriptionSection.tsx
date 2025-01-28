@@ -122,7 +122,7 @@ export const OperationDescriptionSection: React.FC = () => {
           <Row>
             {
               cards.map((card: any, index) => (
-                <Col xs={12} md={4}>
+                <Col xs={12} lg={4} style={{ display: 'flex', justifyContent: 'center', alignContent: 'center' }}>
                   <OperationDesciptionCard
                     title={card.frontmatter.title}
                     description={card.frontmatter.description}

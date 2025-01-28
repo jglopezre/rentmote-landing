@@ -6,3 +6,4 @@ export * from './LoginButtonGroup';
 export * from './OperationDescriptionCards';
 export * from './SocialBox';
 export * from './CountdownTimer';
+export * from './AnimatedAutoCarousel';

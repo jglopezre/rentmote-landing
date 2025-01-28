@@ -11,7 +11,18 @@ const StyledSectionWrapper = styled(Container)`
   padding-bottom: 5rem;
 `;
 
+const ImageContainer = styled(Col)`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+`;
+
 const StyledTextArea = styled(Col)`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   & div {
     display: inline-block;
     width: 100%;
@@ -65,7 +76,7 @@ export const HeroSection: React.FC = () => {
         justify='center'
         align='center'
       >
-        <Col xs="content">
+        <ImageContainer xs={12}>
           <StaticImage
             src="../images/rentmote-logotipo-color.png"
             alt="rentmote-logo"
@@ -73,8 +84,8 @@ export const HeroSection: React.FC = () => {
             placeholder="blurred"
             style={{ marginBottom: '2rem' }}
           />
-        </Col>
-        <StyledTextArea xs="content">
+        </ImageContainer>
+        <StyledTextArea xs={12}>
           <div>
             <h1>{texts.textA}</h1>
             <p>{texts.textB}</p>

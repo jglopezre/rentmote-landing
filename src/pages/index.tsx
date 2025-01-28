@@ -6,6 +6,7 @@ import {
   ApplicationDescriptionSection,
   CharacteristicsSection,
   HeroSection,
+  LogotipoAnimatedCarouselSection,
   OperationDescriptionSection
 } from '@/sections';
 
@@ -13,6 +14,7 @@ const IndexPage: React.FC<PageProps> = () => {
   return (
     <Layout>
       <HeroSection />
+      <LogotipoAnimatedCarouselSection />
       <OperationDescriptionSection />
       <CharacteristicsSection />
       <ApplicationDescriptionSection />
