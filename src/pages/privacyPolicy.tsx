@@ -2,17 +2,18 @@ import React from 'react';
 import { HeadFC, PageProps } from 'gatsby';
 import { Seo } from '@/components/Seo';
 import Layout from '@/components/Layout';
+import { LegalDocumentSection } from '@/sections';
 
-const PrivacyPolicy: React.FC<PageProps> = () => {
+const PrivacyPolicyPage: React.FC<PageProps> = () => {
 
   return (
     <Layout>
-      <h1>Políticas de privacidad</h1>
+      <LegalDocumentSection documentType="privacyPolicy" />
     </Layout>
   )
 }
 
-export default PrivacyPolicy;
+export default PrivacyPolicyPage;
 
 export const Head: HeadFC = () => (
   <Seo title="Rentomte - Privacy" />

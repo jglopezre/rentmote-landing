@@ -52,7 +52,52 @@
         "text": "Preguntas Frecuentes",
         "to": "/faqs"
       }
-    ]
+    ],
+    "faqsSection": {
+      "title": "Preguntas Frecuentes",
+      "faqs": [
+        {
+          "title": "Lorem ipsum odor amet, consectetuer adipiscing elit. Purus rhoncus aenean aenean litora luctus pulvinar luctus",
+          "description": "Lorem ipsum odor amet, consectetuer adipiscing elit. Purus neque sagittis maecenas fusce venenatis tempor rhoncus. Proin a parturient tempus sapien nisl auctor. Augue per parturient amet rhoncus conubia nisl pharetra. Vitae maximus magnis himenaeos enim cubilia ad aptent. Eros mollis iaculis vehicula at; phasellus ad iaculis maecenas. Facilisis lobortis maximus aliquam quis vitae elit proin aliquam"
+        },
+        {
+          "title": "Mattis turpis vivamus tempor elit; sollicitudin efficitur",
+          "description": "Senectus nisl aliquam mauris quisque molestie vitae proin. Primis mi phasellus taciti ligula elit urna in. Scelerisque ridiculus felis sodales ex penatibus. Habitasse mauris taciti litora ut litora augue lacinia mauris. Lobortis sapien mollis sociosqu aliquet in. Integer lorem arcu ut finibus felis? Parturient morbi suspendisse viverra volutpat habitant porta himenaeos. Luctus torquent urna auctor cubilia vel nisl neque hac. Volutpat pretium velit magna purus fringilla; nullam primis nam eu."
+        },
+        {
+          "title": "Sem natoque non malesuada ornare pharetra; nam blandit",
+          "description": "Velit eros eget enim ultrices commodo id. Laoreet tristique tincidunt, mi taciti iaculis augue neque vulputate. Fusce senectus sagittis fames interdum luctus fermentum suspendisse dictumst. Ultricies orci mus a conubia neque habitasse ut euismod. Semper duis sit nullam sociosqu hendrerit bibendum. Fames et cubilia faucibus; nisl ultrices maximus. Justo eleifend posuere penatibus conubia taciti maecenas nibh. Sit iaculis sollicitudin eget interdum pretium arcu."
+        },
+        {
+          "title": "Ultricies elit arcu placerat accumsan accumsan phasellus suspendisse",
+          "description": "Sollicitudin ultricies tristique mollis mollis rhoncus sociosqu amet eu. Turpis habitant molestie ante vestibulum maecenas ultricies nascetur. Ex duis amet nibh cursus posuere viverra mus. Himenaeos morbi ultricies ullamcorper aptent sem imperdiet pretium imperdiet. Feugiat netus parturient; sociosqu adipiscing neque leo. Torquent quis enim nec pretium tincidunt pellentesque aliquet gravida cursus. Maecenas viverra amet nec quam, hac ut. Cras molestie ipsum mollis est augue nisl. Porttitor mollis libero ligula orci convallis molestie. Phasellus semper cras tellus, congue enim mattis id."
+        },
+        {
+          "title": "Congue dui etiam; convallis volutpat mollis donec ullamcorper",
+          "description": "Fermentum gravida per integer malesuada sed. Dolor euismod ipsum volutpat orci tortor sed eros scelerisque. Justo hendrerit duis euismod lorem nibh. Diam aenean class congue quisque; sollicitudin viverra. Libero ipsum justo pulvinar habitasse lacus congue ex dolor. Nunc imperdiet parturient nibh sollicitudin iaculis. Tellus tristique placerat enim adipiscing feugiat? Semper mus nisl erat bibendum nibh egestas nostra ultrices. Montes egestas nec duis molestie porttitor."
+        },
+        {
+          "title": "Laoreet est maximus maximus fermentum orci id facilisi",
+          "description": "Nam ornare lacus varius himenaeos; arcu vel? Amet suspendisse maximus nostra parturient mi dolor dolor orci. Porttitor netus scelerisque fringilla per; finibus tortor pellentesque. Tortor non nisi torquent pretium volutpat lacus himenaeos fusce. Lectus conubia est suscipit interdum sit velit. Consectetur pulvinar fringilla cursus maximus vulputate; lacus dictum porttitor. Pellentesque efficitur dui posuere vehicula neque natoque duis suspendisse justo. Etiam ipsum blandit euismod, enim rutrum quis. Varius urna dis sagittis interdum nibh mattis rhoncus aenean orci. Proin malesuada class elit maximus congue per."
+        },
+        {
+          "title": "Aliquet torquent habitant consectetur primis suscipit rhoncus auctor",
+          "description": "Bibendum fringilla inceptos gravida ac cursus accumsan consectetur. Tempor a aliquet lorem, fames porta leo. Interdum sapien laoreet magna pharetra tincidunt volutpat magna? Consequat lacus vel; inceptos ultrices accumsan volutpat suscipit. Fames auctor rhoncus condimentum sociosqu aptent mus consequat. Leo auctor semper efficitur nisl finibus aptent consectetur iaculis potenti. Maecenas conubia ultricies, lobortis curae congue laoreet."
+        },
+        {
+          "title": "Vulputate eleifend finibus nibh sem facilisis sit dictumst interdum",
+          "description": "Rutrum taciti gravida orci semper leo. Inceptos ac imperdiet mollis conubia dictum dui. Maecenas semper fermentum dui eget taciti eget consequat. Platea adipiscing cras phasellus semper et maecenas. Est ligula suscipit quis mus ullamcorper. Imperdiet a nulla pulvinar ultricies; ridiculus vel sagittis. Purus ridiculus elit bibendum quam elit convallis est dolor tempus."
+        },
+        {
+          "title": "Mollis taciti volutpat adipiscing amet penatibus",
+          "description": "Natoque pharetra elit risus habitasse cursus rutrum pretium nunc. Pellentesque libero mauris nulla elementum nisl rhoncus dignissim natoque. Penatibus egestas commodo vivamus lacinia inceptos. Eget egestas nulla, imperdiet consequat curae ipsum. Senectus velit mus id et curabitur venenatis. Sodales egestas adipiscing potenti convallis velit sit odio est. Purus vulputate sagittis aliquam; eget viverra ad. Consectetur adipiscing aptent pretium torquent nulla ante."
+        },
+        {
+          "title": "Tincidunt non gravida imperdiet morbi orci class per vestibulum",
+          "description": "Natoque pharetra elit risus habitasse cursus rutrum pretium nunc. Pellentesque libero mauris nulla elementum nisl rhoncus dignissim natoque. Penatibus egestas commodo vivamus lacinia inceptos. Eget egestas nulla, imperdiet consequat curae ipsum. Senectus velit mus id et curabitur venenatis. Sodales egestas adipiscing potenti convallis velit sit odio est. Purus vulputate sagittis aliquam; eget viverra ad. Consectetur adipiscing aptent pretium torquent nulla ante."
+        }
+      ]
+    }
   },
   "en": {
     "heroContent": {
@@ -107,6 +152,51 @@
         "text": "FAQs",
         "to": "/faqs"
       }
-    ]
+    ],
+    "faqsSection": {
+      "title": "Frequently Asked Questions",
+      "faqs": [
+        {
+          "title": "Lorem ipsum odor amet, consectetuer adipiscing elit. Purus rhoncus aenean aenean litora luctus pulvinar luctus",
+          "description": "Lorem ipsum odor amet, consectetuer adipiscing elit. Purus neque sagittis maecenas fusce venenatis tempor rhoncus. Proin a parturient tempus sapien nisl auctor. Augue per parturient amet rhoncus conubia nisl pharetra. Vitae maximus magnis himenaeos enim cubilia ad aptent. Eros mollis iaculis vehicula at; phasellus ad iaculis maecenas. Facilisis lobortis maximus aliquam quis vitae elit proin aliquam"
+        },
+        {
+          "title": "Mattis turpis vivamus tempor elit; sollicitudin efficitur",
+          "description": "Senectus nisl aliquam mauris quisque molestie vitae proin. Primis mi phasellus taciti ligula elit urna in. Scelerisque ridiculus felis sodales ex penatibus. Habitasse mauris taciti litora ut litora augue lacinia mauris. Lobortis sapien mollis sociosqu aliquet in. Integer lorem arcu ut finibus felis? Parturient morbi suspendisse viverra volutpat habitant porta himenaeos. Luctus torquent urna auctor cubilia vel nisl neque hac. Volutpat pretium velit magna purus fringilla; nullam primis nam eu."
+        },
+        {
+          "title": "Sem natoque non malesuada ornare pharetra; nam blandit",
+          "description": "Velit eros eget enim ultrices commodo id. Laoreet tristique tincidunt, mi taciti iaculis augue neque vulputate. Fusce senectus sagittis fames interdum luctus fermentum suspendisse dictumst. Ultricies orci mus a conubia neque habitasse ut euismod. Semper duis sit nullam sociosqu hendrerit bibendum. Fames et cubilia faucibus; nisl ultrices maximus. Justo eleifend posuere penatibus conubia taciti maecenas nibh. Sit iaculis sollicitudin eget interdum pretium arcu."
+        },
+        {
+          "title": "Ultricies elit arcu placerat accumsan accumsan phasellus suspendisse",
+          "description": "Sollicitudin ultricies tristique mollis mollis rhoncus sociosqu amet eu. Turpis habitant molestie ante vestibulum maecenas ultricies nascetur. Ex duis amet nibh cursus posuere viverra mus. Himenaeos morbi ultricies ullamcorper aptent sem imperdiet pretium imperdiet. Feugiat netus parturient; sociosqu adipiscing neque leo. Torquent quis enim nec pretium tincidunt pellentesque aliquet gravida cursus. Maecenas viverra amet nec quam, hac ut. Cras molestie ipsum mollis est augue nisl. Porttitor mollis libero ligula orci convallis molestie. Phasellus semper cras tellus, congue enim mattis id."
+        },
+        {
+          "title": "Congue dui etiam; convallis volutpat mollis donec ullamcorper",
+          "description": "Fermentum gravida per integer malesuada sed. Dolor euismod ipsum volutpat orci tortor sed eros scelerisque. Justo hendrerit duis euismod lorem nibh. Diam aenean class congue quisque; sollicitudin viverra. Libero ipsum justo pulvinar habitasse lacus congue ex dolor. Nunc imperdiet parturient nibh sollicitudin iaculis. Tellus tristique placerat enim adipiscing feugiat? Semper mus nisl erat bibendum nibh egestas nostra ultrices. Montes egestas nec duis molestie porttitor."
+        },
+        {
+          "title": "Laoreet est maximus maximus fermentum orci id facilisi",
+          "description": "Nam ornare lacus varius himenaeos; arcu vel? Amet suspendisse maximus nostra parturient mi dolor dolor orci. Porttitor netus scelerisque fringilla per; finibus tortor pellentesque. Tortor non nisi torquent pretium volutpat lacus himenaeos fusce. Lectus conubia est suscipit interdum sit velit. Consectetur pulvinar fringilla cursus maximus vulputate; lacus dictum porttitor. Pellentesque efficitur dui posuere vehicula neque natoque duis suspendisse justo. Etiam ipsum blandit euismod, enim rutrum quis. Varius urna dis sagittis interdum nibh mattis rhoncus aenean orci. Proin malesuada class elit maximus congue per."
+        },
+        {
+          "title": "Aliquet torquent habitant consectetur primis suscipit rhoncus auctor",
+          "description": "Bibendum fringilla inceptos gravida ac cursus accumsan consectetur. Tempor a aliquet lorem, fames porta leo. Interdum sapien laoreet magna pharetra tincidunt volutpat magna? Consequat lacus vel; inceptos ultrices accumsan volutpat suscipit. Fames auctor rhoncus condimentum sociosqu aptent mus consequat. Leo auctor semper efficitur nisl finibus aptent consectetur iaculis potenti. Maecenas conubia ultricies, lobortis curae congue laoreet."
+        },
+        {
+          "title": "Vulputate eleifend finibus nibh sem facilisis sit dictumst interdum",
+          "description": "Rutrum taciti gravida orci semper leo. Inceptos ac imperdiet mollis conubia dictum dui. Maecenas semper fermentum dui eget taciti eget consequat. Platea adipiscing cras phasellus semper et maecenas. Est ligula suscipit quis mus ullamcorper. Imperdiet a nulla pulvinar ultricies; ridiculus vel sagittis. Purus ridiculus elit bibendum quam elit convallis est dolor tempus."
+        },
+        {
+          "title": "Mollis taciti volutpat adipiscing amet penatibus",
+          "description": "Natoque pharetra elit risus habitasse cursus rutrum pretium nunc. Pellentesque libero mauris nulla elementum nisl rhoncus dignissim natoque. Penatibus egestas commodo vivamus lacinia inceptos. Eget egestas nulla, imperdiet consequat curae ipsum. Senectus velit mus id et curabitur venenatis. Sodales egestas adipiscing potenti convallis velit sit odio est. Purus vulputate sagittis aliquam; eget viverra ad. Consectetur adipiscing aptent pretium torquent nulla ante."
+        },
+        {
+          "title": "Tincidunt non gravida imperdiet morbi orci class per vestibulum",
+          "description": "Natoque pharetra elit risus habitasse cursus rutrum pretium nunc. Pellentesque libero mauris nulla elementum nisl rhoncus dignissim natoque. Penatibus egestas commodo vivamus lacinia inceptos. Eget egestas nulla, imperdiet consequat curae ipsum. Senectus velit mus id et curabitur venenatis. Sodales egestas adipiscing potenti convallis velit sit odio est. Purus vulputate sagittis aliquam; eget viverra ad. Consectetur adipiscing aptent pretium torquent nulla ante."
+        }
+      ]
+    }
   }
 }

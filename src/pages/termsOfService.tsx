@@ -2,17 +2,19 @@ import React from 'react';
 import { HeadFC, PageProps } from 'gatsby';
 import { Seo } from '@/components/Seo';
 import Layout from '@/components/Layout';
+import { LegalDocumentSection } from '@/sections';
 
-const TermsOfService: React.FC<PageProps> = () => {
+
+const TermsOfServicePage: React.FC<PageProps> = () => {
 
   return (
     <Layout>
-      <h1>Terminos y condiciones</h1>
+      <LegalDocumentSection documentType="termsOfService" />
     </Layout>
   )
 }
 
-export default TermsOfService
+export default TermsOfServicePage;
 
 export const Head: HeadFC = () => (
   <Seo title="Rentomte - Terms" />

@@ -2,17 +2,18 @@ import React from 'react';
 import { HeadFC, PageProps } from 'gatsby';
 import { Seo } from '@/components/Seo';
 import Layout from '@/components/Layout';
+import { FaqsSection } from '@/sections';
 
-const Faqs: React.FC<PageProps> = () => {
+const FaqsPage: React.FC<PageProps> = () => {
 
   return (
     <Layout>
-      <h1>Preguntas Frecuentes</h1>
+      <FaqsSection />
     </Layout>
   )
 }
 
-export default Faqs;
+export default FaqsPage;
 
 export const Head: HeadFC = () => (
   <Seo title="Rentomte - Frequently Questions" />

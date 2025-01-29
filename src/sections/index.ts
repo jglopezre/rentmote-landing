@@ -6,4 +6,6 @@ export * from './TopBar';
 export * from './HeroSection';
 export * from './LogotipoAnimatedCarouselSection';
 export * from './BottomAnimatedCaruosel';
+export * from './FaqsSection';
+export * from './LegalDocumentSection';
  

@@ -10,7 +10,8 @@
 export const theme = {
   border: {
     radius: {
-      base: '10px'
+      base: '10px',
+      sm: '5px',
     },
     width: {
       sm: '1px',

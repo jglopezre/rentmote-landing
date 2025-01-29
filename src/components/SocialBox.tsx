@@ -4,8 +4,8 @@ import styled from 'styled-components';
 
 const urls = {
   instagram: 'https://www.instagram.com/rentmote/',
-  facebook: '',
-  linkedin: '',
+  facebook: '#',
+  linkedin: '#',
 }
 
 
