@@ -12,6 +12,7 @@ type Faq = {
 
 const TitleContainer = styled(Col)`
   margin-bottom: 3rem;
+  text-align: center;
   & h1 {
     font-weight: 300;
     font-size: ${({ theme }) => theme.typography.fontSize.s1};

@@ -42,30 +42,6 @@ const StyledTextCol = styled(Col)`
   }
 `;
 
-const UpperText = styled.h1`
-  font-size: ${({ theme }) => theme.typography.fontSize.s3};
-  font-weight: ${({ theme }) => theme.typography.fontWeight.bold};
-  color: ${({ theme }) => theme.colors.primary2};
-  font-family: Lexend, Arial, Helvetica, sans-serif;
-  position: relative;
-  &::before {
-    content: '';
-    display: block;
-    position: absolute;
-    left: 40%;
-    bottom: -20px;
-    width: 20%;
-    height: 5px;
-    background: linear-gradient(90deg, ${({ theme }) => theme.colors.secondary2}, ${({ theme }) => theme.colors.secondary1}, ${({ theme }) => theme.colors.secondary2});
-    border-radius: 5px;
-  }
-`;
-
-const LowerText = styled.p`
-  font-size: ${({ theme }) => theme.typography.fontSize.s4};
-  color: ${({ theme }) => theme.colors.primary1};
-`;
-
 const ImageWrapper = styled(Col)`
   display: flex;
   align-items: center;

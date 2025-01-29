@@ -8,3 +8,4 @@ export * from './SocialBox';
 export * from './CountdownTimer';
 export * from './AnimatedAutoCarousel';
 export * from './FaqBox';
+export * from './MiniCard';

@@ -1,7 +1,6 @@
 import React, { useRef } from 'react';
 import styled from 'styled-components';
 import { Col, Container, Row } from 'react-grid-system';
-import html2pdf from 'html2pdf.js';
 import { useMarkDownContent } from '@/customHooks';
 
 type LegalDocumentSectionProps = {
@@ -36,12 +35,6 @@ export const LegalDocumentSection: React.FC<LegalDocumentSectionProps> = ({ docu
   const markDownDocument = useMarkDownContent(documentType);
   const contentRef = useRef<HTMLDivElement>(null)
   
-  const downloadPdf = () => {
-    if (contentRef.current) {
-      html2pdf().from(contentRef.current).save(`${documentType}.pdf`);
-    }
-  };
-
   return (
     <Container>
       <Row>
@@ -51,11 +44,6 @@ export const LegalDocumentSection: React.FC<LegalDocumentSectionProps> = ({ docu
             ref={contentRef}  
           />
         </Col>
-      </Row>
-      <Row>
-        <StyledButtonContainer xs={12}>
-          <button type="button" onClick={downloadPdf}>Descargar</button> 
-        </StyledButtonContainer>
       </Row>
     </Container>
   );

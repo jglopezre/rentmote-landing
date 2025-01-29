@@ -12,6 +12,9 @@ const StyrledWrapper = styled.div`
   border-bottom-width: ${({ theme }) => theme.border.width.md};
   border-bottom-color: ${({ theme }) => theme.colors.primary1};
   margin-bottom: 3rem;
+  & h2 {
+    font-weight: 400;
+  }
 `
 
 export const FaqBox: React.FC<FaqBoxProps> = ({ title, description }) => {

@@ -45,12 +45,12 @@
         "to": "/howItWorks"
       },
       {
-        "text": "Soporte",
-        "to": "/support"
-      },
-      {
         "text": "Preguntas Frecuentes",
         "to": "/faqs"
+      },
+      {
+        "text": "Soporte",
+        "to": "/support"
       }
     ],
     "faqsSection": {
@@ -95,6 +95,24 @@
         {
           "title": "Tincidunt non gravida imperdiet morbi orci class per vestibulum",
           "description": "Natoque pharetra elit risus habitasse cursus rutrum pretium nunc. Pellentesque libero mauris nulla elementum nisl rhoncus dignissim natoque. Penatibus egestas commodo vivamus lacinia inceptos. Eget egestas nulla, imperdiet consequat curae ipsum. Senectus velit mus id et curabitur venenatis. Sodales egestas adipiscing potenti convallis velit sit odio est. Purus vulputate sagittis aliquam; eget viverra ad. Consectetur adipiscing aptent pretium torquent nulla ante."
+        }
+      ]
+    },
+    "supportSection": {
+      "title": "Contactanos",
+      "description": "Por favor, selecciona el area de soporte con la cuál deseas contactarte.",
+      "cards": [
+        {
+          "title": "Ventas",
+          "image": "rentmote-sales-support"
+        },
+        {
+          "title": "Soporte",
+          "image": "rentmote-support-support"
+        },
+        {
+          "title": "Cobranzas",
+          "image": "rentmote-billing-support"
         }
       ]
     }
@@ -145,12 +163,12 @@
         "to": "/howItWorks"
       },
       {
-        "text": "Support",
-        "to": "/support"
-      },
-      {
         "text": "FAQs",
         "to": "/faqs"
+      },
+      {
+        "text": "Support",
+        "to": "/support"
       }
     ],
     "faqsSection": {
@@ -195,6 +213,24 @@
         {
           "title": "Tincidunt non gravida imperdiet morbi orci class per vestibulum",
           "description": "Natoque pharetra elit risus habitasse cursus rutrum pretium nunc. Pellentesque libero mauris nulla elementum nisl rhoncus dignissim natoque. Penatibus egestas commodo vivamus lacinia inceptos. Eget egestas nulla, imperdiet consequat curae ipsum. Senectus velit mus id et curabitur venenatis. Sodales egestas adipiscing potenti convallis velit sit odio est. Purus vulputate sagittis aliquam; eget viverra ad. Consectetur adipiscing aptent pretium torquent nulla ante."
+        }
+      ]
+    },
+    "supportSection": {
+      "title": "Contact Us",
+      "description": "Please select the support area you'd like to contact.",
+      "cards": [
+        {
+          "title": "Sales",
+          "image": "rentmote-sales-support"
+        },
+        {
+          "title": "Support",
+          "image": "rentmote-support-support"
+        },
+        {
+          "title": "Billing",
+          "image": "rentmote-billing-support"
         }
       ]
     }
