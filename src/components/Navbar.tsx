@@ -67,7 +67,7 @@ export const NavBar: React.FC = () => {
     <nav>
       {
         selectedTexts.map(( elem ) => (
-            <StyledLink to={elem.to} onClick={handleScroll}>{elem.text}</StyledLink>    
+            <StyledLink to={elem.to}>{elem.text}</StyledLink>    
         ))
       }
     </nav>

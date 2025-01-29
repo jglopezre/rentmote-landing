@@ -14,6 +14,19 @@ const StyledSectionWrapper = styled.section`
   align-items: center;
   flex-direction: column;
   position: relative;
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    z-index: 1;
+  }
 `;
 
 const StyledContentWrapper = styled.div`
@@ -26,6 +39,8 @@ const StyledContentWrapper = styled.div`
   height: 70%;
   bottom: 30%;
   left: 0;
+  z-index: 2;
+  
 `;
 
 const StyledParagraph = styled.h1`

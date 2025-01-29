@@ -10,15 +10,27 @@ const date = new Date();
 
 
 const textsEs = {
-  copyright: "Desarrollado por Rentmote. Todos los derechos reservados.",
-  termsOfService: "Terminos de Servicio",
-  privacyPolicy: 'Política de Privacidad',
+  copyright: 'Desarrollado por Rentmote. Todos los derechos reservados.',
+  termsOfService: {
+    text: 'Terminos de Servicio',
+    url: '/termsOfService'
+  },
+  privacyPolicy: {
+    text: 'Política de Privacidad',
+    url: '/privacyPolicy',
+  },
 }
 
 const textsEn = {
-  copyright: "Developed by Rentmote. All rights reserved.",
-  termsOfService: "Terms of Service",
-  privacyPolicy: 'Privacy Policy',
+  copyright: 'Developed by Rentmote. All rights reserved.',
+  termsOfService: {
+    text: 'Terms of Service',
+    url: '/termsOfService',
+  },
+  privacyPolicy: {
+    text: 'Privacy Policy',
+    url: '/privacyPolicy',
+  },
 }
 
 const StyledFooterWrapper = styled(Row)<{ $breakpoint:string }>`
@@ -89,9 +101,9 @@ export const Footer: React.FC = () => {
       </LogoContainer>
       <LinksContainer xs={12} md={4}>
         <div>
-          <StyledLink to="#">{texts.termsOfService}</StyledLink>
+          <StyledLink to={texts.termsOfService.url}>{texts.termsOfService.text}</StyledLink>
           <br/>
-          <StyledLink to="#">{texts.privacyPolicy}</StyledLink>
+          <StyledLink to={texts.privacyPolicy.url}>{texts.privacyPolicy.text}</StyledLink>
         </div>
       </LinksContainer>
       <SocialContainer xs={12} md={4}>

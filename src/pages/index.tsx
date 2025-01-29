@@ -4,6 +4,7 @@ import Layout from '@/components/Layout';
 import { Seo } from '@/components/Seo';
 import {
   ApplicationDescriptionSection,
+  BottomAnimatedCarousel,
   CharacteristicsSection,
   HeroSection,
   LogotipoAnimatedCarouselSection,
@@ -18,6 +19,7 @@ const IndexPage: React.FC<PageProps> = () => {
       <OperationDescriptionSection />
       <CharacteristicsSection />
       <ApplicationDescriptionSection />
+      <BottomAnimatedCarousel />
     </Layout>
   )
 }

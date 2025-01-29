@@ -5,4 +5,5 @@ export * from './applicationDescriptionSection';
 export * from './TopBar';
 export * from './HeroSection';
 export * from './LogotipoAnimatedCarouselSection';
+export * from './BottomAnimatedCaruosel';
  

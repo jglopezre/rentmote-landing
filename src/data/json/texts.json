@@ -42,11 +42,15 @@
     "navbar": [
       {
         "text": "Cómo Funciona",
-        "to": "/#operation-description"
+        "to": "/howItWorks"
       },
       {
-        "text": "¿Qué te ofrece?",
-        "to": "/#characteristics-section"
+        "text": "Soporte",
+        "to": "/support"
+      },
+      {
+        "text": "Preguntas Frecuentes",
+        "to": "/faqs"
       }
     ]
   },
@@ -93,11 +97,15 @@
     "navbar": [
       {
         "text": "How does it work?",
-        "to": "/#operation-description"
+        "to": "/howItWorks"
       },
       {
-        "text": "What does it offer you?",
-        "to": "/#characteristics-section"
+        "text": "Support",
+        "to": "/support"
+      },
+      {
+        "text": "FAQs",
+        "to": "/faqs"
       }
     ]
   }

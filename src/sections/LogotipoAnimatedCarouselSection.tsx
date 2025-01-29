@@ -7,7 +7,7 @@ export const LogotipoAnimatedCarouselSection: React.FC = () => {
   const data = useStaticQuery(graphql`
     query LogotipoAnimatedCarousel {
       allFile(
-        filter: {name: {regex: "/-carousel$/"}, extension: {regex: "/(png|webp)/"}}
+        filter: {name: {regex: "/-top-carousel$/"}, extension: {regex: "/(png|webp)/"}}
       ) {
         nodes {
           id
@@ -29,7 +29,7 @@ export const LogotipoAnimatedCarouselSection: React.FC = () => {
   return (
     <Container component="section">
       <Row>
-        <Col>
+        <Col xs={12}>
           {
             breakpoint === 'xs' || breakpoint === 'md' && data.allFile.nodes.length > 5
             ? null
