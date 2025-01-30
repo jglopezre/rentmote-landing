@@ -30,6 +30,7 @@ export const theme = {
     lg: '24px',
     xl: '32px',
     xxl: '48px',
+    section: '5rem',
   },
   typography: {
     fontSize: {
@@ -40,7 +41,9 @@ export const theme = {
       s4: '1.6rem',
       a5: '1.2rem',
       s6: '1rem',
-      s7: '0.7rem', 
+      s7: '0.7rem',
+      title: '3.5rem',
+      bigTitle: '4.5rem', 
     },
     fontWeight: {
       regular: 300,

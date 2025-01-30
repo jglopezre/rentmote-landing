@@ -1,10 +1,12 @@
+import React, { forwardRef } from 'react';
+import { graphql, useStaticQuery } from 'gatsby';
+import { Col, Container, Row, RowProps, useScreenClass } from 'react-grid-system';
+import styled from 'styled-components';
+import { Variants, motion } from 'framer-motion'
 import { MiniCard } from '@/components';
 import { useUserLanguage } from '@/customHooks';
-import { graphql, useStaticQuery } from 'gatsby';
-import React from 'react';
-import { Col, Container, Row } from 'react-grid-system';
-import styled from 'styled-components';
 
+// Styled Components
 const StyledSectionWrapper = styled(Container)`
   margin-bottom: 8rem;
 `;
@@ -30,11 +32,49 @@ const StyledTextCol = styled(Col)`
   }
 `;
 
-const CardContainer = styled(Col)`
+const CardsRow = styled(motion.div)<{$breakpoint: string}>`
+  background: linear-gradient(${({ theme }) => theme.colors.light2}, ${({ theme }) => theme.colors.light} );
+  padding-top: 3rem;
+  border-radius: ${({ theme }) => theme.border.radius.base};
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 64px;
+`;
+
+const CardContainer = styled(motion.div)`
   display: flex;
   align-items: center;
   justify-content: center;
 `;
+
+// Motion properties for animation
+const cardVariants: Variants = {
+  offscreen: {
+    y: -70,
+    opacity: 0,
+  },
+  onscreen: {
+    y: 0,
+    opacity: 1,
+  }
+};
+
+const containerVariants: Variants = {
+  offscreen: { opacity: 1 },
+  onscreen: {
+    transition: {
+      staggerChildren: 0.5,
+      type: 'spring', // Tipo de transición
+      stiffness: 100, // Rigidez del resorte
+      damping: 20, // Amortiguación
+      delay: 0.2, // Retraso inicial
+    }
+  }
+};
+
+
 
 export const SupportSection: React.FC = () => {
   const data = useStaticQuery(graphql`
@@ -75,12 +115,7 @@ export const SupportSection: React.FC = () => {
     }
   `);
 
-  const CardsRow = styled(Row)`
-    background: linear-gradient(${({ theme }) => theme.colors.light2}, ${({ theme }) => theme.colors.light} );
-    padding-top: 3rem;
-    border-radius: ${({ theme }) => theme.border.radius.base};
-
-  `
+  const breakpoint = useScreenClass();
 
   const userLanguage = useUserLanguage();
 
@@ -98,14 +133,23 @@ export const SupportSection: React.FC = () => {
           </div>
         </StyledTextCol>
       </Row>
-      <CardsRow>
+      
+      <CardsRow
+        initial="offscreen"
+        whileInView="onscreen"
+        viewport={{ once: true, amount: 0.2 }}
+        variants={containerVariants}
+        $breakpoint={breakpoint}
+      >
         {
           cards.map((card) => {
             const gatsbyImage = images.find((image: any) => image.name === card.image)
             return (
-              <CardContainer xs={4}>
+              <CardContainer
+                key={gatsbyImage.id}
+                variants={cardVariants}
+              >
                 <MiniCard
-                  key={gatsbyImage.id}
                   title={card.title}
                   description={card.description}
                   imageSrc={gatsbyImage}

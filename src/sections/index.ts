@@ -9,4 +9,5 @@ export * from './BottomAnimatedCaruosel';
 export * from './FaqsSection';
 export * from './LegalDocumentSection';
 export * from './SupportSection';
+export * from './ExperienceSection';
  

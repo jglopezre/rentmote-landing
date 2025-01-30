@@ -9,12 +9,18 @@ export const GlobalStyles = createGlobalStyle`
     font-size: ${({ theme }) => theme.typography.fontSize.base};
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1 {
     font-family: Lexend, Arial, sans-serif;
-    font-weight: ${({ theme }) => theme.typography.fontWeight.bold};;
+    font-weight: ${({ theme }) => theme.typography.fontWeight.regular};
+    font-size: 3.5rem;
   }
 
-  p, span {
+  h2, h3, h4, h5, h6 {
+    font-family: Lexend, Arial, sans-serif;
+    font-weight: ${({ theme }) => theme.typography.fontWeight.bold};
+  }
+
+  p, span { 
     font-family: Lexend, Arial, sans-serif;
   }
 `;
