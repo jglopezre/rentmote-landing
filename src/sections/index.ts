@@ -10,4 +10,8 @@ export * from './FaqsSection';
 export * from './LegalDocumentSection';
 export * from './SupportSection';
 export * from './ExperienceSection';
+export * from './InfoCardsSection';
+export * from './CallToActionSection1';
+export * from './CallToActionSection2';
+export * from './SimpleTestimonialSection';
  

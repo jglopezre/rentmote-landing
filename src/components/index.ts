@@ -9,3 +9,6 @@ export * from './CountdownTimer';
 export * from './AnimatedAutoCarousel';
 export * from './FaqBox';
 export * from './MiniCard';
+export * from './MiniTextCard';
+export * from './BigTextWithButton';
+export * from './SimpleTextWithPicture';

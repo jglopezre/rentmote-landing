@@ -2,7 +2,6 @@ import React from 'react';
 import { GatsbyImage, getImage, ImageDataLike } from 'gatsby-plugin-image';
 import { Col, Row } from 'react-grid-system';
 import styled from 'styled-components';
-import { theme } from '@/styles';
 
 type CharacteristicCardProps = {
   description: string,
@@ -82,7 +81,6 @@ export const CharacteristicCard: React.FC<CharacteristicCardProps> = (props) => 
             <RotatedBar />
           )) 
         }
-        
       </BarsContainer>
       <StyledTextContainer>
         <StyledParagraph>{props.description ?? ''}</StyledParagraph>

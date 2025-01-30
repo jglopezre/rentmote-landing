@@ -115,6 +115,39 @@
           "image": "rentmote-billing-support"
         }
       ]
+    },
+    "experienceSection": {
+      "title": "El software todo en uno cuyo objetivo es tu crecimiento.",
+      "description": "Nuestro software de vanguardia y equipo de clase mundial están aquí para ayudar a que tu negocio sea el más rentable, organizado y exitoso que jamás haya sido."
+    },
+    "infoCardSection": [
+      {
+        "title": "Lorem ipsum dolor sit amet",
+        "description": "Cras aptent volutpat consequat tellus iaculis orci.",
+        "pillText": "Lorem ipsum"
+      },
+      {
+        "title": "Ut enim ad minim veniam",
+        "description": "Sem posuere mollis dignissim nisi elementum commodo vitae class.",
+        "pillText": "Cras aptent"
+      },
+      {
+        "title": "sed do eiusmod tempor",
+        "description": "Porttitor phasellus semper finibus nam ridiculus pulvinar.",
+        "pillText": "Tellus iaculis"
+      }
+    ],
+    "callToActionSection1": {
+      "text": "Lorem ipsum odor amet, consectetuer adipiscing elit. Maecenas etiam pulvinar curae viverra ullamcorper accumsan.",
+      "buttonText": "odor amet"
+    },
+    "callToActionSection2": {
+      "text": "Quam ridiculus id auctor elementum hendrerit. Praesent urna cras accumsan ultricies mauris nullam.",
+      "buttonText": "odor amet"
+    },
+    "simpleTestimonialSection": {
+      "text": "Mauris consequat lobortis sollicitudin, fringilla nisi velit primis euismod. Potenti varius suscipit tellus aptent facilisis. Mattis consequat fames eu faucibus aliquam fringilla enim iaculis. Pretium litora consequat; auctor platea mus cursus risus augue. Curae mus cursus scelerisque massa feugiat a.",
+      "image": "rentmote-people-talking-simple-testimonial"
     }
   },
   "en": {
@@ -233,6 +266,39 @@
           "image": "rentmote-billing-support"
         }
       ]
+    },
+    "experienceSection": {
+      "title": "The all-in-one software whose goal is your growth.",
+      "description": "Our cutting-edge software and world-class team are here to help your business become the most profitable, organized, and successful it is ever been."
+    },
+    "infoCardSection": [
+      {
+        "title": "Lorem ipsum dolor sit amet",
+        "description": "Cras aptent volutpat consequat tellus iaculis orci.",
+        "pillText": "Lorem ipsum"
+      },
+      {
+        "title": "Ut enim ad minim veniam",
+        "description": "Sem posuere mollis dignissim nisi elementum commodo vitae class.",
+        "pillText": "Cras aptent"
+      },
+      {
+        "title": "sed do eiusmod tempor",
+        "description": "Porttitor phasellus semper finibus nam ridiculus pulvinar.",
+        "pillText": "Tellus iaculis"
+      }
+    ],
+    "callToActionSection1": {
+      "text": "Porttitor phasellus semper finibus nam ridiculus pulvinar. Iaculis condimentum viverra",
+      "buttonText": "habitant enim"
+    },
+    "callToActionSection2": {
+      "text": "Inceptos euismod eros varius ex fames felis vulputate parturient. Vestibulum malesuada volutpat",
+      "buttonText": "habitant enim"
+    },
+    "simpleTestimonialSection": {
+      "text": "Ligula sem commodo libero montes praesent curabitur. Amet eros posuere est tellus at pretium condimentum! Arcu dui curabitur pulvinar; tincidunt at a. Sed convallis dapibus eu posuere vulputate eros fames a malesuada. Imperdiet quis mus tincidunt nec felis, metus venenatis phasellus. Vehicula arcu nascetur amet posuere ad leo; vestibulum rhoncus commodo.",
+      "image": "rentmote-people-talking-simple-testimonial"
     }
   }
 }

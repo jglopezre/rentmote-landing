@@ -1,4 +1,6 @@
 import { AnimatedPicturePresenter } from '@/components/AnimatedPicturePresenter';
+import { useUserLanguage } from '@/customHooks';
+import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
 import { Col, Container, Row, useScreenClass } from 'react-grid-system';
 import styled from 'styled-components';
@@ -44,15 +46,40 @@ const RotatedBar = styled.div`
 `;
 
 export const ExperienceSection: React.FC = () => {
+  const data = useStaticQuery(graphql`
+    query ExperienceSection {
+      allJsonJson {
+        nodes {
+          en {
+            experienceSection {
+              description
+              title
+            }
+          }
+          es {
+            experienceSection {
+              description
+              title
+            }
+          }
+        }
+      }
+    }  
+  `);
+
   const breakpoint = useScreenClass();
-  
+
+  const userLanguage = useUserLanguage();
+
+  const texts = userLanguage === 'es' ? data.allJsonJson.nodes[0].es.experienceSection : data.allJsonJson.nodes[0].en.experienceSection;
+
   return (
     <StyledSectionWrapper component="section">
       <Row>
         <ContentTextContainer xs={12} lg={6} $breakpoint={breakpoint}>
           <div>
-            <h1>The all-in-one software whose goal is your growth.</h1>
-            <p>Our cutting-edge software and world-class team are here to help your business become the most profitable, organized, and successful it is ever been.</p>
+            <h1>{texts.title}</h1>
+            <p>{texts.description}</p>
           </div>
         </ContentTextContainer>
         <AnimatedImageContainer xs={12} lg={6}>
