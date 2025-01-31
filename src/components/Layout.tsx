@@ -1,11 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
+import { motion } from 'framer-motion'
 import { TopBar } from '@/sections/TopBar';
 import { Footer } from '@/sections/Footer';
 import { ReactSimpleComponentProps } from '@/custom-types';
 import { useScreenClass } from 'react-grid-system';
 
-const StyledContainer = styled.div`
+const StyledContainer = styled(motion.div)`
   width: 100%;
   display: grid;
   grid-template-rows: auto 1fr;
@@ -35,10 +36,14 @@ const StyledFooterArea = styled.div`
   grid-area: footer-area;
 `
 
-const Layout: React.FC<ReactSimpleComponentProps> = ({ children }) => {
+export const Layout: React.FC<ReactSimpleComponentProps> = ({ children }) => {
   const breakpoint = useScreenClass();
   return (
-    <StyledContainer>
+    <StyledContainer
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{duration: 0.5}}
+    >
       <StyledHeaderBar $breakpoint={breakpoint}>
         <TopBar />
       </StyledHeaderBar>
@@ -49,5 +54,3 @@ const Layout: React.FC<ReactSimpleComponentProps> = ({ children }) => {
     </StyledContainer>
   );
 }
-
-export default Layout;

@@ -12,3 +12,5 @@ export * from './MiniCard';
 export * from './MiniTextCard';
 export * from './BigTextWithButton';
 export * from './SimpleTextWithPicture';
+export * from './Seo';
+export * from './ScrollingAnimatedImageConvergence';

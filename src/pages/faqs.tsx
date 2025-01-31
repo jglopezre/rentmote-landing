@@ -1,15 +1,14 @@
 import React from 'react';
 import { HeadFC, PageProps } from 'gatsby';
-import { Seo } from '@/components/Seo';
-import Layout from '@/components/Layout';
+import { Seo } from '@/components';
 import { FaqsSection } from '@/sections';
 
 const FaqsPage: React.FC<PageProps> = () => {
 
   return (
-    <Layout>
+    <>
       <FaqsSection />
-    </Layout>
+    </>
   )
 }
 

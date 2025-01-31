@@ -1,7 +1,6 @@
 import React from 'react';
 import { HeadFC, PageProps } from 'gatsby';
-import { Seo } from '@/components/Seo';
-import Layout from '@/components/Layout';
+import { Seo } from '@/components';
 import {
   ExperienceSection,
   InfoCardsSection,
@@ -13,13 +12,13 @@ import {
 const HowItWorksPage: React.FC<PageProps> = () => {
 
   return (
-    <Layout>
+    <>
       <ExperienceSection />
       <InfoCardsSection />
       <CallToActionSection1 />
       <SimpleTestimonialSection />
       <CallToActionSection2 />
-    </Layout>
+    </>
   )
 }
 

@@ -42,7 +42,7 @@ export const SimpleTestimonialSection: React.FC = () => {
           name
           childImageSharp {
             id
-            gatsbyImageData(height: 480 ,placeholder: BLURRED, transformOptions: {fit: COVER})
+            gatsbyImageData(height: 550 ,placeholder: BLURRED, transformOptions: {fit: COVER})
           }
         }
       }
