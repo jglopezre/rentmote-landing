@@ -1,8 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion'
-import { TopBar } from '@/sections/TopBar';
-import { Footer } from '@/sections/Footer';
+import { FooterSection, TopBarSection } from '@/sections';
 import { ReactSimpleComponentProps } from '@/custom-types';
 import { useScreenClass } from 'react-grid-system';
 
@@ -32,10 +31,6 @@ const StyledBodyArea = styled.div<{$breakpoint: string}>`
   padding-top: ${(props) => props.$breakpoint == 'xs' ? '0' : '78px'};
 `;
 
-const StyledFooterArea = styled.div`
-  grid-area: footer-area;
-`
-
 export const Layout: React.FC<ReactSimpleComponentProps> = ({ children }) => {
   const breakpoint = useScreenClass();
   return (
@@ -45,11 +40,11 @@ export const Layout: React.FC<ReactSimpleComponentProps> = ({ children }) => {
       transition={{duration: 0.5}}
     >
       <StyledHeaderBar $breakpoint={breakpoint}>
-        <TopBar />
+        <TopBarSection />
       </StyledHeaderBar>
       <StyledBodyArea $breakpoint={breakpoint}>
         { children }
-        <Footer />
+        <FooterSection />
       </StyledBodyArea>
     </StyledContainer>
   );

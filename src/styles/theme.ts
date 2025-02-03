@@ -12,6 +12,8 @@ export const theme = {
     radius: {
       base: '10px',
       sm: '5px',
+      md: '15px',
+      lg: '20px',
     },
     width: {
       sm: '1px',
@@ -36,8 +38,8 @@ export const theme = {
     fontSize: {
       base: '18px',
       s1: '3rem',
-      s2: '2.3rem',
-      s3: '1.2rem',
+      s2: '2.5rem',
+      s3: '2.0rem',
       s4: '1.6rem',
       s5: '1.2rem',
       s6: '1rem',

@@ -2,7 +2,7 @@ import { QuantityMiniCard } from '@/components';
 import { useUserLanguage } from '@/customHooks';
 import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
-import { Col, Container, Row } from 'react-grid-system';
+import { Col, Container, Row, useScreenClass } from 'react-grid-system';
 import styled from 'styled-components';
 
 const StyledSectionWrapper = styled(Container)`
@@ -46,10 +46,9 @@ export const QuantityInformationSectiton: React.FC = () => {
   const userLanguage = useUserLanguage();
 
   const texts: any[] = userLanguage === 'es' ? data.allJsonJson.nodes[0].es.quantityInformationSection : data.allJsonJson.nodes[0].en.quantityInformationSection
-  console.log(texts)
 
   return (
-    <StyledSectionWrapper>
+    <StyledSectionWrapper component="section">
       <StyledCardRow>
         {
           texts.map((text, index) => (
@@ -61,7 +60,6 @@ export const QuantityInformationSectiton: React.FC = () => {
                 unity={text.unity}
               />
             </Col>
-
           ))
         }
       </StyledCardRow>

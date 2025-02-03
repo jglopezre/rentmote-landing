@@ -21,7 +21,7 @@ const StyledWrapper = styled.div<{ $breakpoint: string }>`
     padding-right: ${({ $breakpoint }) => $breakpoint === 'xs' ? '0' : '3rem'};
   }
   & button {
-    background-color: ${({ theme }) => theme.colors.primary1};
+    background-color: ${({ theme }) => theme.colors.primary2};
     padding: 0.9rem 4rem;
     color: ${({ theme }) => theme.colors.light};
     border-radius: ${({ theme }) => theme.border.radius.sm};
@@ -29,7 +29,7 @@ const StyledWrapper = styled.div<{ $breakpoint: string }>`
     font-weight: ${({ theme }) => theme.typography.fontWeight.bold};
     cursor: pointer;
     &:hover {
-      background-color: ${({ theme }) => theme.colors.primary2};
+      background-color: ${({ theme }) => theme.colors.secondary1};
     }
   }
 `;

@@ -1,8 +1,7 @@
 export * from './characteristicsSection';
 export * from './OperationDescriptionSection';
-export * from './Footer';
+export * from './FooterSection';
 export * from './applicationDescriptionSection';
-export * from './TopBar';
 export * from './HeroSection';
 export * from './LogotipoAnimatedCarouselSection';
 export * from './BottomAnimatedCaruosel';
@@ -13,7 +12,10 @@ export * from './ExperienceSection';
 export * from './InfoCardsSection';
 export * from './CallToActionSection1';
 export * from './CallToActionSection2';
+export * from './CallToActionSection3';
 export * from './SimpleTestimonialSection';
 export * from './ConvergenceAnimationSection';
 export * from './QuantityInformationSection';
+export * from './BigInfoSection';
+export * from './TopBarSection';
  

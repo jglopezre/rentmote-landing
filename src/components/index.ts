@@ -15,3 +15,4 @@ export * from './SimpleTextWithPicture';
 export * from './Seo';
 export * from './ScrollingAnimatedImageConvergence';
 export * from './QuantityMinicard';
+export * from './VerticalInfoBigCard';

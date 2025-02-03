@@ -3,13 +3,15 @@ import type { HeadFC, PageProps } from 'gatsby';
 import { Seo } from '@/components';
 import {
   ApplicationDescriptionSection,
+  BigInfoSection,
   BottomAnimatedCarousel,
   CharacteristicsSection,
   ConvergenceAnimationSection,
   HeroSection,
   LogotipoAnimatedCarouselSection,
   OperationDescriptionSection,
-  QuantityInformationSectiton
+  QuantityInformationSectiton,
+  CallToActionSection3,
 } from '@/sections';
 
 const IndexPage: React.FC<PageProps> = () => {
@@ -22,7 +24,9 @@ const IndexPage: React.FC<PageProps> = () => {
       <OperationDescriptionSection />
       <CharacteristicsSection />
       <QuantityInformationSectiton />
+      <BigInfoSection />
       <ApplicationDescriptionSection />
+      <CallToActionSection3 />
       <BottomAnimatedCarousel />
     </>
   )

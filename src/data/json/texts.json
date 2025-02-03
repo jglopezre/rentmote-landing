@@ -145,6 +145,10 @@
       "text": "Quam ridiculus id auctor elementum hendrerit. Praesent urna cras accumsan ultricies mauris nullam.",
       "buttonText": "odor amet"
     },
+    "callToActionSection3": {
+      "text": "Duis scelerisque id habitasse, habitasse mi gravida. Sapien a pellentesque pharetra enim.",
+      "buttonText": "egestas maximus"
+    },
     "simpleTestimonialSection": {
       "text": "Mauris consequat lobortis sollicitudin, fringilla nisi velit primis euismod. Potenti varius suscipit tellus aptent facilisis. Mattis consequat fames eu faucibus aliquam fringilla enim iaculis. Pretium litora consequat; auctor platea mus cursus risus augue. Curae mus cursus scelerisque massa feugiat a.",
       "image": "rentmote-people-talking-simple-testimonial"
@@ -168,7 +172,48 @@
         "quantity": 500,
         "unity": ""
       }
-    ]
+    ],
+    "bigInfoSection": {
+      "title": "Duis scelerisque id",
+      "description": "habitasse, habitasse mi gravida. Sapien a pellentesque pharetra enim, lectus morbi varius fringilla magna! Quisque facilisi rutrum enim commodo natoque parturient sed",
+      "cards": [
+        {
+          "title": "Libero pharetra",
+          "description": "phasellus est tristique fusce mus congue pharetra. Iaculis vulputate tempus vitae egestas maximus.",
+          "image": "tenant-information-section",
+          "url": {
+            "to": "/howItWorks",
+            "text": "Cómo funciona"
+          }
+        },
+        {
+          "title": "Amet curae aptent leo",
+          "description": "Nunc mauris sociosqu conubia quam in ullamcorper scelerisque",
+          "image": "owner-information-section",
+          "url": {
+            "to": "/faqs",
+            "text": "Preguntas Frecuentes"
+          }
+        }
+      ]
+    },
+    "footerSection": {
+      "copyright": "Desarrollado por Rentmote. Todos los derechos reservados.",
+      "infoLinks": [
+        {
+          "text": "Terminos de Servicio",
+          "url": "/termsOfService"
+        },
+        {
+          "text": "Política de Privacidad",
+          "url": "/privacyPolicy"
+        },
+        {
+          "text": "Preguntas Frecuentes",
+          "url": "/faqs"
+        }
+      ]
+    }
   },
   "en": {
     "heroContent": {
@@ -316,6 +361,10 @@
       "text": "Inceptos euismod eros varius ex fames felis vulputate parturient. Vestibulum malesuada volutpat",
       "buttonText": "habitant enim"
     },
+    "callToActionSection3": {
+      "text": "Duis scelerisque id habitasse, habitasse mi gravida.",
+      "buttonText": "egestas maximus"
+    },
     "simpleTestimonialSection": {
       "text": "Ligula sem commodo libero montes praesent curabitur. Amet eros posuere est tellus at pretium condimentum! Arcu dui curabitur pulvinar; tincidunt at a. Sed convallis dapibus eu posuere vulputate eros fames a malesuada. Imperdiet quis mus tincidunt nec felis, metus venenatis phasellus. Vehicula arcu nascetur amet posuere ad leo; vestibulum rhoncus commodo.",
       "image": "rentmote-people-talking-simple-testimonial"
@@ -339,6 +388,48 @@
         "quantity": 500,
         "unity": ""
       }
-    ]
+    ],
+    "bigInfoSection": {
+      "title": "Duis scelerisque id",
+      "description": "habitasse, habitasse mi gravida. Sapien a pellentesque pharetra enim, lectus morbi varius fringilla magna! Quisque facilisi rutrum enim commodo natoque parturient sed",
+      "cards": [
+        {
+          "title": "Libero pharetra",
+          "description": "phasellus est tristique fusce mus congue pharetra. Iaculis vulputate tempus vitae egestas maximus.",
+          "image": "tenant-information-section",
+          "url": {
+            "to": "/howItWorks",
+            "text": "How It Works"
+          }
+        },
+        {
+          "title": "Amet curae aptent leo",
+          "description": "Nunc mauris sociosqu conubia quam in ullamcorper scelerisque",
+          "image": "owner-information-section",
+          "url": {
+            "to": "/faqs",
+            "text": "FAQs"
+          }
+          
+        }
+      ]
+    },
+    "footerSection": {
+      "copyright": "Developed by Rentmote. All rights reserved.",
+      "infoLinks": [
+        {
+          "text": "Terms of Service",
+          "url": "/termsOfService"
+        },
+        {
+          "text": "Privacy Policy",
+          "url": "/privacyPolicy"
+        },
+        {
+          "text": "Frequently Asked Questions",
+          "url": "/faqs"
+        }
+      ]
+    }
   }
 }
