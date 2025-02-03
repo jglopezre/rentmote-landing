@@ -41,7 +41,10 @@ export const ScrollingAnimatedImageConvergence: React.FC<ScrollingAnimatedImageC
     const image = getImage(imageSrc);
     if (!image) return null;
 
-    const initialX = getRandomPosition((1 * window.innerWidth / 1000), (3 * window.innerWidth / 1000));
+    const initialX = getRandomPosition(
+      typeof window !== 'undefined' ? (1 * window.innerWidth / 1000) : 1,
+      typeof window !== 'undefined' ? (3 * window.innerWidth / 1000) : 2,
+    );
     const initialY = getRandomPosition(1, 3);
 
     const x = useTransform(scrollYProgress, [0, 1], [`${initialX}`, '0px']);

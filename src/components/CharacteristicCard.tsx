@@ -1,14 +1,15 @@
 import React from 'react';
-import { GatsbyImage, getImage, ImageDataLike } from 'gatsby-plugin-image';
-import { Col, Row } from 'react-grid-system';
+import { GatsbyImage, getImage, ImageDataLike, StaticImage } from 'gatsby-plugin-image';
+import { motion } from 'framer-motion';
 import styled from 'styled-components';
+import { theme } from '@/styles';
 
 type CharacteristicCardProps = {
   description: string,
-  imageSrc: ImageDataLike
+  imageSrc?: ImageDataLike
 }
 
-const Wrapper = styled(Row)`
+const Wrapper = styled.div`
   position: relative;
   background-color: ${({ theme }) => theme.colors.primary1};
   border-radius: ${({ theme }) => theme.border.radius.base};
@@ -18,7 +19,7 @@ const StyledParagraph = styled.p`
   line-height: 1.7rem;
 `;
 
-const StyledTextContainer = styled.div`
+const StyledTextContainer = styled(motion.div)`
   position: absolute;
   padding: 1rem 2rem;
   bottom: 0;
@@ -33,11 +34,20 @@ const StyledTextContainer = styled.div`
   border-radius: ${({ theme }) => theme.border.radius.base};
   z-index: 3;
 `
-const ImageContainer = styled(Col)`
+const ImageContainer = styled(motion.div)`
   display: flex;
   justify-content: end;
   align-items: center;
   z-index: 2;
+  min-height: 480px;
+`;
+
+const LogoContainer = styled(motion.div)`
+  position: absolute;
+  top: 50%;
+  right: 25%;
+  transform: translateY(-50%);
+  
 `;
 
 const BarsContainer = styled.div`
@@ -59,20 +69,26 @@ const RotatedBar = styled.div`
   transform: rotate(25deg);
 `;
 
-export const CharacteristicCard: React.FC<CharacteristicCardProps> = (props) => {
-  const image = getImage(props.imageSrc);
+export const CharacteristicCard: React.FC<CharacteristicCardProps> = ({ imageSrc, description }) => {
+  const image = imageSrc && getImage(imageSrc);
+
   return (
     <Wrapper>
-      <ImageContainer xs={12}>
+      <LogoContainer>
+        <StaticImage src="../images/rentmote-logotipo-white.png" alt="" width={120}/>
+      </LogoContainer>
+      <ImageContainer>
         {
-          image
-            ? (
-                <GatsbyImage
-                  image={image}
-                  alt=''
-                />
-              )
-            : null
+          image && (
+            <GatsbyImage
+              image={image}
+              alt=''
+              style={{
+                borderTopRightRadius: theme.border.radius.base,
+                borderBottomRightRadius: theme.border.radius.base, 
+              }}
+            />
+          )
         }
       </ImageContainer>
       <BarsContainer>
@@ -82,9 +98,13 @@ export const CharacteristicCard: React.FC<CharacteristicCardProps> = (props) => 
           )) 
         }
       </BarsContainer>
-      <StyledTextContainer>
-        <StyledParagraph>{props.description ?? ''}</StyledParagraph>
-      </StyledTextContainer>
+        {
+          description && (
+            <StyledTextContainer>
+              <StyledParagraph>{description}</StyledParagraph>
+            </StyledTextContainer>
+          )
+        }
     </Wrapper>
   );
 }

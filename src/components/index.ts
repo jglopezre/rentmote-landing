@@ -14,3 +14,4 @@ export * from './BigTextWithButton';
 export * from './SimpleTextWithPicture';
 export * from './Seo';
 export * from './ScrollingAnimatedImageConvergence';
+export * from './QuantityMinicard';

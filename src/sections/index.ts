@@ -15,4 +15,5 @@ export * from './CallToActionSection1';
 export * from './CallToActionSection2';
 export * from './SimpleTestimonialSection';
 export * from './ConvergenceAnimationSection';
+export * from './QuantityInformationSection';
  

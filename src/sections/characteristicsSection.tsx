@@ -105,7 +105,7 @@ export const CharacteristicsSection: React.FC = () => {
           name
           childrenImageSharp {
             id
-            gatsbyImageData(width: 340, layout: CONSTRAINED, placeholder: BLURRED)
+            gatsbyImageData(height: 480, layout: CONSTRAINED, placeholder: BLURRED)
           }
         }
       }
@@ -160,16 +160,10 @@ export const CharacteristicsSection: React.FC = () => {
           }
         </StyledSelectorsContainer >
         <Col xs={12} md={6}>
-          {
-            selectedCard
-            ? (
-                <CharacteristicCard
-                  description={selectedCard.description}
-                  imageSrc={selectedCard.image}
-                />
-            )
-            : null
-          }
+          <CharacteristicCard
+            description={selectedCard?.description}
+            imageSrc={selectedCard?.image}
+          />
         </Col>
       </InnerContainer>
     </StyledSectionWrapper>

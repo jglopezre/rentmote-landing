@@ -39,7 +39,7 @@ export const theme = {
       s2: '2.3rem',
       s3: '1.2rem',
       s4: '1.6rem',
-      a5: '1.2rem',
+      s5: '1.2rem',
       s6: '1rem',
       s7: '0.7rem',
       title: '3.5rem',

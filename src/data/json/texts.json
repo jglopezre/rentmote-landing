@@ -148,7 +148,27 @@
     "simpleTestimonialSection": {
       "text": "Mauris consequat lobortis sollicitudin, fringilla nisi velit primis euismod. Potenti varius suscipit tellus aptent facilisis. Mattis consequat fames eu faucibus aliquam fringilla enim iaculis. Pretium litora consequat; auctor platea mus cursus risus augue. Curae mus cursus scelerisque massa feugiat a.",
       "image": "rentmote-people-talking-simple-testimonial"
-    }
+    },
+    "quantityInformationSection": [
+      {
+        "title": "Massa suscipit",
+        "description": "Amet pharetra at egestas vel platea etiam. Egestas leo litora quisque consectetur blandit vel venenatis",
+        "quantity": 33.3,
+        "unity": "k"
+      },
+      {
+        "title": "lorem senectus",
+        "description": "Habitant mus sodales nec imperdiet ac faucibus. Fringilla penatibus phasellus iaculis eu curabitur.",
+        "quantity": 4.2,
+        "unity": "k"
+      },
+      {
+        "title": "metus viverra",
+        "description": "Feugiat mauris dapibus laoreet congue; odio semper. Metus venenatis elit enim hac mattis neque",
+        "quantity": 500,
+        "unity": ""
+      }
+    ]
   },
   "en": {
     "heroContent": {
@@ -299,6 +319,26 @@
     "simpleTestimonialSection": {
       "text": "Ligula sem commodo libero montes praesent curabitur. Amet eros posuere est tellus at pretium condimentum! Arcu dui curabitur pulvinar; tincidunt at a. Sed convallis dapibus eu posuere vulputate eros fames a malesuada. Imperdiet quis mus tincidunt nec felis, metus venenatis phasellus. Vehicula arcu nascetur amet posuere ad leo; vestibulum rhoncus commodo.",
       "image": "rentmote-people-talking-simple-testimonial"
-    }
+    },
+    "quantityInformationSection": [
+      {
+        "title": "nullam faucibus",
+        "description": "Rhoncus inceptos scelerisque dictumst senectus himenaeos posuere; cubilia iaculis",
+        "quantity": 33.3,
+        "unity": "k"
+      },
+      {
+        "title": "nullam faucibus",
+        "description": "Vel felis convallis eu diam convallis faucibus. Diam nec vel mi facilisi nec imperdiet venenatis praesent",
+        "quantity": 4.2,
+        "unity": "k"
+      },
+      {
+        "title": "nullam faucibus",
+        "description": "Feugiat mauris dapibus laoreet congue; odio semper. Metus venenatis elit enim hac mattis neque",
+        "quantity": 500,
+        "unity": ""
+      }
+    ]
   }
 }
