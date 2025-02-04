@@ -18,4 +18,4 @@ export * from './ConvergenceAnimationSection';
 export * from './QuantityInformationSection';
 export * from './BigInfoSection';
 export * from './TopBarSection';
- 
+export * from './ScrollableStickyInfoSection';

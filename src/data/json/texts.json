@@ -197,6 +197,48 @@
         }
       ]
     },
+    "scrollableStickyInfoSection": [
+      {
+        "title": "Sunset Dreams",
+        "description": "Vivid colors paint the evening sky as the sun dips below the horizon."
+      },
+      {
+        "title": "Ocean Waves",
+        "description": "Gentle waves crash against the shore with a soothing rhythm."
+      },
+      {
+        "title": "Mountain Peaks",
+        "description": "Snowy summits under a clear blue sky offer breathtaking views."
+      },
+      {
+        "title": "Forest Whispers",
+        "description": "Leaves rustle softly in the cool breeze, creating a serene atmosphere."
+      },
+      {
+        "title": "Golden Fields",
+        "description": "Endless fields shimmer under the sun, swaying gently in the wind."
+      },
+      {
+        "title": "City Lights",
+        "description": "Bright lights illuminate the bustling streets of the urban jungle."
+      },
+      {
+        "title": "Desert Sands",
+        "description": "Golden dunes stretch endlessly, shaped by the desert winds."
+      },
+      {
+        "title": "Rainy Days",
+        "description": "Soft raindrops patter on the window glass, calming the soul."
+      },
+      {
+        "title": "Morning Dew",
+        "description": "Tiny droplets glisten on fresh green leaves in the early light."
+      },
+      {
+        "title": "Night Stars",
+        "description": "Countless stars twinkle in the dark sky, inspiring wonder and awe."
+      }
+    ],
     "footerSection": {
       "copyright": "Desarrollado por Rentmote. Todos los derechos reservados.",
       "infoLinks": [
@@ -414,6 +456,48 @@
         }
       ]
     },
+    "scrollableStickyInfoSection": [
+      {
+        "title": "Sunset Dreams",
+        "description": "Vivid colors paint the evening sky as the sun dips below the horizon."
+      },
+      {
+        "title": "Ocean Waves",
+        "description": "Gentle waves crash against the shore with a soothing rhythm."
+      },
+      {
+        "title": "Mountain Peaks",
+        "description": "Snowy summits under a clear blue sky offer breathtaking views."
+      },
+      {
+        "title": "Forest Whispers",
+        "description": "Leaves rustle softly in the cool breeze, creating a serene atmosphere."
+      },
+      {
+        "title": "Golden Fields",
+        "description": "Endless fields shimmer under the sun, swaying gently in the wind."
+      },
+      {
+        "title": "City Lights",
+        "description": "Bright lights illuminate the bustling streets of the urban jungle."
+      },
+      {
+        "title": "Desert Sands",
+        "description": "Golden dunes stretch endlessly, shaped by the desert winds."
+      },
+      {
+        "title": "Rainy Days",
+        "description": "Soft raindrops patter on the window glass, calming the soul."
+      },
+      {
+        "title": "Morning Dew",
+        "description": "Tiny droplets glisten on fresh green leaves in the early light."
+      },
+      {
+        "title": "Night Stars",
+        "description": "Countless stars twinkle in the dark sky, inspiring wonder and awe."
+      }
+    ],
     "footerSection": {
       "copyright": "Developed by Rentmote. All rights reserved.",
       "infoLinks": [
