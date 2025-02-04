@@ -1,6 +1,6 @@
 import React from 'react';
 import { GatsbyImage, getImage, ImageDataLike, StaticImage } from 'gatsby-plugin-image';
-import { motion } from 'framer-motion';
+import { motion, Variants } from 'motion/react';
 import styled from 'styled-components';
 import { theme } from '@/styles';
 
@@ -9,10 +9,12 @@ type CharacteristicCardProps = {
   imageSrc?: ImageDataLike
 }
 
+// Styles
 const Wrapper = styled.div`
   position: relative;
   background-color: ${({ theme }) => theme.colors.primary1};
   border-radius: ${({ theme }) => theme.border.radius.base};
+  overflow-x: hidden;
 `;
 
 const StyledParagraph = styled.p`
@@ -25,9 +27,6 @@ const StyledTextContainer = styled(motion.div)`
   bottom: 0;
   right: 40%;
   color: ${({ theme }) => theme.colors.primary1};
-  //border-color: ${({ theme }) => theme.colors.primary1};
-  //border-width: 2px;
-  //border-style: solid;
   background-color: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
@@ -42,7 +41,7 @@ const ImageContainer = styled(motion.div)`
   min-height: 480px;
 `;
 
-const LogoContainer = styled(motion.div)`
+const LogoContainer = styled.div`
   position: absolute;
   top: 50%;
   right: 25%;
@@ -69,6 +68,46 @@ const RotatedBar = styled.div`
   transform: rotate(25deg);
 `;
 
+// Animation
+
+const containerVariants: Variants = {
+  offscreen: { opacity: 0 },
+  onscreen: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.5,
+    }
+  }
+}
+
+const imageVariants: Variants = {
+  offscreen: {
+    opacity: 0,
+    x: 350,
+  },
+  onscreen: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      duration: 0.6,
+    }
+  }
+}
+
+const textBoxVariants: Variants = {
+  offscreen: {
+    opacity: 0,
+    x: -150,
+  },
+  onscreen: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      duration: 0.6,
+    }
+  }
+}
+
 export const CharacteristicCard: React.FC<CharacteristicCardProps> = ({ imageSrc, description }) => {
   const image = imageSrc && getImage(imageSrc);
 
@@ -77,20 +116,37 @@ export const CharacteristicCard: React.FC<CharacteristicCardProps> = ({ imageSrc
       <LogoContainer>
         <StaticImage src="../images/rentmote-logotipo-white.png" alt="" width={120}/>
       </LogoContainer>
-      <ImageContainer>
+      <motion.div
+        variants={containerVariants}
+        initial="offscreen"
+        animate="onscreen"
+      >
+        <ImageContainer
+          variants={imageVariants}
+        >
+          {
+            image && (
+              <GatsbyImage
+                image={image}
+                alt=''
+                style={{
+                  borderTopRightRadius: theme.border.radius.base,
+                  borderBottomRightRadius: theme.border.radius.base, 
+                }}
+              />
+            )
+          }
+        </ImageContainer>
         {
-          image && (
-            <GatsbyImage
-              image={image}
-              alt=''
-              style={{
-                borderTopRightRadius: theme.border.radius.base,
-                borderBottomRightRadius: theme.border.radius.base, 
-              }}
-            />
+          description && (
+            <StyledTextContainer
+              variants={textBoxVariants}
+            >
+              <StyledParagraph>{description}</StyledParagraph>
+            </StyledTextContainer>
           )
         }
-      </ImageContainer>
+      </motion.div>
       <BarsContainer>
         {
           Array.from({ length: 4 }).map((_, index) => (
@@ -98,13 +154,6 @@ export const CharacteristicCard: React.FC<CharacteristicCardProps> = ({ imageSrc
           )) 
         }
       </BarsContainer>
-        {
-          description && (
-            <StyledTextContainer>
-              <StyledParagraph>{description}</StyledParagraph>
-            </StyledTextContainer>
-          )
-        }
     </Wrapper>
   );
 }

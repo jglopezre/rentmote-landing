@@ -161,6 +161,7 @@ export const CharacteristicsSection: React.FC = () => {
         </StyledSelectorsContainer >
         <Col xs={12} md={6}>
           <CharacteristicCard
+            key={selectedCard?.id}
             description={selectedCard?.description}
             imageSrc={selectedCard?.image}
           />

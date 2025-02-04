@@ -82,6 +82,7 @@ export const HeroSection: React.FC = () => {
             alt="rentmote-logo"
             width={300}
             placeholder="blurred"
+            backgroundColor="white"
             style={{ marginBottom: '2rem' }}
           />
         </ImageContainer>
