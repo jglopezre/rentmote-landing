@@ -9,17 +9,6 @@ const StyledSectionWrapper = styled(Container)`
   padding-top: ${({ theme }) => theme.spacing.section};
   padding-bottom: ${({ theme }) => theme.spacing.section};
   position: relative;
-  color: white;
-  &::before {
-    content: '';
-    display: block;
-    position: absolute;
-    background-color: ${({ theme }) => theme.colors.primary1};
-    top: 0;
-    left: -50%;
-    width: 200%;
-    height: 100%;
-  }
 `;
 
 export const CallToActionSection3: React.FC = () => {

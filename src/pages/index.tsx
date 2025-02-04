@@ -13,6 +13,16 @@ import {
   QuantityInformationSectiton,
   CallToActionSection3,
 } from '@/sections';
+import styled from 'styled-components';
+
+const BackgroundWrapper = styled.div`
+  background-color: ${({ theme }) => theme.colors.primary1};
+  color: ${({ theme }) => theme.colors.light};
+`;
+
+const GrayBackGroundWrapper = styled.div`
+  background-image: linear-gradient(${({ theme }) => theme.colors.light2}, ${({ theme }) => theme.colors.light});
+`;
 
 const IndexPage: React.FC<PageProps> = () => {
   
@@ -21,13 +31,17 @@ const IndexPage: React.FC<PageProps> = () => {
       <HeroSection />
       <ConvergenceAnimationSection />
       <LogotipoAnimatedCarouselSection />
-      <OperationDescriptionSection />
+      <GrayBackGroundWrapper>
+        <OperationDescriptionSection />
+      </GrayBackGroundWrapper>
       <CharacteristicsSection />
       <QuantityInformationSectiton />
-      <BigInfoSection />
-      <ApplicationDescriptionSection />
-      <CallToActionSection3 />
-      <BottomAnimatedCarousel />
+      <BackgroundWrapper>
+        <BigInfoSection />
+        <ApplicationDescriptionSection />
+        <CallToActionSection3 />
+        <BottomAnimatedCarousel />
+      </BackgroundWrapper>
     </>
   )
 }

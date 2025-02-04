@@ -8,6 +8,7 @@ import {
   CallToActionSection2,
   SimpleTestimonialSection
 } from '@/sections';
+import StickyScrollAnimation from '@/sections/StickyAnimationSection';
 
 const HowItWorksPage: React.FC<PageProps> = () => {
 
@@ -15,6 +16,7 @@ const HowItWorksPage: React.FC<PageProps> = () => {
     <>
       <ExperienceSection />
       <InfoCardsSection />
+      <StickyScrollAnimation />
       <CallToActionSection1 />
       <SimpleTestimonialSection />
       <CallToActionSection2 />

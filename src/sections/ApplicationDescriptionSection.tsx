@@ -10,20 +10,20 @@ const StyledSectionWrapper = styled(Container)<{ $breakpoint: string }>`
   padding-top: 8rem;
   padding-bottom: 5rem;
   position: relative;
-  &::before {
-    content: '';
-    display: block;
-    position: absolute;
-    width: 200%;
-    height: 100%;
-    top: 0;
-    left: -50%;
-    background-color: ${({ theme }) => theme.colors.primary1};
-  }
+  //&::before {
+  //  content: '';
+  //  display: block;
+  //  position: absolute;
+  //  width: 200%;
+  //  height: 100%;
+  //  top: 0;
+  //  left: -50%;
+  //  background-color: ${({ theme }) => theme.colors.primary1};
+  //}
 `
 
 const StyledTextCol = styled(Col)`
-  color: ${({ theme }) => theme.colors.light};
+  // color: ${({ theme }) => theme.colors.light};
   text-align: center;
   padding-bottom: 4rem;
   & div {

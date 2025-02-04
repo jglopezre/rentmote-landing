@@ -3,6 +3,7 @@ import { graphql, useStaticQuery } from 'gatsby';
 import { motion, useCycle } from 'framer-motion';
 import styled from 'styled-components';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+import { theme } from '@/styles';
 
 const PictureWrapper = styled(motion.div)`
   display: grid;
@@ -19,7 +20,7 @@ export const AnimatedPicturePresenter: React.FC = () => {
           id
           name
           childImageSharp {
-            gatsbyImageData(placeholder: TRACED_SVG, height: 480)
+            gatsbyImageData(placeholder: BLURRED, height: 480, aspectRatio: 1.4)
           }
         }
       }
@@ -52,6 +53,9 @@ export const AnimatedPicturePresenter: React.FC = () => {
       <GatsbyImage
         image={imageSrc!!}
         alt={gImage.name}
+        style={{
+          borderRadius: theme.border.radius.lg,
+        }}
       />
     </PictureWrapper>
   )

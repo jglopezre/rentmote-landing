@@ -1,25 +1,19 @@
-import { VerticalInfoBigCard } from '@/components';
-import { useUserLanguage } from '@/customHooks';
-import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
+import { graphql, useStaticQuery } from 'gatsby';
 import { Col, Container, Row } from 'react-grid-system';
 import styled from 'styled-components';
+import { motion, Variants } from 'motion/react';
+import { VerticalInfoBigCard } from '@/components';
+import { useUserLanguage } from '@/customHooks';
+import { useInView } from 'react-intersection-observer';
+
+
+// Styles
 
 const StyledContainerSection = styled(Container)`
   position: relative;
   padding-top: ${({ theme }) => theme.spacing.section};
   padding-bottom: ${({ theme }) => theme.spacing.section};
-  color: ${({ theme }) => theme.colors.light};
-  &::before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: -50%;
-    width: 200%;
-    height: 100%;
-    background-color: ${({ theme }) => theme.colors.primary1};
-  }
 `;
 
 const StyledTitle = styled(Col)`
@@ -42,10 +36,43 @@ const StyledTitle = styled(Col)`
   }
 `;
 
-const CardContainer = styled(Col)`
+const CardContainer = styled(motion.div)`
   display: grid;
   place-items: center;
 `;
+
+const CardRowContainer = styled(motion.div)`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  column-gap: 64px;
+`;
+
+// Animations
+const containerVariants: Variants = {
+  offscreen: { opacity: 0 },
+  onscreen: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.4,
+    }
+  }
+};
+
+const cardVariants: Variants = {
+  offscreen: {
+    opacity: 0,
+    y: 40,
+  },
+  onscreen: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.7,
+    }
+  }
+}
 
 export const BigInfoSection: React.FC = () => {
   const data = useStaticQuery(graphql`
@@ -96,12 +123,18 @@ export const BigInfoSection: React.FC = () => {
     }  
   `);
   const userLanguage = useUserLanguage();
+  
+  const [containerRef, isInView] = useInView({
+    threshold: 0.3,
+    triggerOnce: true,
+  })
+
 
   const content = userLanguage === 'es' ? data.allJsonJson.nodes[0].es.bigInfoSection : data.allJsonJson.nodes[0].en.bigInfoSection;
   const cards: any[] = content.cards;
   
   return (
-    <StyledContainerSection>
+    <StyledContainerSection component="section">
       <Row>
         <StyledTitle>
           <div>
@@ -110,28 +143,36 @@ export const BigInfoSection: React.FC = () => {
           </div>
         </StyledTitle>
       </Row>
-      <Row >
-        {
-          cards.map((card) => {
-            console.log(card)
-            const gatsbyImage = data.allFile.nodes.find((image: any) => image.name === card.image)
-            console.log(gatsbyImage)
-            return (
-              <CardContainer
-                key={gatsbyImage.id}
-                xs={12}
-                md={6}
-              >
-                <VerticalInfoBigCard
-                  title={card.title}
-                  description={card.description}
-                  imageSrc={gatsbyImage}
-                  url={card.url}
-                />
-              </CardContainer>
-            )
-          })  
-        }
+      <Row>
+        <Col>
+          <div ref={containerRef}>
+            <CardRowContainer
+              variants={containerVariants}
+              initial="offscreen"
+              animate={isInView ? 'onscreen' : 'offscreen'}
+            >
+              {
+                cards.map((card) => {
+                  console.log(card)
+                  const gatsbyImage = data.allFile.nodes.find((image: any) => image.name === card.image)
+                  return (
+                    <CardContainer
+                      key={gatsbyImage.id}
+                      variants={cardVariants}
+                    >
+                      <VerticalInfoBigCard
+                        title={card.title}
+                        description={card.description}
+                        imageSrc={gatsbyImage}
+                        url={card.url}
+                      />
+                    </CardContainer>
+                  )
+                })  
+              }
+            </CardRowContainer>
+          </div>
+        </Col>
       </Row>
     </StyledContainerSection>
   );

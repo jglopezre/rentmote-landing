@@ -3,30 +3,20 @@ import styled from 'styled-components';
 import { motion } from 'framer-motion'
 import { FooterSection, TopBarSection } from '@/sections';
 import { ReactSimpleComponentProps } from '@/custom-types';
-import { useScreenClass } from 'react-grid-system';
-
-const StyledContainer = styled(motion.div)`
-  width: 100%;
-  display: grid;
-  grid-template-rows: auto 1fr;
-  height: 100vh;
-  grid-template-columns: 100%;
-  grid-template-areas: 
-    "header-area"
-    "body-area";
-`;
+import { Container, useScreenClass } from 'react-grid-system';
 
 const StyledHeaderBar = styled.div<{$breakpoint: string}>`
-  grid-area: header-area;
+  background-color: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
   position: ${(props) => props.$breakpoint == 'xs' ? 'relative' : 'fixed'};
+  width: 100%;
   top: 0;
   left: 0;
-  width: 100%;
-  z-index: 100;
+  z-index: 1000;
 `
 const StyledBodyArea = styled.div<{$breakpoint: string}>`
-  grid-area: body-area;
-  overflow-y: auto;
   margin-top: auto;
   padding-top: ${(props) => props.$breakpoint == 'xs' ? '0' : '78px'};
 `;
@@ -34,7 +24,7 @@ const StyledBodyArea = styled.div<{$breakpoint: string}>`
 export const Layout: React.FC<ReactSimpleComponentProps> = ({ children }) => {
   const breakpoint = useScreenClass();
   return (
-    <StyledContainer
+    <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{duration: 0.5}}
@@ -46,6 +36,6 @@ export const Layout: React.FC<ReactSimpleComponentProps> = ({ children }) => {
         { children }
         <FooterSection />
       </StyledBodyArea>
-    </StyledContainer>
+    </motion.div>
   );
 }

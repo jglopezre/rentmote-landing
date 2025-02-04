@@ -1,7 +1,22 @@
 import React from 'react';
-import { Col, Container, Row } from 'react-grid-system';
 import { ScrollingAnimatedImageConvergence } from '@/components';
 import { graphql, useStaticQuery } from 'gatsby';
+import styled from 'styled-components';
+
+const StickyContainer = styled.div`
+  position: sticky;
+  top: 78px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+`
+
+const ExtraSpace = styled.div`
+  height: 300vh;
+`;
 
 export const ConvergenceAnimationSection: React.FC = () => {
   const data = useStaticQuery(graphql`
@@ -31,18 +46,14 @@ export const ConvergenceAnimationSection: React.FC = () => {
   const secondaryImages = data.secondaryImages.nodes;
 
   return(
-    <Container fluid style={{
-      height: '100vh',
-      scrollSnapAlign: 'start',
-    }}>
-      <Row>
-        <Col>
-          <ScrollingAnimatedImageConvergence
-            mainImageSrc={mainImageData}
-            secondaryImagesSrc={secondaryImages}  
-          />
-        </Col>
-      </Row>
-    </Container>
+    <div>
+      <StickyContainer>
+        <ScrollingAnimatedImageConvergence
+          mainImageSrc={mainImageData}
+          secondaryImagesSrc={secondaryImages}  
+        />
+      </StickyContainer>
+      <ExtraSpace />
+    </div>
   );
 }

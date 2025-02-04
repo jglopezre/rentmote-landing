@@ -9,16 +9,6 @@ const StyledSextionWrapper = styled(Container)`
   padding-top: 3rem;
   padding-bottom: 5rem;
   position: relative;
-  &::before {
-    content: '';
-    display: block;
-    position: absolute;
-    width: 200%;
-    height: 100%;
-    top: 0;
-    left: -50%;
-    background-image: linear-gradient(${({ theme }) => theme.colors.light2}, ${({ theme }) => theme.colors.light});
-  }
 `;
 
 const StyledTextCol = styled(Col)`

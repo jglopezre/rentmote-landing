@@ -6,16 +6,6 @@ import styled from 'styled-components';
 
 const StyledSectionWrapper = styled(Container)`
   position: relative;
-  &::before {
-    content: '';
-    display: box;
-    position: absolute;
-    width: 200%;
-    height: 100%;
-    background-color: ${({ theme }) => theme.colors.primary1};
-    top: 0;
-    left: -50%;
-  }
 `;
 
 export const BottomAnimatedCarousel: React.FC = () => {
