@@ -17,3 +17,4 @@ export * from './ScrollingAnimatedImageConvergence';
 export * from './QuantityMinicard';
 export * from './VerticalInfoBigCard';
 export * from './HorizontalInfoMiniCard';
+export * from './StoreBox';

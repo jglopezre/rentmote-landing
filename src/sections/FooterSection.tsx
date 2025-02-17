@@ -1,10 +1,10 @@
 import React from 'react';
 import { graphql, Link, useStaticQuery } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
-import { Col, Container, Row, useScreenClass } from 'react-grid-system';
+import { Col, Container, Row } from 'react-grid-system';
 import styled from 'styled-components';
 import { useUserLanguage } from '@/customHooks';
-import { SocialBox } from '@/components';
+import { SocialBox, StoreBox } from '@/components';
 
 const date = new Date();
 
@@ -25,7 +25,7 @@ const StyledFooterWrapper = styled(Row)`
 const LogoContainer = styled(Col)`
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: center;
   padding-bottom: ${({ theme }) => theme.spacing.lg};
 `;
 
@@ -33,7 +33,7 @@ const LinksContainer = styled(Col)`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: start;
+  align-items: center;
   padding-bottom: ${({ theme }) => theme.spacing.lg};
   line-height: 2rem;
   font-size: ${({ theme }) => theme.typography.fontSize.s7};
@@ -43,7 +43,7 @@ const SocialContainer = styled(Col)`
   padding-bottom: ${({ theme }) => theme.spacing.lg};
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: center;
 `;
 
 const StyledLink = styled(Link)`
@@ -94,7 +94,7 @@ export const FooterSection: React.FC = () => {
     <BackgroundWrapper>
       <Container>
         <StyledFooterWrapper component="footer">
-          <LogoContainer xs={12} md={4}>
+          <LogoContainer xs={12} md={3}>
             <Link to="/">
               <StaticImage
                 src="../images/rentmote-logotipo-white.png"
@@ -103,7 +103,7 @@ export const FooterSection: React.FC = () => {
               />
             </Link>
           </LogoContainer>
-          <LinksContainer xs={12} md={4}>
+          <LinksContainer xs={12} md={3}>
             <div>
               {
                 texts.infoLinks.map((link: any) => (
@@ -115,8 +115,11 @@ export const FooterSection: React.FC = () => {
               }
             </div>
           </LinksContainer>
-          <SocialContainer xs={12} md={4}>
+          <SocialContainer xs={12} md={3}>
             <SocialBox />
+          </SocialContainer>
+          <SocialContainer xs={12} md={3}>
+            <StoreBox />
           </SocialContainer>
           <CopyCol xs={12}>
             <p>
