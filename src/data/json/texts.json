@@ -31,28 +31,28 @@
       ]
     },
     "characteristicsSection": {
-      "title": "Una plataforma para gestionarlo todo",
+      "title": "Una plataforma para gestionarlo todo.",
       "description": "Expande tu negocio sin contratiempos utilizando una plataforma de gestión unificada que respalda todos tus activos.",
       "cards": [
         {
-          "title": "Gestión de Propiedades",
-          "description": "Simplificación la gestión de propiedades. Permite ahorrar tiempo y esfuerzo mientras optimiza sus resultados.",
-          "image": "rentmote-property-manager"
+          "title": "Gestiona los detalles contables con facilidad",
+          "description": "Configura facturas, envía recibos y crea informes financieros para rastrear hasta el último centavo. Automatiza tareas como facturas y cargos por mora, accede a informes personalizables y predefinidos, y conecta tus cuentas bancarias sincronizando sin problemas con QuickBooks para una gestión financiera eficiente.",
+          "image": "rentmote-property-manager-characteristic"
         },
         {
-          "title": "Gestión de cuentas",
-          "description": "Gestiona las cuentas tanto de ingresos como egresos de manera intantanea, generando reportes de los diferentes estados financieros.",
-          "image": "rentmote-account"
+          "title": "Filtra y da de alta a los inquilinos con solo unos pocos clics.",
+          "description": "Recopila solicitudes, realiza verificaciones de antecedentes y firma contratos de arrendamiento a tiempo para el día de la mudanza. Realiza verificaciones de crédito y antecedentes juntas o por separado, asigna tarifas de selección e incluye verificaciones con cada solicitud si lo deseas.",
+          "image": "rentmote-account-characteristic"
         },
         {
-          "title": "Pago Automatizado",
-          "description": "Configura pagos automatizados para simplificar la gestión de tus propiedades, brindándote tranquilidad y ahorrándote tiempo.",
-          "image": "rentmote-paying"
+          "title": "Automatiza la recaudación de rentas y elimina el esfuerzo de perseguir pagos.",
+          "description": "Ofrece a los inquilinos una forma flexible y conveniente de pagar la renta en línea. Proporciona opciones de pago como tarjeta de crédito, débito, ACH, efectivo y cheques. Acepta pagos completos o parciales y lleva un seguimiento sencillo de las facturas pagadas y vencidas.",
+          "image": "rentmote-paying-characteristic"
         },
         {
-          "title": "Seguimiento de incidencias",
-          "description": "Organiza y gestiona las incidencias reportadas, permitiendo generar reportes para monitorear y priorizar el estado de cada incidencia.",
-          "image": "rentmote-incidents"
+          "title": "Gestiona rápidamente las solicitudes de mantenimiento y los proveedores.",
+          "description": "Recibe las solicitudes de mantenimiento en línea, lleva un seguimiento del progreso y obtén presupuestos profesionales a través de nuestra red integrada para un mantenimiento sin complicaciones.",
+          "image": "rentmote-incidents-characteristic"
         }
       ]
     },
@@ -263,8 +263,8 @@
       "buttonText": "odor amet"
     },
     "callToActionSection3": {
-      "text": "Duis scelerisque id habitasse, habitasse mi gravida. Sapien a pellentesque pharetra enim.",
-      "buttonText": "egestas maximus"
+      "text": "Solicita una demo de Rentmote hoy y optimiza tu tiempo y ganancias fácilmente.",
+      "buttonText": "Solicita tu Demo"
     },
     "simpleTestimonialSection": {
       "text": "Mauris consequat lobortis sollicitudin, fringilla nisi velit primis euismod. Potenti varius suscipit tellus aptent facilisis. Mattis consequat fames eu faucibus aliquam fringilla enim iaculis. Pretium litora consequat; auctor platea mus cursus risus augue. Curae mus cursus scelerisque massa feugiat a.",
@@ -272,31 +272,31 @@
     },
     "quantityInformationSection": [
       {
-        "title": "Massa suscipit",
-        "description": "Amet pharetra at egestas vel platea etiam. Egestas leo litora quisque consectetur blandit vel venenatis",
-        "quantity": 33.3,
+        "title": "Alojamientos",
+        "description": "Hemos logrado mas de 40,000 alojamientos activos gestionados con éxito en todo el mundo",
+        "quantity": 40,
         "unity": "k"
       },
       {
-        "title": "lorem senectus",
-        "description": "Habitant mus sodales nec imperdiet ac faucibus. Fringilla penatibus phasellus iaculis eu curabitur.",
-        "quantity": 4.2,
+        "title": "Propietarios",
+        "description": "Más de 10,000 propietarios gestionan más de 30,000 propiedades en todo el mundo con Rentmote…",
+        "quantity": 10,
         "unity": "k"
       },
       {
-        "title": "metus viverra",
-        "description": "Feugiat mauris dapibus laoreet congue; odio semper. Metus venenatis elit enim hac mattis neque",
-        "quantity": 500,
+        "title": "Ciudades",
+        "description": "Alcanzamos 40 ciudades en todo el mundo, ofreciendo soluciones confiables de gestión de propiedades.",
+        "quantity": 40,
         "unity": ""
       }
     ],
     "bigInfoSection": {
-      "title": "Duis scelerisque id",
-      "description": "habitasse, habitasse mi gravida. Sapien a pellentesque pharetra enim, lectus morbi varius fringilla magna! Quisque facilisi rutrum enim commodo natoque parturient sed",
+      "title": "Todo en un solo lugar: Simplificamos tu experiencia de alquiler",
+      "description": "Accede a información clave, gestiona contratos y mejora la comunicación entre managers, inquilinos y propietarios de manera eficiente y segura.",
       "cards": [
         {
-          "title": "Libero pharetra",
-          "description": "phasellus est tristique fusce mus congue pharetra. Iaculis vulputate tempus vitae egestas maximus.",
+          "title": "Tu Alquiler, Más Fácil y Transparente",
+          "description": "Gestiona pagos, consulta contratos, recibe notificaciones y resuelve incidencias de manera rápida y segura. Todo al alcance de tu mano.",
           "image": "tenant-information-section",
           "url": {
             "to": "/howItWorks",
@@ -304,12 +304,12 @@
           }
         },
         {
-          "title": "Amet curae aptent leo",
-          "description": "Nunc mauris sociosqu conubia quam in ullamcorper scelerisque",
+          "title": "Coordina y Gestiona Todo en un Solo Lugar",
+          "description": "Simplifica la gestión de contratos, coordina proveedores, supervisa pagos y mantén una comunicación fluida con propietarios e inquilinos de manera eficiente.",
           "image": "owner-information-section",
           "url": {
-            "to": "/faqs",
-            "text": "Preguntas Frecuentes"
+            "to": "/howItWorksForManager",
+            "text": "Cómo funciona para managers"
           }
         }
       ]
@@ -410,24 +410,24 @@
       "description": "Expand your business seamlessly by leveraging a unified management platform that supports all your assets.",
       "cards": [
         {
-          "title": "Properties Manager",
-          "description": "Simplifying property management. It saves time and effort while optimizing your results.",
-          "image": "rentmote-property-manager"
+          "title": "Manage accounting details with ease",
+          "description": "Set up invoices, send receipts, and create financial reports to track every penny. Automate tasks like invoices and late fees, access customizable and pre-templated reports, and connect your bank accounts while syncing seamlessly with QuickBooks for efficient financial management.",
+          "image": "rentmote-property-manager-characteristic"
         },
         {
-          "title": "Account Manager",
-          "description": "Manage both income and expense accounts instantly, generating reports of the different financial statements.",
-          "image": "rentmote-account"
+          "title": "Screen and onboard tenants effortlessly with just a few clicks",
+          "description": "Collect applications, run background checks, and sign lease agreements in time for moving day. Perform background and credit checks together or separately, designate screening fees, and include screenings with every application if desired.",
+          "image": "rentmote-account-characteristic"
         },
         {
-          "title": "Automatic Payment",
-          "description": "Set up automated payments to simplify your rental management, providing peace of mind and saving you time.",
-          "image": "rentmote-paying"
+          "title": "Put rent collection on autopilot and eliminate the hassle of chasing payments",
+          "description": "Provide tenants with a flexible and convenient way to pay rent online. Offer payment options including credit, debit, ACH, cash, and checks. Accept full or partial payments while tracking paid and overdue invoices effortlessly.",
+          "image": "rentmote-paying-characteristic"
         },
         {
-          "title": "Incidents Following",
-          "description": "Organize and manage reported incidents, allowing you to generate reports to monitor and prioritize the status of each incident",
-          "image": "rentmote-incidents"
+          "title": "Quickly handle maintenance requests and vendors with our simple",
+          "description": "Receive maintenance requests online, track their progress effortlessly, and obtain professional bids through our built-in network for seamless property upkeep.",
+          "image": "rentmote-incidents-characteristic"
         }
       ]
     },
@@ -638,8 +638,8 @@
       "buttonText": "habitant enim"
     },
     "callToActionSection3": {
-      "text": "Duis scelerisque id habitasse, habitasse mi gravida.",
-      "buttonText": "egestas maximus"
+      "text": "Request a Rentmote demo today and optimize your time and profits effortlessly!",
+      "buttonText": "Request your Demo"
     },
     "simpleTestimonialSection": {
       "text": "Ligula sem commodo libero montes praesent curabitur. Amet eros posuere est tellus at pretium condimentum! Arcu dui curabitur pulvinar; tincidunt at a. Sed convallis dapibus eu posuere vulputate eros fames a malesuada. Imperdiet quis mus tincidunt nec felis, metus venenatis phasellus. Vehicula arcu nascetur amet posuere ad leo; vestibulum rhoncus commodo.",
@@ -647,31 +647,31 @@
     },
     "quantityInformationSection": [
       {
-        "title": "nullam faucibus",
-        "description": "Rhoncus inceptos scelerisque dictumst senectus himenaeos posuere; cubilia iaculis",
-        "quantity": 33.3,
+        "title": "Accommodations",
+        "description": "Achieved a milestone of 40,000 active accommodations successfully managed worldwide.",
+        "quantity": 40,
         "unity": "k"
       },
       {
-        "title": "nullam faucibus",
-        "description": "Vel felis convallis eu diam convallis faucibus. Diam nec vel mi facilisi nec imperdiet venenatis praesent",
-        "quantity": 4.2,
+        "title": "Property Owner",
+        "description": "More than 10,000 property owners manage over 30.000 properties worldwide with Rentmote",
+        "quantity": 25,
         "unity": "k"
       },
       {
-        "title": "nullam faucibus",
-        "description": "Feugiat mauris dapibus laoreet congue; odio semper. Metus venenatis elit enim hac mattis neque",
-        "quantity": 500,
+        "title": "Cities",
+        "description": "Successfully expanded to 40 cities worldwide, delivering reliable property management solutions",
+        "quantity": 40,
         "unity": ""
       }
     ],
     "bigInfoSection": {
-      "title": "Duis scelerisque id",
-      "description": "habitasse, habitasse mi gravida. Sapien a pellentesque pharetra enim, lectus morbi varius fringilla magna! Quisque facilisi rutrum enim commodo natoque parturient sed",
+      "title": "Everything in One Place: Simplifying Your Rental Experience",
+      "description": "Access key information, manage contracts, and enhance communication between managers, tenants, and owners efficiently and securely.",
       "cards": [
         {
-          "title": "Libero pharetra",
-          "description": "phasellus est tristique fusce mus congue pharetra. Iaculis vulputate tempus vitae egestas maximus.",
+          "title": "Your Rental, Easier and More Transparent",
+          "description": "Manage payments, review contracts, receive notifications, and resolve issues quickly and securely. Everything at your fingertips.",
           "image": "tenant-information-section",
           "url": {
             "to": "/howItWorks",
@@ -679,12 +679,12 @@
           }
         },
         {
-          "title": "Amet curae aptent leo",
-          "description": "Nunc mauris sociosqu conubia quam in ullamcorper scelerisque",
+          "title": "Coordinate and Manage Everything in One Place",
+          "description": "Streamline contract management, coordinate providers, oversee payments, and maintain seamless communication with owners and tenants efficiently.",
           "image": "owner-information-section",
           "url": {
-            "to": "/faqs",
-            "text": "FAQs"
+            "to": "/howItWorksForManager",
+            "text": "How it works form managers"
           }
           
         }

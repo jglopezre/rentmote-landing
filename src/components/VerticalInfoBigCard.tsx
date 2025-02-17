@@ -12,9 +12,10 @@ type VerticalInfoBigCardProps = {
 
 const Wrapper = styled.div`
   max-width: 450px;
+  height: 100%;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: ${({ theme }) => theme.border.radius.lg};
-  padding: 3rem;
+  padding: 3rem 3rem 0 3rem;
 `;
 
 const ImageContainer = styled.div`

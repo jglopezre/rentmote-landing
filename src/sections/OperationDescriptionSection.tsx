@@ -83,7 +83,6 @@ export const OperationDescriptionSection: React.FC = () => {
     const selectedTexts = userLanguage === 'es' ? texts.es.operationDescription : texts.en.operationDescription;
     const cards: any[] = selectedTexts.cards;
     const imagesSrcs: any[] = data.allFile.nodes;
-    console.log(imagesSrcs)
 
   return (
     <StyledSextionWrapper component="section" id="operation-description">
@@ -99,7 +98,6 @@ export const OperationDescriptionSection: React.FC = () => {
             {
               cards.map((card: any, index) => {
                 const imageSrc = imagesSrcs.find((image) => image.name === card.image);
-                console.log(imageSrc)
                 return (
                   <Col
                     xs={12}

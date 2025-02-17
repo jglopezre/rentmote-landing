@@ -73,7 +73,7 @@ const StyledOptions = styled.div<{ $isSelected: boolean }>`
 
 export const CharacteristicsSection: React.FC = () => {
   const data = useStaticQuery(graphql`
-    query MyQuery {
+    query CharacteristicsSection {
       allJsonJson {
         nodes {
           en {
@@ -100,7 +100,7 @@ export const CharacteristicsSection: React.FC = () => {
           }
         }
       }
-      allFile(filter: {sourceInstanceName: {eq: "images"}}) {
+      allFile(filter: {name: {regex: "/-characteristic/"}}) {
         nodes {
           name
           childrenImageSharp {
@@ -115,13 +115,13 @@ export const CharacteristicsSection: React.FC = () => {
 
   const userLanguage = useUserLanguage();
 
-  const [selectedCard, setSelectedCard] = useState();
+  const [selectedCard, setSelectedCard] = useState<any | undefined>();
 
   const imagesData: any[] = data.allFile.nodes;
   const texts = data.allJsonJson.nodes[0];
-  const selectedTexts = texts[userLanguage].characteristicsSection ?? texts['en'].characteristicsSection;
+  const selectedTexts = userLanguage === 'es' ? texts.es.characteristicsSection : texts.en.characteristicsSection
   
-  const imagesNames: any[] = selectedTexts.cards
+  const imagesNames: any[] = selectedTexts.cards;
 
   const cards = (() => {
     const provitional: any[] = []

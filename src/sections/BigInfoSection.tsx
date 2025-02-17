@@ -36,16 +36,10 @@ const StyledTitle = styled(Col)`
   }
 `;
 
-const CardContainer = styled(motion.div)`
-  display: grid;
-  place-items: center;
-`;
-
 const CardRowContainer = styled(motion.div)`
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: nowrap;
   column-gap: 64px;
 `;
 
@@ -145,19 +139,20 @@ export const BigInfoSection: React.FC = () => {
       </Row>
       <Row>
         <Col>
-          <div ref={containerRef}>
             <CardRowContainer
               variants={containerVariants}
               initial="offscreen"
               animate={isInView ? 'onscreen' : 'offscreen'}
+              ref={containerRef}
             >
               {
                 cards.map((card) => {
                   const gatsbyImage = data.allFile.nodes.find((image: any) => image.name === card.image)
                   return (
-                    <CardContainer
+                    <motion.div
                       key={gatsbyImage.id}
                       variants={cardVariants}
+                      style={{ alignSelf: 'stretch' }}
                     >
                       <VerticalInfoBigCard
                         title={card.title}
@@ -165,12 +160,11 @@ export const BigInfoSection: React.FC = () => {
                         imageSrc={gatsbyImage}
                         url={card.url}
                       />
-                    </CardContainer>
+                    </motion.div>
                   )
                 })  
               }
             </CardRowContainer>
-          </div>
         </Col>
       </Row>
     </StyledContainerSection>
