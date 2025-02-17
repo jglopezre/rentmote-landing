@@ -7,7 +7,7 @@ import { CircledNumber } from './CircledNumber';
 type OperationDescriptionCardProps = {
   title: string,
   description: string,
-  imageSrc: ImageDataLike
+  imageSrc: any
   value?: number
 }
 
@@ -28,7 +28,7 @@ const CardWrapper = styled.div`
 
 const StyledContentWrapper = styled(Row)<{$isHovered: boolean}>`
   position: absolute;
-  top: ${(props) => props.$isHovered ? '45%' : '73%'};
+  top: ${(props) => props.$isHovered ? '40%' : '70%'};
   padding-left: 2rem;
   padding-right: 2rem;
   padding-top: 2rem;

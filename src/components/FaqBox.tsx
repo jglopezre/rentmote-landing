@@ -14,6 +14,10 @@ const StyrledWrapper = styled.div`
   margin-bottom: 3rem;
   & h2 {
     font-weight: 400;
+    line-height: 2.5rem;
+  }
+  & p {
+    line-height: 2rem;
   }
 `
 

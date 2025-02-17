@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import { Col, Container, Row } from 'react-grid-system';
 import { useUserLanguage } from '@/customHooks';
@@ -8,6 +8,11 @@ import styled from 'styled-components';
 type Faq = {
   title: string
   description: string
+}
+
+type FaqSection = {
+  section: string,
+  questions: Faq[]
 }
 
 const TitleContainer = styled(Col)`
@@ -27,8 +32,11 @@ export const FaqsSection: React.FC = () => {
           en {
             faqsSection {
               faqs {
-                description
-                title
+                section
+                questions {
+                  description
+                  title
+                }
               }
               title
             }
@@ -36,8 +44,11 @@ export const FaqsSection: React.FC = () => {
           es {
             faqsSection {
               faqs {
-                description
-                title
+                section
+                questions {
+                  description
+                  title
+                }
               }
               title
             }
@@ -48,12 +59,18 @@ export const FaqsSection: React.FC = () => {
   `);
 
   const userLanguaje = useUserLanguage();
-
-  const texts = userLanguaje === 'es' ? data.allJsonJson.nodes[0][userLanguaje].faqsSection : data.allJsonJson.nodes[0]['en'].faqsSection
+  
+  const texts = userLanguaje === 'es' ? data.allJsonJson.nodes[0].es.faqsSection : data.allJsonJson.nodes[0].en.faqsSection
   
   const title: string = texts.title;
-  const faqs: Faq[] = texts.faqs
   
+  const faqs: FaqSection[] = texts.faqs
+  
+  const [selectedSection, setSelectedSection] = useState<string>(faqs[0].section);
+
+  const questions = faqs.find((faqSection) => faqSection.section === selectedSection)?.questions;
+  console.log(questions)
+
   return (
     <Container>
       <Row>
@@ -61,14 +78,25 @@ export const FaqsSection: React.FC = () => {
           <h1>{title}</h1>
         </TitleContainer>
       </Row>
+      <Row>
+        <Col>
+          {
+            faqs.map((faqSection) => (
+              <button onClick={() => setSelectedSection(faqSection.section)}>
+                {faqSection.section}
+              </button>
+            ))
+          }
+        </Col>
+      </Row>
       <Row gutterWidth={48}>
         {
-          faqs.map((faq, index) => (
+          questions?.map((question, index) => (
             <Col xs={12} lg={6}>
               <FaqBox
-                key={faq.title.slice(0,6).concat(index.toString())}
-                title={faq.title}
-                description={faq.description}
+                key={question.title.slice(0,6).concat(index.toString())}
+                title={question.title}
+                description={question.description}
               />
             </Col>
           ))

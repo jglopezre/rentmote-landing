@@ -1,6 +1,6 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
-import { Col, Container, Row, useScreenClass } from 'react-grid-system';
+import { Col, Container, Row } from 'react-grid-system';
 import styled from 'styled-components';
 import { useUserLanguage } from '@/customHooks';
 import { OperationDesciptionCard } from '@/components';
@@ -33,71 +33,57 @@ const StyledTextCol = styled(Col)`
 `;
 
 export const OperationDescriptionSection: React.FC = () => {
-  const data = useStaticQuery(graphql`
-      query OperationDescriptionCardQuery {
-        en: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/md/en/operationDescription/" } }) {
-          nodes {
-            frontmatter {
-              image {
-                id
-                childImageSharp {
-                  gatsbyImageData(
-                    layout: CONSTRAINED
-                    width: 360
-                    height: 600
-                    placeholder: BLURRED
-                  )
-                }
-              }
-              description
-              title
-            }
-          }
-        }
-        es: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/md/es/operationDescription/" } }) {
-          nodes {
-            frontmatter {
-              image {
-                id
-                childImageSharp {
-                  gatsbyImageData(
-                    layout: CONSTRAINED
-                    width: 360
-                    height: 600
-                    placeholder: BLURRED
-                  )
-                }
-              }
-              description
-              title
-            }
-          }
-        }
+    const data = useStaticQuery(graphql`
+      query OperationDescriptionSection {
         allJsonJson {
           nodes {
             en {
               operationDescription {
+                cards {
+                  description
+                  image
+                  title
+                }
                 description
                 title
               }
             }
             es {
               operationDescription {
+                cards {
+                  description
+                  image
+                  title
+                }
                 description
                 title
               }
             }
           }
         }
+        allFile(filter: {name: {regex: "/-opeartion-description$/"}}) {
+          nodes {
+            childImageSharp {
+              gatsbyImageData(
+                layout: CONSTRAINED
+                width: 360
+                height: 600
+                placeholder: BLURRED
+              )
+            }
+            name
+            id
+          }
+        }
       }
     `);
     const userLanguage = useUserLanguage();
 
-    const cards: any[] = data[userLanguage]?.nodes ?? data['en'].nodes;
     const texts = data.allJsonJson.nodes[0];
-    const selectedTexts = texts[userLanguage].operationDescription ?? texts['en'].operationDescription;
-
-    const breakpoint = useScreenClass();
+    const selectedTexts = userLanguage === 'es' ? texts.es.operationDescription : texts.en.operationDescription;
+    const cards: any[] = selectedTexts.cards;
+    const imagesSrcs: any[] = data.allFile.nodes;
+    console.log(imagesSrcs)
 
   return (
     <StyledSextionWrapper component="section" id="operation-description">
@@ -111,16 +97,25 @@ export const OperationDescriptionSection: React.FC = () => {
         <Col xs={12}>
           <Row>
             {
-              cards.map((card: any, index) => (
-                <Col xs={12} lg={4} style={{ display: 'flex', justifyContent: 'center', alignContent: 'center' }}>
-                  <OperationDesciptionCard
-                    title={card.frontmatter.title}
-                    description={card.frontmatter.description}
-                    imageSrc={card.frontmatter.image.childImageSharp.gatsbyImageData}
-                    value={index + 1}
-                  />
-                </Col>
-              ))
+              cards.map((card: any, index) => {
+                const imageSrc = imagesSrcs.find((image) => image.name === card.image);
+                console.log(imageSrc)
+                return (
+                  <Col
+                    xs={12}
+                    lg={4}
+                    style={{ display: 'flex', justifyContent: 'center', alignContent: 'center' }}
+                    key={imageSrc.id}
+                  >
+                    <OperationDesciptionCard
+                      title={card.title}
+                      description={card.description}
+                      imageSrc={imageSrc}
+                      value={index + 1}
+                    />
+                  </Col>
+                );
+              })
             }
           </Row>
         </Col>

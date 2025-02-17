@@ -43,7 +43,7 @@ export const theme = {
       s4: '1.6rem',
       s5: '1.2rem',
       s6: '1rem',
-      s7: '0.7rem',
+      s7: '0.8rem',
       title: '3.5rem',
       bigTitle: '4.5rem', 
     },
@@ -59,9 +59,10 @@ export const theme = {
     secondary1: '#C017A2',  // Fuchia
     secondary2: '#722282',  // Purple
     light: 'white',
-    dark: '#2a2a2a',
+    dark: 'black',
     dark2: '#404040',
     light2: '#fbfaf9',
     light3: '#a0a0ba',
+
   }
 };

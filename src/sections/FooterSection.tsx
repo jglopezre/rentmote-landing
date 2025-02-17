@@ -9,7 +9,7 @@ import { SocialBox } from '@/components';
 const date = new Date();
 
 const BackgroundWrapper = styled.div`
-  background-color: ${({ theme }) => theme.colors.primary1};
+  background-color: ${({ theme }) => theme.colors.dark};
   border-top-color: ${({ theme }) => theme.colors.light3};
   border-top-width: ${({ theme }) => theme.border.width.sm};
   border-top-style: ${({ theme }) => theme.border.style.solid};
@@ -25,7 +25,7 @@ const StyledFooterWrapper = styled(Row)`
 const LogoContainer = styled(Col)`
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   padding-bottom: ${({ theme }) => theme.spacing.lg};
 `;
 
@@ -33,17 +33,17 @@ const LinksContainer = styled(Col)`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   padding-bottom: ${({ theme }) => theme.spacing.lg};
   line-height: 2rem;
-  font-size: ${({ theme }) => theme.typography.fontSize.s6};
+  font-size: ${({ theme }) => theme.typography.fontSize.s7};
 `;
 
 const SocialContainer = styled(Col)`
   padding-bottom: ${({ theme }) => theme.spacing.lg};
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
 `;
 
 const StyledLink = styled(Link)`
@@ -56,7 +56,7 @@ const StyledLink = styled(Link)`
 
 const CopyCol = styled(Col)`
   text-align: center;
-  font-size: ${({ theme }) => theme.typography.fontSize.s6};
+  font-size: ${({ theme }) => theme.typography.fontSize.s7};
   color: darkgray;
 `;
 export const FooterSection: React.FC = () => {

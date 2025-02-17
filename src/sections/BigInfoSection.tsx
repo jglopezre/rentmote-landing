@@ -153,7 +153,6 @@ export const BigInfoSection: React.FC = () => {
             >
               {
                 cards.map((card) => {
-                  console.log(card)
                   const gatsbyImage = data.allFile.nodes.find((image: any) => image.name === card.image)
                   return (
                     <CardContainer

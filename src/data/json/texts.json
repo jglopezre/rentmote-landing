@@ -11,7 +11,24 @@
     },
     "operationDescription": {
       "title": "Cómo Funciona",
-      "description": "Es muy fácil"
+      "description": "Es muy fácil",
+      "cards": [
+        {
+          "title": "Crea una propiedad",
+          "description": "Crea un registro detallado de la propiedad, describiendo el tipo, tamaño, mobiliario, etc.",
+          "image": "rentmote-properties-opeartion-description"
+        },
+        {
+          "title": "Crea un alquiler",
+          "description": "Crea un perfil detallado de tu inquilino, relacionalo con una propiedad, especifica los gastos por periodos, el alquiler, los servicios y demas.",
+          "image": "rentmote-tenant-opeartion-description"
+        },
+        {
+          "title": "Gestiona tus contratos",
+          "description": "Gestiona los pagos, los incidentes y cualquier requisito de tus inquilinos desde el mismo lugar en muy poco tiempo",
+          "image": "rentmote-rent-opeartion-description"
+        }
+      ]
     },
     "characteristicsSection": {
       "title": "Una plataforma para gestionarlo todo",
@@ -57,44 +74,144 @@
       "title": "Preguntas Frecuentes",
       "faqs": [
         {
-          "title": "Lorem ipsum odor amet, consectetuer adipiscing elit. Purus rhoncus aenean aenean litora luctus pulvinar luctus",
-          "description": "Lorem ipsum odor amet, consectetuer adipiscing elit. Purus neque sagittis maecenas fusce venenatis tempor rhoncus. Proin a parturient tempus sapien nisl auctor. Augue per parturient amet rhoncus conubia nisl pharetra. Vitae maximus magnis himenaeos enim cubilia ad aptent. Eros mollis iaculis vehicula at; phasellus ad iaculis maecenas. Facilisis lobortis maximus aliquam quis vitae elit proin aliquam"
+          "section": "Acerca",
+          "questions": [
+            {
+              "title": "¿Qué es Rentmote y a quien va dirigido?",
+              "description": "El software integral de gestión de propiedades de Rentmote permite a administradores y propietarios gestionar cualquier cartera de manera eficiente, ayudándote a aumentar tus ingresos, mantenerte organizado y hacer crecer tu negocio. Nuestra plataforma simplifica la gestión de propiedades al automatizar el seguimiento de inquilinos y arrendamientos, la recaudación de rentas y tarifas, la contabilidad e informes, las solicitudes de mantenimiento y más, mediante un software fácil de usar, seguro y confiable."
+            },
+            {
+              "title": "¿Qué tipos de propiedades puedo gestionar?",
+              "description": "Rentmote permite a administradores y propietarios gestionar de manera eficiente cualquier cartera, incluyendo: Propiedades residenciales (viviendas unifamiliares, multifamiliares, casas móviles, residencias estudiantiles, etc.). Espacios comerciales (tiendas, oficinas, naves industriales, etc.), Viviendas asequibles, Asociaciones comunitarias"
+            },
+            {
+              "title": "No somos expertos en tecnología. ¿Es fácil de usar?",
+              "description": "El software de Rentmote está diseñado para ser fácil de usar, ayudándote a simplificar la gestión de propiedades para que puedas aumentar tus ganancias, mantenerte organizado y hacer crecer tu negocio. Además de automatizar tareas como la recaudación de rentas y el seguimiento de contratos, Rentmote ofrece un especialista en incorporación, soporte de primera clase y recursos educativos gratuitos para que gestiones tus propiedades de manera eficiente. Agenda una demostración para saber más."
+            },
+            {
+              "title": "¿Puedo usar Rentmote desde mi teléfono?",
+              "description": "¡Sí! Rentmote ofrece aplicaciones móviles para iPhone, iPad y Android, disponibles en la Apple App Store y Google Play Store. Lo mejor es que casi todas las funciones y pantallas disponibles en la versión de escritorio también están accesibles en la aplicación móvil. Ahora puedes gestionar y acceder a todas tus propiedades de manera remota, no importa dónde te encuentres en el mundo."
+            },
+            {
+              "title": "¿Para quién es Rentmote?",
+              "description": "Rentmote está diseñado para administradores y propietarios de propiedades, ofreciendo un software fácil de usar, seguro y confiable para simplificar la gestión de propiedades. Con tecnología avanzada, soporte de primera clase y recursos educativos gratuitos, Rentmote te ayuda a crecer personal, profesional y financieramente. Nos importa más que solo tu negocio: ¡nos importas tú!"
+            },
+            {
+              "title": "¿Cuál es el proceso para comenzar?",
+              "description": "Rentmote hace que sea muy fácil comenzar a gestionar tu portafolio con nuestro software fácil de usar, seguro y confiable en solo dos pasos:\nPaso 1 – Agenda una demostración con nuestro equipo de ventas para crear tu cuenta de Rentmote, selecciona un plan para tu portafolio y añade tus datos de pago. \nPaso 2 – Migra tus datos, configura tu cuenta comercial para recibir pagos de renta y completa la capacitación con tu especialista en incorporación asignado.\nUna vez configurado, Rentmote te ayuda a crecer personal, profesional y financieramente con soporte de primera clase y recursos educativos gratuitos."
+            },
+            {
+              "title": "Tengo más preguntas",
+              "description": "Si ya eres cliente y tienes preguntas, inicia sesión en tu cuenta de Rentmote y contacta al soporte a través del chat. Si eres un cliente potencial y deseas conocer más sobre nuestro software, solicita una demostración."
+            }
+          ]
         },
         {
-          "title": "Mattis turpis vivamus tempor elit; sollicitudin efficitur",
-          "description": "Senectus nisl aliquam mauris quisque molestie vitae proin. Primis mi phasellus taciti ligula elit urna in. Scelerisque ridiculus felis sodales ex penatibus. Habitasse mauris taciti litora ut litora augue lacinia mauris. Lobortis sapien mollis sociosqu aliquet in. Integer lorem arcu ut finibus felis? Parturient morbi suspendisse viverra volutpat habitant porta himenaeos. Luctus torquent urna auctor cubilia vel nisl neque hac. Volutpat pretium velit magna purus fringilla; nullam primis nam eu."
+          "section": "¿Por qué nosotros?",
+          "questions": [
+            {
+              "title": "¿Todavía necesito Excel, Word, Outlook y Dropbox?",
+              "description": "No, el software integral de Rentmote te permite gestionar de manera segura y eficiente todos los aspectos de tu portafolio en un solo lugar. Con nuestra plataforma confiable, puedes automatizar la contabilidad y los informes, las solicitudes de mantenimiento, el seguimiento de inquilinos y contratos, el almacenamiento de documentos, la cobranza de rentas y tarifas, y mucho más."
+            },
+            {
+              "title": "¿Tienen todas las funciones que tienen sus competidores?",
+              "description": "Durante los últimos 15+ años, muchos competidores han añadido tantas funciones que sus plataformas se han vuelto innecesariamente complejas y lentas, convirtiendo tareas simples en procesos largos. Además, muchos cobran extra por integraciones en lugar de desarrollar estas funciones internamente. Esto significa que terminas pagando por usar solo alrededor del 10% de sus funciones a un ritmo lento, mientras aún necesitas otro software para cubrir tus necesidades. En Rentmote, nuestro objetivo es ofrecer una plataforma fácil de usar con un diseño intuitivo que prioriza la calidad sobre la cantidad. Nos enfocamos en perfeccionar las funciones más importantes mientras ofrecemos una interfaz rápida y eficiente."
+            },
+            {
+              "title": "¿Por qué debería elegir Rentmote sobre otros programas?",
+              "description": "Rentmote se diferencia de la competencia porque nos importa más que solo tu negocio: nos importas tú. Con tecnología avanzada, soporte de primera clase y recursos educativos gratuitos, Rentmote te permite gestionar tu portafolio de manera efectiva, ayudándote a aumentar tus ganancias, mantenerte organizado y hacer crecer tu negocio. Para saber más, agenda una demostración con Rentmote hoy mismo."
+            },
+            {
+              "title": "¿Ya utilizas un software de administración de propiedades?",
+              "description": "Rentmote ofrece una solución integral con todas las herramientas que los administradores y propietarios necesitan para gestionar eficientemente sus carteras. Simplifica tareas como el seguimiento de inquilinos y contratos, la recaudación de rentas, la contabilidad, las solicitudes de mantenimiento y más, a través de una plataforma segura y fácil de usar. Agenda una demostración con Rentmote para descubrir qué nos hace diferentes al resto."
+            },
+            {
+              "title": "¿Cómo reduce Rentmote la rotación?",
+              "description": "Creamos Rentmote para resolver nuestros propios problemas y reducir los costos asociados con la rotación de empleados, inquilinos y propietarios. Sin sistemas confiables, las tareas importantes a menudo se pasaban por alto. Después de años perfeccionando nuestro enfoque, hemos optimizado todo el proceso e incorporado nuestras mejores prácticas en Rentmote. Los inquilinos pueden comunicarse fácilmente, pagar la renta y solicitar mantenimiento; los propietarios obtienen informes detallados y una visión completa de sus propiedades; el personal puede evitar tareas repetitivas y centrarse en lo más importante. Comienza hoy y simplifica tu vida con Rentmote."
+            },
+            {
+              "title": "¿Cuánta capacitación necesitaré?",
+              "description": "Rentmote brinda una formación completa y un soporte excepcional para asegurar que usted y su equipo aprovechen al máximo nuestro software. Recomendamos dos sesiones de incorporación de 45 minutos para familiarizarse y configurar la plataforma. Luego, tendrá acceso a una amplia gama de recursos gratuitos disponibles cuando lo necesite, incluyendo nuestro Centro de Ayuda, Rentmote University y soporte por chat en vivo."
+            },
+            {
+              "title": "¿Qué es nuestra prueba de comparación con la competencia?",
+              "description": "Muchas empresas de software de administración de propiedades afirman ser “las más fáciles de usar.” Te invitamos a poner esa afirmación a prueba. Regístrate para una demostración gratuita con cualquier competidor y decide por ti mismo qué plataforma es realmente la más sencilla de usar. Cuando realizamos nuestra investigación, descubrimos que la mayoría de los programas de gestión de propiedades parecen atrapados en los años 90. En el software, el lenguaje de programación es como un motor viejo—no se puede reemplazar fácilmente. La mayoría de nosotros no conduciríamos un auto de 1998, entonces, ¿por qué conformarnos con un software obsoleto de hace décadas?"
+            }
+          ]
         },
         {
-          "title": "Sem natoque non malesuada ornare pharetra; nam blandit",
-          "description": "Velit eros eget enim ultrices commodo id. Laoreet tristique tincidunt, mi taciti iaculis augue neque vulputate. Fusce senectus sagittis fames interdum luctus fermentum suspendisse dictumst. Ultricies orci mus a conubia neque habitasse ut euismod. Semper duis sit nullam sociosqu hendrerit bibendum. Fames et cubilia faucibus; nisl ultrices maximus. Justo eleifend posuere penatibus conubia taciti maecenas nibh. Sit iaculis sollicitudin eget interdum pretium arcu."
+          "section": "Datos y seguridad",
+          "questions": [
+            {
+              "title": "¿Realizan verificaciones de antecedentes a sus empleados?",
+              "description": "Revisamos minuciosamente a cada posible empleado antes de contratarlo en Rentmote. Nuestro proceso incluye entrevistas rigurosas, verificación de identidad con múltiples formas de identificación, revisión de referencias laborales, verificación de empleo y chequeos de antecedentes penales. Todos los empleados deben firmar acuerdos de confidencialidad y no divulgación, además de completar una capacitación exhaustiva antes de comenzar a trabajar en Rentmote."
+            },
+            {
+              "title": "¿Está mi información respaldada y protegida?",
+              "description": "Por supuesto. Puede estar tranquilo sabiendo que sus datos se respaldan automáticamente en múltiples servidores. Si lo desea, también puede exportar y guardar una copia física de sus datos en su computadora. Rentmote está alojado por Amazon Web Services (AWS), el líder en seguridad de datos, utilizado por empresas como Netflix, LinkedIn, Airbnb, Apple y Adobe. AWS protege sus datos con firewalls, auditorías de seguridad y pruebas de penetración."
+            },
+            {
+              "title": "¿Tienen un programa de recompensas por errores (bug bounty)?",
+              "description": "Sí, con el objetivo de garantizar la seguridad. Al ser usuarios de nuestro propio software, la seguridad es nuestra máxima prioridad. Si eres un investigador de seguridad y encuentras alguna vulnerabilidad potencial, por favor contáctenos."
+            },
+            {
+              "title": "¿Mis pagos y datos están encriptados?",
+              "description": "Al iniciar sesión en Rentmote, el enlace HTTPS con un ícono de candado indica una encriptación SSL segura para toda la comunicación en su navegador. Sus datos están protegidos con cifrado de grado militar de 256 bits, tanto cuando se almacenan como durante la transferencia. Los pagos a Rentmote y los pagos de renta de los inquilinos son compatibles con PCI, procesados directamente por el procesador de tarjetas de crédito sin pasar por nuestros servidores. Los inquilinos pueden pagar la renta en línea con tarjeta de crédito/débito o mediante ACH (respaldado por Stripe). Obtenga más información sobre la seguridad de Rentmote."
+            },
+            {
+              "title": "¿Cómo puedo eliminar todos mis datos?",
+              "description": "Si tienes acceso completo como administrador, puedes eliminar todos tus datos seleccionando cada elemento en cada página y realizando una eliminación masiva. Alternativamente, después de verificar ampliamente tu identidad, podemos eliminar toda tu cuenta por ti. Ten en cuenta que la eliminación es permanente y no hay papelera de reciclaje ni opción de recuperación."
+            },
+            {
+              "title": "¿Necesito servidores para usar Rentmote?",
+              "description": "¡Para nada! Como software basado en la nube, Rentmote es accesible desde cualquier dispositivo o navegador, incluyendo computadoras como Mac, PCs con Windows, Surface y Chromebook, dispositivos móviles como iPhone, iPad, Android y Amazon Fire, y navegadores como Chrome, Safari, Internet Explorer, Firefox y Opera. Trabaja desde cualquier lugar, en cualquier momento y en cualquier dispositivo."
+            },
+            {
+              "title": "¿Qué tan segura es su API?",
+              "description": "Si planea usar nuestra API para integrarla con otras aplicaciones, tenga la tranquilidad de que todos los datos están encriptados tanto en reposo como durante la transferencia utilizando el algoritmo AES-256. Cada plan incluye características de seguridad empresarial como puntos finales de aplicación TLS/SSL, conjuntos de cifrado sólidos, Perfect Forward Secrecy y más. Puede probar nuestra API utilizando la prueba de Qualys SSL Labs, donde hemos obtenido una calificación A+."
+            },
+            {
+              "title": "¿Ofrecen verificación en dos pasos?",
+              "description": "Sí. Para mayor seguridad, puede habilitar esta función para recibir un correo electrónico con un código único cada vez que inicie sesión en su cuenta."
+            }
+          ]
         },
         {
-          "title": "Ultricies elit arcu placerat accumsan accumsan phasellus suspendisse",
-          "description": "Sollicitudin ultricies tristique mollis mollis rhoncus sociosqu amet eu. Turpis habitant molestie ante vestibulum maecenas ultricies nascetur. Ex duis amet nibh cursus posuere viverra mus. Himenaeos morbi ultricies ullamcorper aptent sem imperdiet pretium imperdiet. Feugiat netus parturient; sociosqu adipiscing neque leo. Torquent quis enim nec pretium tincidunt pellentesque aliquet gravida cursus. Maecenas viverra amet nec quam, hac ut. Cras molestie ipsum mollis est augue nisl. Porttitor mollis libero ligula orci convallis molestie. Phasellus semper cras tellus, congue enim mattis id."
-        },
-        {
-          "title": "Congue dui etiam; convallis volutpat mollis donec ullamcorper",
-          "description": "Fermentum gravida per integer malesuada sed. Dolor euismod ipsum volutpat orci tortor sed eros scelerisque. Justo hendrerit duis euismod lorem nibh. Diam aenean class congue quisque; sollicitudin viverra. Libero ipsum justo pulvinar habitasse lacus congue ex dolor. Nunc imperdiet parturient nibh sollicitudin iaculis. Tellus tristique placerat enim adipiscing feugiat? Semper mus nisl erat bibendum nibh egestas nostra ultrices. Montes egestas nec duis molestie porttitor."
-        },
-        {
-          "title": "Laoreet est maximus maximus fermentum orci id facilisi",
-          "description": "Nam ornare lacus varius himenaeos; arcu vel? Amet suspendisse maximus nostra parturient mi dolor dolor orci. Porttitor netus scelerisque fringilla per; finibus tortor pellentesque. Tortor non nisi torquent pretium volutpat lacus himenaeos fusce. Lectus conubia est suscipit interdum sit velit. Consectetur pulvinar fringilla cursus maximus vulputate; lacus dictum porttitor. Pellentesque efficitur dui posuere vehicula neque natoque duis suspendisse justo. Etiam ipsum blandit euismod, enim rutrum quis. Varius urna dis sagittis interdum nibh mattis rhoncus aenean orci. Proin malesuada class elit maximus congue per."
-        },
-        {
-          "title": "Aliquet torquent habitant consectetur primis suscipit rhoncus auctor",
-          "description": "Bibendum fringilla inceptos gravida ac cursus accumsan consectetur. Tempor a aliquet lorem, fames porta leo. Interdum sapien laoreet magna pharetra tincidunt volutpat magna? Consequat lacus vel; inceptos ultrices accumsan volutpat suscipit. Fames auctor rhoncus condimentum sociosqu aptent mus consequat. Leo auctor semper efficitur nisl finibus aptent consectetur iaculis potenti. Maecenas conubia ultricies, lobortis curae congue laoreet."
-        },
-        {
-          "title": "Vulputate eleifend finibus nibh sem facilisis sit dictumst interdum",
-          "description": "Rutrum taciti gravida orci semper leo. Inceptos ac imperdiet mollis conubia dictum dui. Maecenas semper fermentum dui eget taciti eget consequat. Platea adipiscing cras phasellus semper et maecenas. Est ligula suscipit quis mus ullamcorper. Imperdiet a nulla pulvinar ultricies; ridiculus vel sagittis. Purus ridiculus elit bibendum quam elit convallis est dolor tempus."
-        },
-        {
-          "title": "Mollis taciti volutpat adipiscing amet penatibus",
-          "description": "Natoque pharetra elit risus habitasse cursus rutrum pretium nunc. Pellentesque libero mauris nulla elementum nisl rhoncus dignissim natoque. Penatibus egestas commodo vivamus lacinia inceptos. Eget egestas nulla, imperdiet consequat curae ipsum. Senectus velit mus id et curabitur venenatis. Sodales egestas adipiscing potenti convallis velit sit odio est. Purus vulputate sagittis aliquam; eget viverra ad. Consectetur adipiscing aptent pretium torquent nulla ante."
-        },
-        {
-          "title": "Tincidunt non gravida imperdiet morbi orci class per vestibulum",
-          "description": "Natoque pharetra elit risus habitasse cursus rutrum pretium nunc. Pellentesque libero mauris nulla elementum nisl rhoncus dignissim natoque. Penatibus egestas commodo vivamus lacinia inceptos. Eget egestas nulla, imperdiet consequat curae ipsum. Senectus velit mus id et curabitur venenatis. Sodales egestas adipiscing potenti convallis velit sit odio est. Purus vulputate sagittis aliquam; eget viverra ad. Consectetur adipiscing aptent pretium torquent nulla ante."
+          "section": "Otras",
+          "questions": [
+            {
+              "title": "¿Está Rentmote siempre en línea?",
+              "description": "Ofrecemos un tiempo de actividad del servidor líder en la industria del 99.9%. Las actualizaciones generalmente se realizan los fines de semana o en horarios nocturnos para no afectar sus operaciones. Para verificar nuestro estado o tiempo de actividad, visite nuestra página de Estado. Dado que hemos enfrentado huracanes en nuestra sede global en Miami, hemos desarrollado extensos planes de respaldo y continuidad. En caso de un desastre natural, nuestros equipos remotos y oficinas, ubicadas en varios continentes, seguirán brindándole soporte sin interrupciones."
+            },
+            {
+              "title": "¿Está Rentmote disponible en otros idiomas?",
+              "description": "Rentmote está disponible actualmente en inglés. Planeamos ofrecer soporte en español, francés y alemán en un futuro cercano, y también tenemos la intención de traducir el portal para propietarios e inquilinos a otros idiomas. Si recibimos suficientes solicitudes y hay demanda, consideraremos traducir la plataforma a cualquier otro idioma. Por favor, contáctenos para solicitar un idioma específico."
+            },
+            {
+              "title": "Realizan desarrollos personalizados por una tarifa?",
+              "description": "Sí, dependiendo del alcance de la solicitud. Por favor, contáctenos para discutir características personalizadas y otras opciones."
+            },
+            {
+              "title": "¿Con qué frecuencia añaden nuevas funciones y actualizaciones?",
+              "description": "Creemos firmemente en la frase “innovar o morir,” por lo que siempre estamos innovando y agregando funciones emocionantes para ayudar a que su negocio prospere. Rentmote recibe actualizaciones mensuales de forma automática, sin necesidad de descargas o instalaciones."
+            },
+            {
+              "title": "¿Por qué creamos Rentmote?",
+              "description": "Los fundadores de Rentmote son administradores y propietarios de propiedades, igual que usted. Hemos enfrentado muchos de los mismos desafíos, como la recaudación de rentas, las renovaciones de contratos y las solicitudes de mantenimiento, a menudo sacrificando tiempo personal con nuestras familias o conduciendo largas distancias solo para cobrar la renta. Lo que alguna vez parecía un sueño comenzó a sentirse abrumador, como si nuestras inversiones nos estuvieran poseyendo. Sin embargo, después de perfeccionar nuestros métodos y aprender de los mejores administradores y propietarios, integramos estas mejores prácticas en el software de Rentmote. Nuestro objetivo es ayudarlo a administrar sus propiedades, hacer crecer su negocio y aumentar sus ganancias."
+            },
+            {
+              "title": "¿Aceptan sugerencias de funciones?",
+              "description": "¡Por supuesto! Sus comentarios nos ayudan a guiar nuestras prioridades. Aunque no podemos implementar todas las sugerencias para evitar sobrecargar el software, nos enfocamos en desarrollar las solicitudes más importantes según la demanda y los beneficios que aportan."
+            },
+            {
+              "title": "¿Por qué el nombre Rentmote?",
+              "description": "El nombre combina las palabras \"rental\" (alquiler) y \"remote\" (remoto), reflejando nuestro enfoque en la gestión eficiente de propiedades de alquiler desde cualquier lugar. Destaca nuestra misión de simplificar la administración de propiedades mientras ofrecemos flexibilidad y control, sin importar dónde te encuentres."
+            },
+            {
+              "title": "¿Puedo acceder a Rentmote desde varios dispositivos al mismo tiempo?",
+              "description": "Sí, puedes acceder a Rentmote desde múltiples dispositivos simultáneamente. Nuestra plataforma basada en la nube te permite gestionar tus propiedades sin problemas, ya sea que estés usando una computadora, tableta o teléfono inteligente. Todos tus datos se sincronizan en tiempo real, asegurando que siempre tengas la información más actualizada, independientemente del dispositivo que utilices."
+            }
+          ]
         }
       ]
     },
@@ -269,7 +386,24 @@
     },
     "operationDescription": {
       "title": "How does it work?",
-      "description": "It's easy"
+      "description": "It's easy",
+      "cards": [
+        {
+          "title": "Create a property",
+          "description": "Create a detailed property record, describing the type, size, furnishings, etc.",
+          "image": "rentmote-properties-opeartion-description"
+        },
+        {
+          "title": "Create a rental",
+          "description": "Create a detailed profile of your tenant, link them to a property, specify expenses by periods, the rent, services, and more.",
+          "image": "rentmote-tenant-opeartion-description"
+        },
+        {
+          "title": "Manage your contracts",
+          "description": "Manage payments, incidents, and any requirements from your tenants all in one place, quickly and efficiently.",
+          "image": "rentmote-rent-opeartion-description"
+        }
+      ]
     },
     "characteristicsSection": {
       "title": "One platform to manage everything",
@@ -315,44 +449,144 @@
       "title": "Frequently Asked Questions",
       "faqs": [
         {
-          "title": "Lorem ipsum odor amet, consectetuer adipiscing elit. Purus rhoncus aenean aenean litora luctus pulvinar luctus",
-          "description": "Lorem ipsum odor amet, consectetuer adipiscing elit. Purus neque sagittis maecenas fusce venenatis tempor rhoncus. Proin a parturient tempus sapien nisl auctor. Augue per parturient amet rhoncus conubia nisl pharetra. Vitae maximus magnis himenaeos enim cubilia ad aptent. Eros mollis iaculis vehicula at; phasellus ad iaculis maecenas. Facilisis lobortis maximus aliquam quis vitae elit proin aliquam"
+          "section": "About",
+          "questions": [
+            {
+              "title": "What is Rentmote and whom is it for?",
+              "description": "Rentmote’s comprehensive property management software empowers property managers and owners to efficiently handle any portfolio, enabling you to increase earnings, stay organized, and expand your business. Our platform streamlines property management by automating tenant and lease monitoring, rent and fee collection, accounting and reporting, maintenance requests, and more through user-friendly, secure, and dependable software."
+            },
+            {
+              "title": "What types of properties can I manage?",
+              "description": "Rentmote enables property managers and owners to efficiently handle any portfolio, including: Residential properties (single-family homes, multi-family units, mobile homes, student housing, etc.). Commercial spaces (retail stores, offices, industrial buildings, etc.). Affordable Housing. Community Associations"
+            },
+            {
+              "title": "We are not tech-savvy. Is it easy to use?",
+              "description": "Yes! Rentmote offers mobile apps for iPhone, iPad, and Android, available on the Apple App Store and Google Play Store. The best part is that nearly every feature and screen available on the desktop version is also accessible on the mobile app. Now you can manage and access all your properties remotely, no matter where you are in the world."
+            },
+            {
+              "title": "Can I use Rentmote from my phone?",
+              "description": "Sollicitudin ultricies tristique mollis mollis rhoncus sociosqu amet eu. Turpis habitant molestie ante vestibulum maecenas ultricies nascetur. Ex duis amet nibh cursus posuere viverra mus. Himenaeos morbi ultricies ullamcorper aptent sem imperdiet pretium imperdiet. Feugiat netus parturient; sociosqu adipiscing neque leo. Torquent quis enim nec pretium tincidunt pellentesque aliquet gravida cursus. Maecenas viverra amet nec quam, hac ut. Cras molestie ipsum mollis est augue nisl. Porttitor mollis libero ligula orci convallis molestie. Phasellus semper cras tellus, congue enim mattis id."
+            },
+            {
+              "title": "Who is Rentmote for?",
+              "description": "Rentmote is designed for property managers and owners to simplify property management through an easy-to-use, secure, and reliable software. With advanced technology, top-tier support, and free educational resources, Rentmote empowers you to grow personally, professionally, and financially. We care about more than just your business – we care about you!"
+            },
+            {
+              "title": "What is the process to get started?",
+              "description": "Rentmote makes it incredibly easy to start managing your portfolio with our user-friendly, secure, and reliable software in just two simple steps:\nStep 1 – Schedule a demo with our sales team to create your Rentmote account, choose a plan for your portfolio, and add your payment details.\nStep 2 – Migrate your data, set up your merchant account to receive rent payments, and complete training with your dedicated onboarding specialist.\nOnce everything is set up, Rentmote empowers you to grow personally, professionally, and financially with top-tier support and free educational resources."
+            },
+            {
+              "title": "I have more questions",
+              "description": "If you are an existing customer with questions, please log in to your Rentmote account and contact support via chat. If you are a potential customer interested in learning more about our software, please request a demo."
+            }
+          ]
         },
         {
-          "title": "Mattis turpis vivamus tempor elit; sollicitudin efficitur",
-          "description": "Senectus nisl aliquam mauris quisque molestie vitae proin. Primis mi phasellus taciti ligula elit urna in. Scelerisque ridiculus felis sodales ex penatibus. Habitasse mauris taciti litora ut litora augue lacinia mauris. Lobortis sapien mollis sociosqu aliquet in. Integer lorem arcu ut finibus felis? Parturient morbi suspendisse viverra volutpat habitant porta himenaeos. Luctus torquent urna auctor cubilia vel nisl neque hac. Volutpat pretium velit magna purus fringilla; nullam primis nam eu."
+          "section": "Why Us?",
+          "questions": [
+            {
+              "title": "Do I still need Excel, Word, Outlook, and Dropbox?",
+              "description": "No, Rentmote's all-in-one property management software allows you to securely and efficiently manage every aspect of your portfolio in one place. With our reliable platform, you can automate accounting and reporting, maintenance requests, tenant and lease tracking, document storage, rent and fee collection, and much more."
+            },
+            {
+              "title": "Do you have all the features your competitors have?",
+              "description": "Over the past 15+ years, many competitors have added so many features that their platforms have become overly bloated and complicated, turning simple tasks into lengthy processes. Additionally, many charge extra for integrations instead of developing these features in-house. This means you end up paying to use only about 10% of their features at a slow pace, while still needing other software to meet your needs. At Rentmote, our goal is to provide an easy-to-use platform with an intuitive design that prioritizes quality over quantity. We focus on perfecting the most important features while offering a fast and sleek interface."
+            },
+            {
+              "title": "Why should I choose Rentmote over other programs?",
+              "description": "Rentmote stands out from competitors because we care about more than just your business – we care about you. With advanced technology, top-tier support, and free educational resources, Rentmote empowers you to manage your portfolio effectively, helping you increase profits, stay organized, and grow your business. To learn more, schedule a demo with Rentmote today."
+            },
+            {
+              "title": "Already using property management software?",
+              "description": "Rentmote offers a comprehensive solution with all the tools property managers and owners need to efficiently handle their portfolios. Simplify tasks like tenant and lease tracking, rent collection, accounting, maintenance requests, and more through our secure and user-friendly platform. Schedule a demo with Rentmote to discover what sets us apart from other options."
+            },
+            {
+              "title": "How does Rentmote minimize turnover?",
+              "description": "We created Rentmote to address our own challenges and cut costs linked to employee, tenant, and owner turnover. Without reliable systems, important tasks often fell through the cracks. After years of refining our approach, we’ve optimized the entire process and integrated our top strategies into Rentmote. Tenants can easily communicate, pay rent, and request maintenance; owners receive comprehensive reports and property insights; staff can avoid repetitive tasks and focus on what matters most. Start today and simplify your life with Rentmote."
+            },
+            {
+              "title": "How much training will I need?",
+              "description": "Rentmote offers thorough training and exceptional support to help you and your team maximize the benefits of our software. We suggest two 45-minute onboarding sessions to get acquainted and set up with the platform. Afterward, you’ll have access to a variety of free resources at your convenience, including our Help Center, Rentmote University, and live chat assistance."
+            },
+            {
+              "title": "What is our competitor comparison test?",
+              "description": "Many property management software providers claim to be “the easiest.” We encourage you to put that statement to the test. Sign up for a free demo with any competitor and decide for yourself which platform is truly the simplest to use. When we conducted our research, we discovered that most property management programs feel stuck in the 90s. In software, the coding framework is like an old engine—it can’t be easily replaced. Most of us wouldn’t drive a car from 1998, so why settle for outdated software from decades ago?"
+            }
+          ]
         },
         {
-          "title": "Sem natoque non malesuada ornare pharetra; nam blandit",
-          "description": "Velit eros eget enim ultrices commodo id. Laoreet tristique tincidunt, mi taciti iaculis augue neque vulputate. Fusce senectus sagittis fames interdum luctus fermentum suspendisse dictumst. Ultricies orci mus a conubia neque habitasse ut euismod. Semper duis sit nullam sociosqu hendrerit bibendum. Fames et cubilia faucibus; nisl ultrices maximus. Justo eleifend posuere penatibus conubia taciti maecenas nibh. Sit iaculis sollicitudin eget interdum pretium arcu."
+          "section": "Data & Security",
+          "questions": [
+            {
+              "title": "Do we conduct background checks on our employees?",
+              "description": "We meticulously screen every potential employee before hiring them at Rentmote. Our process includes a rigorous interview, identity verification with multiple forms of ID, reference checks, employment verification, and criminal background checks. All employees must sign confidentiality and non-disclosure agreements and complete extensive training before starting work at Rentmote."
+            },
+            {
+              "title": "Is my data backed up and secure?",
+              "description": "Absolutely. Rest easy knowing your data is automatically backed up across multiple servers. If desired, you can also export and save a local copy of your data to your computer. Rentmote is hosted by Amazon Web Services (AWS), the industry leader in data security, trusted by companies like Netflix, LinkedIn, Airbnb, Apple, and Adobe. AWS safeguards your data with firewalls, security audits, and penetration testing."
+            },
+            {
+              "title": "Do we have a bug bounty program?",
+              "description": "Yes, for security purposes. As users of our own software, security is our top priority. If you’re a security researcher and find any potential vulnerabilities, please reach out to us."
+            },
+            {
+              "title": "Are my payments and data encrypted?",
+              "description": "When you log into Rentmote, the HTTPS link with a lock icon indicates secure SSL encryption for all browser communication. Your data is protected with 256-bit military-grade encryption, both at rest and during transfer. Payments to Rentmote and tenants’ rent payments are PCI-compliant, processed directly through the credit card processor without touching our servers. Tenants can pay rent online via credit/debit card or ACH (powered by Stripe). Learn more about Rentmote’s security."
+            },
+            {
+              "title": "How can I delete all my data?",
+              "description": "If you have full admin access, you can delete all your data by selecting every item on each page and performing a mass deletion. Alternatively, after thoroughly verifying your identity, we can delete your entire account for you. Please note that deletion is permanent, and there is no recycle bin or recovery option."
+            },
+            {
+              "title": "Do I need servers to run Rentmote?",
+              "description": "Not at all! As a cloud-based software, Rentmote is accessible from any device or browser, including computers like Mac, Windows PCs, Surface, and Chromebook, mobile devices like iPhone, iPad, Android, and Amazon Fire, and browsers such as Chrome, Safari, Internet Explorer, Firefox, and Opera. Work anywhere, anytime, on any device."
+            },
+            {
+              "title": "How secure is your API?",
+              "description": "If you plan to use our API to integrate with other applications, rest assured that all data is encrypted both at rest and in transit using the AES-256 encryption algorithm. Every subscription includes enterprise-level security features such as TLS/SSL application endpoints, robust cipher suites, Perfect Forward Secrecy, and more. You can test our API using the Qualys SSL Labs test, where we’ve earned an A+ rating."
+            },
+            {
+              "title": "Do you offer 2-Step Verification?",
+              "description": "Yes. For added security, you can enable this feature to receive an email with a one-time code whenever you log into your account."
+            }
+          ]
         },
         {
-          "title": "Ultricies elit arcu placerat accumsan accumsan phasellus suspendisse",
-          "description": "Sollicitudin ultricies tristique mollis mollis rhoncus sociosqu amet eu. Turpis habitant molestie ante vestibulum maecenas ultricies nascetur. Ex duis amet nibh cursus posuere viverra mus. Himenaeos morbi ultricies ullamcorper aptent sem imperdiet pretium imperdiet. Feugiat netus parturient; sociosqu adipiscing neque leo. Torquent quis enim nec pretium tincidunt pellentesque aliquet gravida cursus. Maecenas viverra amet nec quam, hac ut. Cras molestie ipsum mollis est augue nisl. Porttitor mollis libero ligula orci convallis molestie. Phasellus semper cras tellus, congue enim mattis id."
-        },
-        {
-          "title": "Congue dui etiam; convallis volutpat mollis donec ullamcorper",
-          "description": "Fermentum gravida per integer malesuada sed. Dolor euismod ipsum volutpat orci tortor sed eros scelerisque. Justo hendrerit duis euismod lorem nibh. Diam aenean class congue quisque; sollicitudin viverra. Libero ipsum justo pulvinar habitasse lacus congue ex dolor. Nunc imperdiet parturient nibh sollicitudin iaculis. Tellus tristique placerat enim adipiscing feugiat? Semper mus nisl erat bibendum nibh egestas nostra ultrices. Montes egestas nec duis molestie porttitor."
-        },
-        {
-          "title": "Laoreet est maximus maximus fermentum orci id facilisi",
-          "description": "Nam ornare lacus varius himenaeos; arcu vel? Amet suspendisse maximus nostra parturient mi dolor dolor orci. Porttitor netus scelerisque fringilla per; finibus tortor pellentesque. Tortor non nisi torquent pretium volutpat lacus himenaeos fusce. Lectus conubia est suscipit interdum sit velit. Consectetur pulvinar fringilla cursus maximus vulputate; lacus dictum porttitor. Pellentesque efficitur dui posuere vehicula neque natoque duis suspendisse justo. Etiam ipsum blandit euismod, enim rutrum quis. Varius urna dis sagittis interdum nibh mattis rhoncus aenean orci. Proin malesuada class elit maximus congue per."
-        },
-        {
-          "title": "Aliquet torquent habitant consectetur primis suscipit rhoncus auctor",
-          "description": "Bibendum fringilla inceptos gravida ac cursus accumsan consectetur. Tempor a aliquet lorem, fames porta leo. Interdum sapien laoreet magna pharetra tincidunt volutpat magna? Consequat lacus vel; inceptos ultrices accumsan volutpat suscipit. Fames auctor rhoncus condimentum sociosqu aptent mus consequat. Leo auctor semper efficitur nisl finibus aptent consectetur iaculis potenti. Maecenas conubia ultricies, lobortis curae congue laoreet."
-        },
-        {
-          "title": "Vulputate eleifend finibus nibh sem facilisis sit dictumst interdum",
-          "description": "Rutrum taciti gravida orci semper leo. Inceptos ac imperdiet mollis conubia dictum dui. Maecenas semper fermentum dui eget taciti eget consequat. Platea adipiscing cras phasellus semper et maecenas. Est ligula suscipit quis mus ullamcorper. Imperdiet a nulla pulvinar ultricies; ridiculus vel sagittis. Purus ridiculus elit bibendum quam elit convallis est dolor tempus."
-        },
-        {
-          "title": "Mollis taciti volutpat adipiscing amet penatibus",
-          "description": "Natoque pharetra elit risus habitasse cursus rutrum pretium nunc. Pellentesque libero mauris nulla elementum nisl rhoncus dignissim natoque. Penatibus egestas commodo vivamus lacinia inceptos. Eget egestas nulla, imperdiet consequat curae ipsum. Senectus velit mus id et curabitur venenatis. Sodales egestas adipiscing potenti convallis velit sit odio est. Purus vulputate sagittis aliquam; eget viverra ad. Consectetur adipiscing aptent pretium torquent nulla ante."
-        },
-        {
-          "title": "Tincidunt non gravida imperdiet morbi orci class per vestibulum",
-          "description": "Natoque pharetra elit risus habitasse cursus rutrum pretium nunc. Pellentesque libero mauris nulla elementum nisl rhoncus dignissim natoque. Penatibus egestas commodo vivamus lacinia inceptos. Eget egestas nulla, imperdiet consequat curae ipsum. Senectus velit mus id et curabitur venenatis. Sodales egestas adipiscing potenti convallis velit sit odio est. Purus vulputate sagittis aliquam; eget viverra ad. Consectetur adipiscing aptent pretium torquent nulla ante."
+          "section": "Others",
+          "questions": [
+            {
+              "title": "Is Rentmote always online?",
+              "description": "We guarantee an industry-leading 99.9% server uptime. Updates are typically released on weekends or late at night to ensure they never disrupt your operations. To verify our status or uptime, visit our Status page. Given our experience with hurricanes at our global headquarters in Miami, we’ve implemented comprehensive backup and continuity plans. In the event of a natural disaster, our remote teams and offices, spread across multiple continents, will continue to support you without interruption."
+            },
+            {
+              "title": "Is Rentmote available in other languages?",
+              "description": "Rentmote is currently offered in English. We plan to add Spanish, French, and German in the near future, and we also intend to translate the owner and tenant portal into additional languages. If there is sufficient demand, we will consider translating the platform into any other language. Please contact us to request support for a specific language."
+            },
+            {
+              "title": "Will you do custom development for a fee?",
+              "description": "Yes, depending on the scope of the request. Please contact us to discuss custom features and other possibilities."
+            },
+            {
+              "title": "How often do you add new features and updates?",
+              "description": "We firmly believe in “innovate or die,” which is why we’re always pushing boundaries and introducing exciting new features to help your business thrive. Rentmote receives monthly updates, which are automatic and don’t require any downloads or installations."
+            },
+            {
+              "title": "Why did we start Rentmote?",
+              "description": "The founders of Rentmote are property managers and owners, just like you. We’ve faced many of the same challenges, such as rent collection, lease renewals, and maintenance requests, often sacrificing personal time with our families or driving long distances just to collect rent. What once seemed like a dream began to feel overwhelming, as if our investments were owning us. However, after refining our methods and learning from top property managers and owners, we incorporated these best practices into Rentmote’s software. Our goal is to help you manage your properties, grow your business, and increase your profits."
+            },
+            {
+              "title": "Do you take feature suggestions?",
+              "description": "Absolutely! Your feedback plays a key role in shaping our priorities. While we can’t incorporate every suggestion to avoid overcomplicating the software, we focus on implementing the most important requests based on demand and overall benefits."
+            },
+            {
+              "title": "Why the name Rentmote?",
+              "description": "The name combines \"rental\" and \"remote,\" reflecting our focus on managing rental properties efficiently from anywhere. It highlights our mission to streamline property management while offering flexibility and control, no matter where you are."
+            },
+            {
+              "title": "Can I access Rentmote from multiple devices simultaneously?",
+              "description": "Yes, you can access Rentmote from multiple devices at the same time. Our cloud-based platform allows you to manage your properties seamlessly, whether you're using a computer, tablet, or smartphone. All your data is synchronized in real-time, ensuring you always have the most up-to-date information no matter which device you use."
+            }
+          ]
         }
       ]
     },
