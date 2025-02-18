@@ -51,7 +51,7 @@ const LoginButon = styled.button`
 `;
 
 export const LoginButtonGroup: React.FC = () => {
-  const userLanguage = useUserLanguage();
+  const { userLanguage } = useUserLanguage();
 
   const onLoginActionHandle = () => {
     if(typeof window === 'undefined') {

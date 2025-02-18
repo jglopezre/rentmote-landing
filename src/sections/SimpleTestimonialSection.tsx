@@ -42,14 +42,14 @@ export const SimpleTestimonialSection: React.FC = () => {
           name
           childImageSharp {
             id
-            gatsbyImageData(height: 550 ,placeholder: BLURRED, transformOptions: {fit: COVER})
+            gatsbyImageData(height: 550, width: 550 ,placeholder: BLURRED, transformOptions: {fit: COVER})
           }
         }
       }
     }  
   `);
 
-  const userLanguage = useUserLanguage();
+  const { userLanguage } = useUserLanguage();
   const texts = userLanguage === 'es' ? data.allJsonJson.nodes[0].es.simpleTestimonialSection : data.allJsonJson.nodes[0].es.simpleTestimonialSection;
 
   const picture = data.allFile.nodes.find((node: any) => node.name === texts.image);

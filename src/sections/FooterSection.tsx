@@ -86,7 +86,7 @@ export const FooterSection: React.FC = () => {
       }
     }  
   `);
-  const userLanguage = useUserLanguage();
+  const { userLanguage } = useUserLanguage();
 
   const texts = userLanguage === 'es' ? data.allJsonJson.nodes[0].es.footerSection : data.allJsonJson.nodes[0].es.footerSection;
 

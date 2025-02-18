@@ -40,7 +40,7 @@ export const InfoCardsSection: React.FC = () => {
     }
   `);
 
-  const userLanguage = useUserLanguage();
+  const { userLanguage } = useUserLanguage();
 
   const texts: TextsProps[] = userLanguage === 'es' ? data.allJsonJson.nodes[0].es.infoCardSection : data.allJsonJson.nodes[0].en.infoCardSection;
 

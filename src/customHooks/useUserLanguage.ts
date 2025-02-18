@@ -1,7 +1,13 @@
-import { useEffect, useState } from 'react';
+import { UserLanguageContext } from '@/contexts/userLanguageContext';
+import { useContext, useEffect, useState } from 'react';
 
 export const useUserLanguage = () => {
-  const [language, setLanguage] = useState('en');
+  const context = useContext(UserLanguageContext);
+
+  if (!context) throw new Error("useUserLanguaje must be wrapped by useUserLanguageContextProvider");
+
+  return context
+  /* const [language, setLanguage] = useState('en');
 
   useEffect(() => {
     const browserLanguage = navigator.language || navigator.languages[0];
@@ -9,5 +15,5 @@ export const useUserLanguage = () => {
     browserLanguage.startsWith('es') ? setLanguage('es') : setLanguage('en');
   }, []);
 
-  return language;
+  return language; */
 }

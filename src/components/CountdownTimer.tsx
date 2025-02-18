@@ -31,10 +31,6 @@ const StyledTimerWrapper = styled(Row)`
 `;
 
 const TimerUnits = styled(Col)`
-  // text-align: center;
-  
-  // background-size: 300% 300%;
-  // position: relative;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -47,12 +43,6 @@ const TimerDigits = styled.p`
   font-weight: bolder;
   font-size: 3rem;
   color: ${({ theme }) => theme.colors.light};
-  // background: linear-gradient(45deg, #ff6ec4, #7873f5, #57e2e5, #45f587);
-  // background-size: 300% 300%;
-  // background-clip: text;
-  // -webkit-background-clip: text;
-  // -webkit-text-fill-color: transparent;
-  // animation: ${gradient} 10s ease infinite;
   margin-bottom: 0;
   margin-top: 1rem;
 `;
@@ -123,60 +113,3 @@ export const CountdownTimer: React.FC<CountdownTimerProps> = ({ targetTime }) =>
     </StyledTimerWrapper>
   )
 };
-
-/*
-@use "colors" as colors;
-
-@mixin textGradient() {
-  background: linear-gradient(45deg, #ff6ec4, #7873f5, #57e2e5, #45f587);
-  background-size: 300% 300%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: gradient 5s ease infinite;
-}
-
-.countdownContainer {
-  // background-color: colors.$white;
-  padding-bottom: 0.5rem;
-  padding-top: 0.5rem;
-  border: solid 1px colors.$textDark;
-  border-radius: 8px;
-  min-width: 360px;
-  .countdownUnits {
-    text-align: center;
-    // background-color: colors.$white;
-    // background-size: 300% 300%;
-    // position: relative;
-    overflow: hidden;
-    border-right: solid 1px colors.$textLight;
-    .digits {
-      font-family: 'Barlow Condensed';
-      font-weight: bolder;
-      font-size: 4rem;
-      color: colors.$textDark;
-      // @include textGradient();
-      // animation: gradient 10s ease infinite;
-    }
-
-    .words {
-      font-family: Rubik;
-      font-weight: 200;
-      font-size: 0.7rem;
-      color: colors.$textDark;
-    }
-  }
-}
-
-@keyframes gradient {
-  0% {
-      background-position: 0% 50%;
-  }
-  50% {
-      background-position: 100% 50%;
-  }
-  100% {
-      background-position: 0% 50%;
-  }
-}
-
-*/

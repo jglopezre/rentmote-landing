@@ -77,7 +77,7 @@ export const OperationDescriptionSection: React.FC = () => {
         }
       }
     `);
-    const userLanguage = useUserLanguage();
+    const { userLanguage } = useUserLanguage();
 
     const texts = data.allJsonJson.nodes[0];
     const selectedTexts = userLanguage === 'es' ? texts.es.operationDescription : texts.en.operationDescription;

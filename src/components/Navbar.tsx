@@ -46,7 +46,7 @@ export const NavBar: React.FC = () => {
     }
   `);
 
-  const userLanguage = useUserLanguage();
+  const { userLanguage } = useUserLanguage();
 
   const handleScroll = (event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
     event.preventDefault();

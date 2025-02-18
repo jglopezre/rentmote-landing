@@ -117,7 +117,7 @@ export const SupportSection: React.FC = () => {
 
   const breakpoint = useScreenClass();
 
-  const userLanguage = useUserLanguage();
+  const { userLanguage } = useUserLanguage();
 
   const images = data.allFile.nodes;
   

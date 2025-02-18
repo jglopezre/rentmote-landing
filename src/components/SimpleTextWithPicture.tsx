@@ -16,14 +16,14 @@ const Wrapper = styled(motion.div)<{ $breakpoint: string }>`
   justify-content: space-between;
   align-content: center;
   flex-wrap: wrap;
-  row-gap: 64px;
+  column-gap: 32 px;
   margin: 0 ${(props) => props.$breakpoint == 'xs' || props.$breakpoint == 'md' ? '0' : '3rem'};
 `;
 
 const StyledTextContainer = styled(motion.div)`
   word-wrap: break-word;
   align-self: center;
-  flex-basis: 60%;
+  flex-basis: 55%;
   & p {
     font-size: ${({ theme }) => theme.typography.fontSize.s4};
     line-height: 2rem;
@@ -74,7 +74,7 @@ export const SimpleTextWithPicture: React.FC<SimpleTextWithPictureProps> = ({ te
       <StyledTextContainer variants={itemVariants}>
         <p><q>{text}</q></p>
       </StyledTextContainer>
-      <motion.div variants={itemVariants}>
+      <motion.div variants={itemVariants} style={{ flexBasis: "40%" }}>
         {
           image
           ? (
@@ -82,7 +82,7 @@ export const SimpleTextWithPicture: React.FC<SimpleTextWithPictureProps> = ({ te
                 image={image}
                 alt={imageSrc.name}
                 style={{
-                  borderRadius: theme.border.radius.base
+                  borderRadius: theme.border.radius.base,
                 }}
 
               />

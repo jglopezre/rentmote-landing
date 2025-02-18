@@ -116,7 +116,7 @@ export const BigInfoSection: React.FC = () => {
       }
     }  
   `);
-  const userLanguage = useUserLanguage();
+  const { userLanguage } = useUserLanguage();
   
   const [containerRef, isInView] = useInView({
     threshold: 0.3,

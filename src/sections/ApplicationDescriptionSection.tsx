@@ -73,8 +73,8 @@ export const ApplicationDescriptionSection: React.FC = () => {
     }
   `);
 
-  const userLanguage = useUserLanguage();
-
+  const { userLanguage } = useUserLanguage();
+  console.log(userLanguage)
   const texts = data.allJsonJson.nodes[0];
   const selectedTexts = texts[userLanguage].applicationDescription ?? texts['en'].applicationDescription;
 

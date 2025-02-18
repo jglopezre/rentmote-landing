@@ -62,8 +62,8 @@
         "to": "/howItWorks"
       },
       {
-        "text": "Preguntas Frecuentes",
-        "to": "/faqs"
+        "text": "¿Por qué?",
+        "to": "/howItWorksForManager"
       },
       {
         "text": "Soporte",
@@ -239,35 +239,35 @@
     },
     "infoCardSection": [
       {
-        "title": "Lorem ipsum dolor sit amet",
-        "description": "Cras aptent volutpat consequat tellus iaculis orci.",
-        "pillText": "Lorem ipsum"
+        "title": "Gestionar propietarios e inquilinos con Facilidad",
+        "description": "Simplifica la comunicación, contratos y relaciones sin esfuerzo.",
+        "pillText": "Usuarios"
       },
       {
-        "title": "Ut enim ad minim veniam",
-        "description": "Sem posuere mollis dignissim nisi elementum commodo vitae class.",
-        "pillText": "Cras aptent"
+        "title": "Verificar Pagos y Gastos con Precisión",
+        "description": "Controla ingresos, gastos y salud financiera en tiempo real.",
+        "pillText": "Pagos"
       },
       {
-        "title": "sed do eiusmod tempor",
-        "description": "Porttitor phasellus semper finibus nam ridiculus pulvinar.",
-        "pillText": "Tellus iaculis"
+        "title": "Controla ingresos, gastos y salud financiera en tiempo real.",
+        "description": "Organiza solicitudes de mantenimiento y tareas de proveedores sin complicaciones.",
+        "pillText": "Incidentes"
       }
     ],
     "callToActionSection1": {
-      "text": "Lorem ipsum odor amet, consectetuer adipiscing elit. Maecenas etiam pulvinar curae viverra ullamcorper accumsan.",
-      "buttonText": "odor amet"
+      "text": "¿Listo para transformar tu gestión de propiedades? Solicita una demo de Rentmote hoy y descubre la diferencia.",
+      "buttonText": "Solicita una Demo"
     },
     "callToActionSection2": {
-      "text": "Quam ridiculus id auctor elementum hendrerit. Praesent urna cras accumsan ultricies mauris nullam.",
-      "buttonText": "odor amet"
+      "text": "¿Listo para elevar tu gestión de propiedades? Solicita una demo de Rentmote y experimenta el cambio hoy.",
+      "buttonText": "Solicita tu Demo"
     },
     "callToActionSection3": {
       "text": "Solicita una demo de Rentmote hoy y optimiza tu tiempo y ganancias fácilmente.",
       "buttonText": "Solicita tu Demo"
     },
     "simpleTestimonialSection": {
-      "text": "Mauris consequat lobortis sollicitudin, fringilla nisi velit primis euismod. Potenti varius suscipit tellus aptent facilisis. Mattis consequat fames eu faucibus aliquam fringilla enim iaculis. Pretium litora consequat; auctor platea mus cursus risus augue. Curae mus cursus scelerisque massa feugiat a.",
+      "text": "Optimiza la gestión de propiedades con la plataforma integral de Rentmote. Automatiza tareas, rastrea pagos, gestiona inquilinos y genera informes sin esfuerzo. Ahorra tiempo, minimiza errores y haz crecer tu negocio con herramientas diseñadas para maximizar eficiencia y rentabilidad—tu éxito comienza aquí.",
       "image": "rentmote-people-talking-simple-testimonial"
     },
     "quantityInformationSection": [
@@ -316,44 +316,44 @@
     },
     "scrollableStickyInfoSection": [
       {
-        "title": "Sunset Dreams",
-        "description": "Vivid colors paint the evening sky as the sun dips below the horizon."
+        "title": "Información de Propietarios",
+        "description": "Accede a perfiles detallados de los propietarios al instante."
       },
       {
-        "title": "Ocean Waves",
-        "description": "Gentle waves crash against the shore with a soothing rhythm."
+        "title": "Detalles de Propiedades",
+        "description": "Consulta y actualiza toda la información de las propiedades en un solo lugar."
       },
       {
-        "title": "Mountain Peaks",
-        "description": "Snowy summits under a clear blue sky offer breathtaking views."
+        "title": "Seguimiento de Incidentes",
+        "description": "Registra y resuelve problemas reportados por inquilinos eficientemente."
       },
       {
-        "title": "Forest Whispers",
-        "description": "Leaves rustle softly in the cool breeze, creating a serene atmosphere."
+        "title": "Perfiles de Inquilinos",
+        "description": "Almacena y gestiona la información de los inquilinos de forma segura."
       },
       {
-        "title": "Golden Fields",
-        "description": "Endless fields shimmer under the sun, swaying gently in the wind."
+        "title": "Reportes de Pagos",
+        "description": "Genera informes en tiempo real sobre todos los pagos de renta."
       },
       {
-        "title": "City Lights",
-        "description": "Bright lights illuminate the bustling streets of the urban jungle."
+        "title": "Seguimiento de Gastos",
+        "description": "Controla los gastos de las propiedades con facilidad y precisión."
       },
       {
-        "title": "Desert Sands",
-        "description": "Golden dunes stretch endlessly, shaped by the desert winds."
+        "title": "Seguimiento de Pagos",
+        "description": "Rastrea pagos vencidos y envía recordatorios automáticamente."
       },
       {
-        "title": "Rainy Days",
-        "description": "Soft raindrops patter on the window glass, calming the soul."
+        "title": "Gestión de Contratos",
+        "description": "Crea, almacena y renueva acuerdos de arrendamiento sin esfuerzo."
       },
       {
-        "title": "Morning Dew",
-        "description": "Tiny droplets glisten on fresh green leaves in the early light."
+        "title": "Chat en Tiempo Real",
+        "description": "Comunícate con inquilinos y propietarios instantáneamente mediante chat."
       },
       {
-        "title": "Night Stars",
-        "description": "Countless stars twinkle in the dark sky, inspiring wonder and awe."
+        "title": "Portabilidad",
+        "description": "Podes usar la aplicación desde tu móvil, tablet, notebook o computadora de escritorio"
       }
     ],
     "footerSection": {
@@ -437,8 +437,8 @@
         "to": "/howItWorks"
       },
       {
-        "text": "FAQs",
-        "to": "/faqs"
+        "text": "Why?",
+        "to": "/howItWorksForManager"
       },
       {
         "text": "Support",
@@ -614,35 +614,35 @@
     },
     "infoCardSection": [
       {
-        "title": "Lorem ipsum dolor sit amet",
-        "description": "Cras aptent volutpat consequat tellus iaculis orci.",
-        "pillText": "Lorem ipsum"
+        "title": "Manage Owners and Tenants with Ease",
+        "description": "Streamline communication, leases, and relationships effortlessly.",
+        "pillText": "Users"
       },
       {
-        "title": "Ut enim ad minim veniam",
-        "description": "Sem posuere mollis dignissim nisi elementum commodo vitae class.",
-        "pillText": "Cras aptent"
+        "title": "Verify Payments and Expenses Accurately",
+        "description": "Track income, expenses, and financial health in real-time.",
+        "pillText": "Payments"
       },
       {
-        "title": "sed do eiusmod tempor",
-        "description": "Porttitor phasellus semper finibus nam ridiculus pulvinar.",
-        "pillText": "Tellus iaculis"
+        "title": "Handle Incidents and Vendors Efficiently",
+        "description": "Organize maintenance requests and vendor tasks seamlessly.",
+        "pillText": "Incidents"
       }
     ],
     "callToActionSection1": {
-      "text": "Porttitor phasellus semper finibus nam ridiculus pulvinar. Iaculis condimentum viverra",
-      "buttonText": "habitant enim"
+      "text": "Ready to transform your property management? Request a Rentmote demo today and see the difference!",
+      "buttonText": "Request a Demo"
     },
     "callToActionSection2": {
-      "text": "Inceptos euismod eros varius ex fames felis vulputate parturient. Vestibulum malesuada volutpat",
-      "buttonText": "habitant enim"
+      "text": "Ready to elevate your property management? Request a Rentmote demo and experience the change today!",
+      "buttonText": "Request your Demo"
     },
     "callToActionSection3": {
       "text": "Request a Rentmote demo today and optimize your time and profits effortlessly!",
       "buttonText": "Request your Demo"
     },
     "simpleTestimonialSection": {
-      "text": "Ligula sem commodo libero montes praesent curabitur. Amet eros posuere est tellus at pretium condimentum! Arcu dui curabitur pulvinar; tincidunt at a. Sed convallis dapibus eu posuere vulputate eros fames a malesuada. Imperdiet quis mus tincidunt nec felis, metus venenatis phasellus. Vehicula arcu nascetur amet posuere ad leo; vestibulum rhoncus commodo.",
+      "text": "Streamline property management with Rentmote’s all-in-one platform. Automate tasks, track payments, manage tenants, and generate reports effortlessly. Save time, reduce errors, and grow your business with tools designed to optimize efficiency and profitability—your success starts here.",
       "image": "rentmote-people-talking-simple-testimonial"
     },
     "quantityInformationSection": [
@@ -692,44 +692,44 @@
     },
     "scrollableStickyInfoSection": [
       {
-        "title": "Sunset Dreams",
-        "description": "Vivid colors paint the evening sky as the sun dips below the horizon."
+        "title": "Owner Information",
+        "description": "Access detailed profiles of property owners instantly."
       },
       {
-        "title": "Ocean Waves",
-        "description": "Gentle waves crash against the shore with a soothing rhythm."
+        "title": "Property Details",
+        "description": "View and update all property data in one place."
       },
       {
-        "title": "Mountain Peaks",
-        "description": "Snowy summits under a clear blue sky offer breathtaking views."
+        "title": "Incident Tracking",
+        "description": "Log and resolve tenant-reported issues efficiently."
       },
       {
-        "title": "Forest Whispers",
-        "description": "Leaves rustle softly in the cool breeze, creating a serene atmosphere."
+        "title": "Tenant Profiles",
+        "description": "Store and manage tenant information securely."
       },
       {
-        "title": "Golden Fields",
-        "description": "Endless fields shimmer under the sun, swaying gently in the wind."
+        "title": "Payment Reports",
+        "description": "Generate real-time reports on all rent payments."
       },
       {
-        "title": "City Lights",
-        "description": "Bright lights illuminate the bustling streets of the urban jungle."
+        "title": "Expense Tracking",
+        "description": "Monitor property expenses with ease and accuracy."
       },
       {
-        "title": "Desert Sands",
-        "description": "Golden dunes stretch endlessly, shaped by the desert winds."
+        "title": "Payment Follow-ups",
+        "description": "Track overdue payments and send reminders automatically."
       },
       {
-        "title": "Rainy Days",
-        "description": "Soft raindrops patter on the window glass, calming the soul."
+        "title": "Contract Management",
+        "description": "Create, store, and renew lease agreements effortlessly."
       },
       {
-        "title": "Morning Dew",
-        "description": "Tiny droplets glisten on fresh green leaves in the early light."
+        "title": "Real-Time Chat",
+        "description": "Communicate with tenants and owners instantly via chat."
       },
       {
-        "title": "Night Stars",
-        "description": "Countless stars twinkle in the dark sky, inspiring wonder and awe."
+        "title": "Portability",
+        "description": "You can use the application on yuor mobile device, tablet, notebook or desktop computer"
       }
     ],
     "footerSection": {

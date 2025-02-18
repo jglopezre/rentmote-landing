@@ -32,7 +32,8 @@ const StyledButtonContainer = styled(Col)<{ $value: string, $selected:string }>`
     background-color: ${({ theme, $value, $selected }) => $value === $selected ? theme.colors.primary1 : theme.colors.light};
     color: ${({ theme, $value, $selected }) => $value === $selected ? theme.colors.light : theme.colors.primary1};
     border-radius: ${({ theme }) => theme.border.radius.base};
-    padding: 1rem 3rem;
+    padding: 1rem 2rem;
+    width: 100%;
     border-style: solid;
     border-width: ${({ theme }) => theme.border.width.md};
     border-color: ${({ theme }) => theme.colors.primary1};
@@ -78,9 +79,9 @@ export const FaqsSection: React.FC = () => {
     }
   `);
 
-  const userLanguaje = useUserLanguage();
+  const { userLanguage } = useUserLanguage();
   
-  const texts = userLanguaje === 'es' ? data.allJsonJson.nodes[0].es.faqsSection : data.allJsonJson.nodes[0].en.faqsSection
+  const texts = userLanguage === 'es' ? data.allJsonJson.nodes[0].es.faqsSection : data.allJsonJson.nodes[0].en.faqsSection
   
   const title: string = texts.title;
   

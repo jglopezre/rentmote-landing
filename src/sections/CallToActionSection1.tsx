@@ -31,7 +31,7 @@ export const CallToActionSection1: React.FC = () => {
       }
     }
   `);
-  const userLanguage = useUserLanguage();
+  const { userLanguage } = useUserLanguage();
 
   const texts = userLanguage === 'es' ? data.allJsonJson.nodes[0].es.callToActionSection1 : data.allJsonJson.nodes[0].en.callToActionSection1;
 

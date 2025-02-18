@@ -113,7 +113,7 @@ export const CharacteristicsSection: React.FC = () => {
   `);
   const breakpoint = useScreenClass();
 
-  const userLanguage = useUserLanguage();
+  const { userLanguage } = useUserLanguage();
 
   const [selectedCard, setSelectedCard] = useState<any | undefined>();
 

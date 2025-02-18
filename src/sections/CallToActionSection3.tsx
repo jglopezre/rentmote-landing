@@ -32,7 +32,7 @@ export const CallToActionSection3: React.FC = () => {
       }
     }
   `);
-  const userLanguage = useUserLanguage();
+  const { userLanguage } = useUserLanguage();
 
   const texts = userLanguage === 'es' ? data.allJsonJson.nodes[0].es.callToActionSection3 : data.allJsonJson.nodes[0].en.callToActionSection3;
 

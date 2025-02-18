@@ -43,7 +43,7 @@ export const QuantityInformationSectiton: React.FC = () => {
     }  
   `);
 
-  const userLanguage = useUserLanguage();
+  const { userLanguage } = useUserLanguage();
 
   const texts: any[] = userLanguage === 'es' ? data.allJsonJson.nodes[0].es.quantityInformationSection : data.allJsonJson.nodes[0].en.quantityInformationSection
 

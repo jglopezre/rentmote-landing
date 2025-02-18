@@ -69,7 +69,7 @@ export const ExperienceSection: React.FC = () => {
 
   const breakpoint = useScreenClass();
 
-  const userLanguage = useUserLanguage();
+  const { userLanguage } = useUserLanguage();
 
   const texts = userLanguage === 'es' ? data.allJsonJson.nodes[0].es.experienceSection : data.allJsonJson.nodes[0].en.experienceSection;
 

@@ -39,7 +39,7 @@ export const ScrollableStickyInfoSection: React.FC = () => {
     }  
   `);
   
-  const userLanguage = useUserLanguage();
+  const { userLanguage } = useUserLanguage();
 
   const content = userLanguage === 'es' ? data.allJsonJson.nodes[0].es.scrollableStickyInfoSection : data.allJsonJson.nodes[0].en.scrollableStickyInfoSection;
 
