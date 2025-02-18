@@ -92,7 +92,7 @@ export const FooterSection: React.FC = () => {
 
   return (
     <BackgroundWrapper>
-      <Container>
+      <Container component="footer">
         <StyledFooterWrapper component="footer">
           <LogoContainer xs={12} md={3}>
             <Link to="/">

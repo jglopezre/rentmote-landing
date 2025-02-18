@@ -27,8 +27,8 @@ export const TopBarSection: React.FC = () => {
   const breakpoint = useScreenClass();
 
   return (
-    <Container>
-      <StyledSectionWrapper justify="between" component="header" $breakpoint={breakpoint}>
+    <Container component="header">
+      <StyledSectionWrapper justify="between" $breakpoint={breakpoint}>
         <Col xs="content">
           <Link to="/">
             <StaticImage

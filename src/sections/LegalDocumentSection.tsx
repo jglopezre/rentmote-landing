@@ -36,7 +36,7 @@ export const LegalDocumentSection: React.FC<LegalDocumentSectionProps> = ({ docu
   const contentRef = useRef<HTMLDivElement>(null)
   
   return (
-    <Container>
+    <Container component="section">
       <Row>
         <Col xs={12}>
           <StyledDocument

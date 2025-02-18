@@ -12,7 +12,7 @@ type Faq = {
 
 type FaqSection = {
   section: string,
-  questions: Faq[]
+  questions: Faq[],
 }
 
 const TitleContainer = styled(Col)`
@@ -21,6 +21,26 @@ const TitleContainer = styled(Col)`
   & h1 {
     font-weight: 300;
     font-size: ${({ theme }) => theme.typography.fontSize.s1};
+  }
+`;
+
+const StyledButtonContainer = styled(Col)<{ $value: string, $selected:string }>`
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+  & > button {
+    background-color: ${({ theme, $value, $selected }) => $value === $selected ? theme.colors.primary1 : theme.colors.light};
+    color: ${({ theme, $value, $selected }) => $value === $selected ? theme.colors.light : theme.colors.primary1};
+    border-radius: ${({ theme }) => theme.border.radius.base};
+    padding: 1rem 3rem;
+    border-style: solid;
+    border-width: ${({ theme }) => theme.border.width.md};
+    border-color: ${({ theme }) => theme.colors.primary1};
+    cursor: pointer;
+    &:hover {
+      background-color: ${({ theme }) => theme.colors.primary1};
+      color: ${({ theme }) => theme.colors.light};
+    }
   }
 `;
 
@@ -69,32 +89,33 @@ export const FaqsSection: React.FC = () => {
   const [selectedSection, setSelectedSection] = useState<string>(faqs[0].section);
 
   const questions = faqs.find((faqSection) => faqSection.section === selectedSection)?.questions;
-  console.log(questions)
 
   return (
-    <Container>
+    <Container component="section">
       <Row>
         <TitleContainer>
           <h1>{title}</h1>
         </TitleContainer>
       </Row>
-      <Row>
-        <Col>
-          {
-            faqs.map((faqSection) => (
-              <button onClick={() => setSelectedSection(faqSection.section)}>
+      <Row justify="center">
+        {
+          faqs.map((faqSection, index) => (
+            <StyledButtonContainer $value={faqSection.section} $selected={selectedSection} key={faqSection.section.concat(index.toString())}>
+              <button
+                type="button"
+                onClick={() => setSelectedSection(faqSection.section)}
+              >
                 {faqSection.section}
               </button>
-            ))
-          }
-        </Col>
+            </StyledButtonContainer>
+          ))
+        }
       </Row>
       <Row gutterWidth={48}>
         {
           questions?.map((question, index) => (
-            <Col xs={12} lg={6}>
+            <Col xs={12} lg={6} key={question.title.slice(0,6).concat(index.toString())}>
               <FaqBox
-                key={question.title.slice(0,6).concat(index.toString())}
                 title={question.title}
                 description={question.description}
               />
@@ -105,15 +126,3 @@ export const FaqsSection: React.FC = () => {
     </Container>
   );
 }
-
-/* {
-  texts.faqs.map((faq, index) => (
-    <Col xs={12} lg={6}>
-      <FaqBox
-        key={faq.title.slice(0,6).concat(index)}
-        title={faq.title}
-        description={faq.description}
-      />
-    </Col>
-  ))
-} */

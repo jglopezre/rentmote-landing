@@ -32,17 +32,12 @@ const StickyScrollAnimation = () => {
   const rotate = useTransform(scrollYProgress, [0, 1], [0, 360]); // Rotación basada en el scroll
 
   return (
-    <div>
-      {/* Contenido antes del sticky container */}
-
-      {/* Sticky container con animación */}
+    <section>
       <StickyContainer>
         <AnimatedBox style={{ scale, rotate }} />
       </StickyContainer>
-
-      {/* Contenido después del sticky container */}
       <Content />
-    </div>
+    </section>
   );
 };
 

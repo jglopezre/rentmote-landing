@@ -44,7 +44,7 @@ export const ScrollableStickyInfoSection: React.FC = () => {
   const content = userLanguage === 'es' ? data.allJsonJson.nodes[0].es.scrollableStickyInfoSection : data.allJsonJson.nodes[0].en.scrollableStickyInfoSection;
 
   return (
-    <StyledSectionContainer>
+    <StyledSectionContainer component="section">
       <Row>
         <Col xs={12} md={6}>
           {

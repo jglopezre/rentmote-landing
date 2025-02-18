@@ -1,9 +1,9 @@
 import React from 'react';
+import { useScreenClass } from 'react-grid-system';
 import styled from 'styled-components';
 import { motion } from 'framer-motion'
 import { FooterSection, TopBarSection } from '@/sections';
 import { ReactSimpleComponentProps } from '@/custom-types';
-import { Container, useScreenClass } from 'react-grid-system';
 
 const StyledHeaderBar = styled.div<{$breakpoint: string}>`
   background-color: rgba(255, 255, 255, 0.4);
@@ -33,7 +33,9 @@ export const Layout: React.FC<ReactSimpleComponentProps> = ({ children }) => {
         <TopBarSection />
       </StyledHeaderBar>
       <StyledBodyArea $breakpoint={breakpoint}>
-        { children }
+        <main style={{ minHeight: '100vh' }}>
+          { children }
+        </main>
         <FooterSection />
       </StyledBodyArea>
     </motion.div>

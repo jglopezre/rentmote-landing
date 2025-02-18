@@ -46,7 +46,7 @@ export const ConvergenceAnimationSection: React.FC = () => {
   const secondaryImages = data.secondaryImages.nodes;
 
   return(
-    <div>
+    <section>
       <StickyContainer>
         <ScrollingAnimatedImageConvergence
           mainImageSrc={mainImageData}
@@ -54,6 +54,6 @@ export const ConvergenceAnimationSection: React.FC = () => {
         />
       </StickyContainer>
       <ExtraSpace />
-    </div>
+    </section>
   );
 }

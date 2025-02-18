@@ -55,7 +55,7 @@ export const SimpleTestimonialSection: React.FC = () => {
   const picture = data.allFile.nodes.find((node: any) => node.name === texts.image);
 
   return (
-    <StyledSectionWrapper>
+    <StyledSectionWrapper component="section">
       <Row>
         <ComponentContainer>
           <SimpleTextWithPicture
