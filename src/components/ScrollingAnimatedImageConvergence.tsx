@@ -39,6 +39,7 @@ export const ScrollingAnimatedImageConvergence: React.FC<ScrollingAnimatedImageC
   
   const secondaryImages = secondaryImagesSrc.map((imageSrc) => {
     const image = getImage(imageSrc);
+ 
     if (!image) return null;
 
     const initialX = getRandomPosition(
@@ -61,7 +62,7 @@ export const ScrollingAnimatedImageConvergence: React.FC<ScrollingAnimatedImageC
       >
         <GatsbyImage
           image={image}
-          alt={image.name}
+          alt={imageSrc.name}
           style={{
             borderRadius: theme.border.radius.base,
           }}
@@ -82,7 +83,7 @@ export const ScrollingAnimatedImageConvergence: React.FC<ScrollingAnimatedImageC
           mainImage && (
             <GatsbyImage
               image={mainImage}
-              alt={mainImage.name}
+              alt={mainImageSrc.name}
               style={{
                 borderRadius: theme.border.radius.base,
                 borderStyle: 'solid',

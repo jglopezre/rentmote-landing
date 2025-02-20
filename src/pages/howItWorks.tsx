@@ -1,21 +1,21 @@
 import React from 'react';
 import { HeadFC, PageProps } from 'gatsby';
-import { ScrollingAnimatedImageConvergence, Seo } from '@/components';
+import { Seo } from '@/components';
 import {
-  ExperienceSection,
-  InfoCardsSection,
   CallToActionSection1,
   CallToActionSection2,
   SimpleTestimonialSection,
-  ScrollableStickyInfoSection
+  ScrollableStickyInfoSection,
+  ExperienceSection2,
+  SelectableInfoCardsSection
 } from '@/sections';
 
 const HowItWorksPage: React.FC<PageProps> = () => {
 
   return (
     <>
-      <ExperienceSection />
-      <InfoCardsSection />
+      <ExperienceSection2 />
+      <SelectableInfoCardsSection />
       <ScrollableStickyInfoSection />
       <CallToActionSection1 />
       <SimpleTestimonialSection />

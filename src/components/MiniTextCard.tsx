@@ -4,7 +4,7 @@ import styled from 'styled-components';
 type MiniTextCardProps = {
   title: string
   description: string
-  pillText: string
+  pillText?: string
 };
 
 const CardWrapper = styled.div`
@@ -13,6 +13,9 @@ const CardWrapper = styled.div`
   justify-content: center;
   flex-direction: column;
   padding: 4rem 3rem;
+  & p {
+    line-height: 1.8rem;
+  }
 `;
 
 const Pill = styled.span`
@@ -27,9 +30,13 @@ const Pill = styled.span`
 export const MiniTextCard: React.FC<MiniTextCardProps> = ({ title, description, pillText }) => {
   return (
     <CardWrapper>
-      <Pill>
-        {pillText}
-      </Pill>
+      {
+        pillText && (
+          <Pill>
+            {pillText}
+          </Pill>
+        )
+      }
       <div>
         <h2>{title}</h2>
         <p>{description}</p>

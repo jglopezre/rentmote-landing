@@ -19,3 +19,5 @@ export * from './QuantityInformationSection';
 export * from './BigInfoSection';
 export * from './TopBarSection';
 export * from './ScrollableStickyInfoSection';
+export * from './ExperienceSection2';
+export * from './SelectableInfoCardsSection';

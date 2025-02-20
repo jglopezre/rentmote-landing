@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { graphql, Link, useStaticQuery } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import { Col, Container, Row } from 'react-grid-system';
@@ -106,11 +106,11 @@ export const FooterSection: React.FC = () => {
           <LinksContainer xs={12} md={3}>
             <div>
               {
-                texts.infoLinks.map((link: any) => (
-                  <>
-                    <StyledLink to={link.url}>{link.text}</StyledLink>
+                texts.infoLinks.map((link: any, index: number) => (
+                  <Fragment key={link.url.concat(index.toString())}>
+                    <StyledLink to={link.url} >{link.text}</StyledLink>
                     <br/>
-                  </>
+                  </Fragment>
                 ))
               }
             </div>

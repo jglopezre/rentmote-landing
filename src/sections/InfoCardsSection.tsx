@@ -49,7 +49,7 @@ export const InfoCardsSection: React.FC = () => {
       <Row>
         {
           texts.map((text, index) => (
-            <Col xs={12} lg={4}>
+            <Col xs={12} lg={4} key={text.pillText.concat(index.toString())}>
               <MiniTextCard
                 title={text.title}
                 description={text.description}

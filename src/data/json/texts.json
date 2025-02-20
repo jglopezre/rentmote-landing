@@ -237,6 +237,10 @@
       "title": "El software todo en uno cuyo objetivo es tu crecimiento.",
       "description": "Nuestro software de vanguardia y equipo de clase mundial están aquí para ayudar a que tu negocio sea el más rentable, organizado y exitoso que jamás haya sido."
     },
+    "experienceSection2": {
+      "title": "La plataforma integral diseñada para gestionar propiedades sin complicaciones.",
+      "description": "Brindando a propietarios e inquilinos herramientas para simplificar pagos, comunicación y mantenimiento sin esfuerzo."
+    },
     "infoCardSection": [
       {
         "title": "Gestionar propietarios e inquilinos con Facilidad",
@@ -254,6 +258,37 @@
         "pillText": "Incidentes"
       }
     ],
+    "selectableInfoCardSection": {
+      "owner": [
+        {
+          "title": "Reportes de Propiedades",
+          "description": "Accede a informes detallados sobre ingresos, gastos y rendimiento."
+        },
+        {
+          "title": "Actualizaciones de Incidentes",
+          "description": "Mantente informado sobre problemas de mantenimiento en tiempo real."
+        },
+        {
+          "title": "Chat Directo",
+          "description": "Comunícate al instante con tu administrador cuando lo necesites."
+        }
+      ],
+      "tenant": [
+        {
+          "title": "Pagos de Renta",
+          "description": "Paga la renta en línea fácilmente y rastrea tu saldo de forma segura."
+        },
+        {
+          "title": "Reporte de Incidentes",
+          "description": "Crea y monitorea problemas relacionados con la propiedad sin complicaciones."
+        },
+        {
+          "title": "Chat en Tiempo Real",
+          "description": "Conéctate directamente con el administrador para soluciones rápidas."
+        }
+      ]
+    },
+    
     "callToActionSection1": {
       "text": "¿Listo para transformar tu gestión de propiedades? Solicita una demo de Rentmote hoy y descubre la diferencia.",
       "buttonText": "Solicita una Demo"
@@ -612,6 +647,10 @@
       "title": "The all-in-one software whose goal is your growth.",
       "description": "Our cutting-edge software and world-class team are here to help your business become the most profitable, organized, and successful it is ever been."
     },
+    "experienceSection2": {
+      "title": "The all-in-one platform designed for seamless property management.",
+      "description": "Empowering owners and tenants with tools to simplify payments, communication, and maintenance effortlessly."
+    },
     "infoCardSection": [
       {
         "title": "Manage Owners and Tenants with Ease",
@@ -629,6 +668,36 @@
         "pillText": "Incidents"
       }
     ],
+    "selectableInfoCardSection": {
+      "owner": [
+        {
+          "title": "Property Reports",
+          "description": "Access detailed reports on income, expenses, and performance."
+        },
+        {
+          "title": "Incident Updates",
+          "description": "Stay informed about maintenance issues in real-time."
+        },
+        {
+          "title": "Direct Chat",
+          "description": "Communicate instantly with your property manager anytime."
+        }
+      ],
+      "tenant": [
+        {
+          "title": "Rent Payments",
+          "description": "Pay rent online easily and track your balance securely.  "
+        },
+        {
+          "title": "Incident Reporting",
+          "description": "Create and monitor property-related issues effortlessly.  "
+        },
+        {
+          "title": "Real-Time Chat",
+          "description": "Connect directly with the manager for quick resolutions."
+        }
+      ]
+    },
     "callToActionSection1": {
       "text": "Ready to transform your property management? Request a Rentmote demo today and see the difference!",
       "buttonText": "Request a Demo"

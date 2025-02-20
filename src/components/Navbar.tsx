@@ -66,8 +66,8 @@ export const NavBar: React.FC = () => {
   return (
     <nav>
       {
-        selectedTexts.map(( elem ) => (
-            <StyledLink to={elem.to}>{elem.text}</StyledLink>    
+        selectedTexts.map(( elem, index ) => (
+            <StyledLink to={elem.to} key={index}>{elem.text}</StyledLink>    
         ))
       }
     </nav>

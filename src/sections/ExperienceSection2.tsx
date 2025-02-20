@@ -1,14 +1,13 @@
-import { AnimatedPicturePresenter } from '@/components/AnimatedPicturePresenter';
-import { useUserLanguage } from '@/customHooks';
-import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
 import { Col, Container, Row, useScreenClass } from 'react-grid-system';
+import { AnimatedPicturePresenter } from '@/components/AnimatedPicturePresenter';
+import { graphql, useStaticQuery } from 'gatsby';
+import { useUserLanguage } from '@/customHooks';
 import styled from 'styled-components';
 
 const StyledSectionWrapper = styled(Container)`
   padding-top: ${({ theme }) => theme.spacing.section};
   padding-bottom: ${({ theme }) => theme.spacing.section};
-  
 `;
 
 const ContentTextContainer = styled(Col)<{$breakpoint: string}>`
@@ -45,19 +44,19 @@ const RotatedBar = styled.div`
   transform: rotate(25deg);
 `;
 
-export const ExperienceSection: React.FC = () => {
+export const ExperienceSection2: React.FC = () => {
   const data = useStaticQuery(graphql`
-    query ExperienceSection {
+    query ExperienceSection2 {
       allJsonJson {
         nodes {
           en {
-            experienceSection {
+            experienceSection2 {
               description
               title
             }
           }
           es {
-            experienceSection {
+            experienceSection2 {
               description
               title
             }
@@ -71,7 +70,7 @@ export const ExperienceSection: React.FC = () => {
 
   const { userLanguage } = useUserLanguage();
 
-  const texts = userLanguage === 'es' ? data.allJsonJson.nodes[0].es.experienceSection : data.allJsonJson.nodes[0].en.experienceSection;
+  const texts = userLanguage === 'es' ? data.allJsonJson.nodes[0].es.experienceSection2 : data.allJsonJson.nodes[0].en.experienceSection2;
 
   return (
     <StyledSectionWrapper component="section">
