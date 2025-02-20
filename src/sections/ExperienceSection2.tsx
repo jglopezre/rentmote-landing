@@ -1,6 +1,6 @@
 import React from 'react';
 import { Col, Container, Row, useScreenClass } from 'react-grid-system';
-import { AnimatedPicturePresenter } from '@/components/AnimatedPicturePresenter';
+import { AnimatedMobilePicturePresenter, AnimatedPicturePresenter } from '@/components';
 import { graphql, useStaticQuery } from 'gatsby';
 import { useUserLanguage } from '@/customHooks';
 import styled from 'styled-components';
@@ -19,10 +19,10 @@ const ContentTextContainer = styled(Col)<{$breakpoint: string}>`
 `;
 
 const AnimatedImageContainer = styled(Col)`
-  background-color: ${({ theme }) => theme.colors.primary1};
+  //background-color: ${({ theme }) => theme.colors.primary1};
   padding-top: 3rem;
   padding-bottom: 3rem;
-  border-radius: ${({ theme }) => theme.border.radius.base};
+  //border-radius: ${({ theme }) => theme.border.radius.base};
   position: relative;
 `;
 
@@ -82,14 +82,8 @@ export const ExperienceSection2: React.FC = () => {
           </div>
         </ContentTextContainer>
         <AnimatedImageContainer xs={12} lg={6}>
-          <BarsContainer>
-            {
-              Array.from({ length: 4 }).map((_, index) => (
-                <RotatedBar key={index}/>
-              )) 
-            }
-          </BarsContainer>
-          <AnimatedPicturePresenter />
+          
+          <AnimatedMobilePicturePresenter />
         </AnimatedImageContainer>
       </Row>
     </StyledSectionWrapper>

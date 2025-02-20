@@ -1,4 +1,4 @@
-import { AnimatedPicturePresenter } from '@/components/AnimatedPicturePresenter';
+import { AnimatedPicturePresenter } from '@/components';
 import { useUserLanguage } from '@/customHooks';
 import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';

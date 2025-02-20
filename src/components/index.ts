@@ -18,3 +18,5 @@ export * from './QuantityMinicard';
 export * from './VerticalInfoBigCard';
 export * from './HorizontalInfoMiniCard';
 export * from './StoreBox';
+export * from './AnimatedPicturePresenter';
+export * from './AnimatedMobilePicturePresenter';

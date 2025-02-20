@@ -301,9 +301,18 @@
       "text": "Solicita una demo de Rentmote hoy y optimiza tu tiempo y ganancias fácilmente.",
       "buttonText": "Solicita tu Demo"
     },
+    "callToActionSection4": {
+      "text": "Descubre cómo Rentmote simplifica la gestión de propiedades. Solicita tu demo gratis hoy y comienza ahora.",
+      "buttonText": "Solicita tu Demo"
+    },
+    
     "simpleTestimonialSection": {
       "text": "Optimiza la gestión de propiedades con la plataforma integral de Rentmote. Automatiza tareas, rastrea pagos, gestiona inquilinos y genera informes sin esfuerzo. Ahorra tiempo, minimiza errores y haz crecer tu negocio con herramientas diseñadas para maximizar eficiencia y rentabilidad—tu éxito comienza aquí.",
       "image": "rentmote-people-talking-simple-testimonial"
+    },
+    "simpleTestimonialSection2": {
+      "text": "Rentmote transformó nuestra experiencia de alquiler. Como inquilinos, pagamos la renta fácilmente, reportamos problemas al instante y nos mantenemos actualizados con el chat en tiempo real. Como propietarios, rastreamos ingresos, controlamos gastos y resolvemos incidentes más rápido que nunca. ¡Es la herramienta perfecta para una gestión eficiente!",
+      "image": "rentmote-man-using-cellphone-simple-testimonial-2"
     },
     "quantityInformationSection": [
       {
@@ -389,6 +398,48 @@
       {
         "title": "Portabilidad",
         "description": "Podes usar la aplicación desde tu móvil, tablet, notebook o computadora de escritorio"
+      }
+    ],
+    "scrollableStickyInfoSection2": [
+      {
+        "title": "Chat en Tiempo Real",
+        "description": "Comunícate al instante con administradores o inquilinos cuando quieras."
+      },
+      {
+        "title": "Seguimiento de Pagos",
+        "description": "Consulta y paga la renta en línea con actualizaciones de saldo."
+      },
+      {
+        "title": "Reporte de Incidentes",
+        "description": "Crea problemas relacionados con la propiedad en segundos."
+      },
+      {
+        "title": "Estado de Incidentes",
+        "description": "Mantente informado sobre el progreso de los problemas reportados."
+      },
+      {
+        "title": "Historial de Pagos",
+        "description": "Accede a un registro detallado de todos los pagos anteriores."
+      },
+      {
+        "title": "Reportes de Gastos",
+        "description": "Revisa gastos de la propiedad y resúmenes financieros."
+      },
+      {
+        "title": "Portal Seguro para Inquilinos",
+        "description": "Gestiona renta, incidentes y comunicaciones en un solo lugar."
+      },
+      {
+        "title": "Detalles de la Propiedad",
+        "description": "Consulta información clave sobre la propiedad que ocupas."
+      },
+      {
+        "title": "Solicitudes de Mantenimiento",
+        "description": "Envía y rastrea necesidades de mantenimiento sin esfuerzo."
+      },
+      {
+        "title": "Reportes para Propietarios",
+        "description": "Genera informes sobre ingresos, gastos y rendimiento."
       }
     ],
     "footerSection": {
@@ -710,9 +761,17 @@
       "text": "Request a Rentmote demo today and optimize your time and profits effortlessly!",
       "buttonText": "Request your Demo"
     },
+    "callToActionSection4": {
+      "text": "Discover how Rentmote simplifies property management—request your free demo today and get started!  ",
+      "buttonText": "Request your demo"
+    },
     "simpleTestimonialSection": {
       "text": "Streamline property management with Rentmote’s all-in-one platform. Automate tasks, track payments, manage tenants, and generate reports effortlessly. Save time, reduce errors, and grow your business with tools designed to optimize efficiency and profitability—your success starts here.",
       "image": "rentmote-people-talking-simple-testimonial"
+    },
+    "simpleTestimonialSection2": {
+      "text": "Rentmote transformed how we manage our rental experience. As tenants, we pay rent easily, report issues instantly, and stay updated through real-time chat. As owners, we track income, monitor expenses, and resolve incidents faster than ever. It’s the ultimate tool for seamless communication and property management—efficiency at its best!",
+      "image": "rentmote-man-using-cellphone-simple-testimonial-2"
     },
     "quantityInformationSection": [
       {
@@ -799,6 +858,48 @@
       {
         "title": "Portability",
         "description": "You can use the application on yuor mobile device, tablet, notebook or desktop computer"
+      }
+    ],
+    "scrollableStickyInfoSection2": [
+      {
+        "title": "Real-Time Chat",
+        "description": "Communicate instantly with managers or tenants anytime."
+      },
+      {
+        "title": "Rent Payment Tracker",
+        "description": "View and pay rent online with balance updates."
+      },
+      {
+        "title": "Incident Reporting",
+        "description": "Create property-related issues in seconds."
+      },
+      {
+        "title": "Incident Status Updates",
+        "description": "Stay informed about the progress of reported issues."
+      },
+      {
+        "title": "Payment History",
+        "description": "Access a detailed record of all past payments."
+      },
+      {
+        "title": "Expense Reports",
+        "description": "Review property expenses and financial summaries."
+      },
+      {
+        "title": "Secure Tenant Portal",
+        "description": "Manage rent, incidents, and communications in one place."
+      },
+      {
+        "title": "Property Details",
+        "description": "Access key information about your rented property."
+      },
+      {
+        "title": "Maintenance Requests",
+        "description": "Submit and track maintenance needs effortlessly."
+      },
+      {
+        "title": "Owner Reports",
+        "description": "Generate insights on income, expenses, and performance."
       }
     ],
     "footerSection": {

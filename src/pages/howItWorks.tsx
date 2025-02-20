@@ -2,12 +2,12 @@ import React from 'react';
 import { HeadFC, PageProps } from 'gatsby';
 import { Seo } from '@/components';
 import {
-  CallToActionSection1,
   CallToActionSection2,
-  SimpleTestimonialSection,
-  ScrollableStickyInfoSection,
   ExperienceSection2,
-  SelectableInfoCardsSection
+  SelectableInfoCardsSection,
+  ScrollableStickyInfoSection2,
+  CallToActionSection4,
+  SimpleTestimonialSection2
 } from '@/sections';
 
 const HowItWorksPage: React.FC<PageProps> = () => {
@@ -16,10 +16,9 @@ const HowItWorksPage: React.FC<PageProps> = () => {
     <>
       <ExperienceSection2 />
       <SelectableInfoCardsSection />
-      <ScrollableStickyInfoSection />
-      <CallToActionSection1 />
-      <SimpleTestimonialSection />
-      <CallToActionSection2 />
+      <ScrollableStickyInfoSection2 />
+      <SimpleTestimonialSection2 />
+      <CallToActionSection4 />
     </>
   )
 }
